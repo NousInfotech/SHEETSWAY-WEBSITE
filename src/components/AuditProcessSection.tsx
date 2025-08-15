@@ -6,8 +6,15 @@ import assets from '@/data/assets';
 
 const AuditProcessSection = () => {
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 px-4 bg-white relative">
+      {/* Curved bottom edge - transparent to show background */}
+      <div className="absolute bottom-0 left-0 right-0 h-20" style={{
+        background: 'linear-gradient(to bottom, white 0%, white 50%, transparent 50%, transparent 100%)',
+        borderRadius: '50% 50% 0 0 / 100px 100px 0 0',
+        transform: 'translateY(50%)'
+      }}></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Main Content Area */}
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mb-20">
           {/* Left Content */}

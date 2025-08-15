@@ -14,6 +14,8 @@ export interface Assets {
   Upload3Png: string;
   User4Png: string;
   UntitledPng: string;
+  ImagePng: string;
+  SaltedgePng: string;
   Rectangle2Png: string;
   SheetSwayFinalLogoWhite2Png: string;
   Spy15449010Png: string;
@@ -53,10 +55,17 @@ export interface Assets {
   CtaBgPng: string;
   CtaBg1Png: string;
   CtaBg2Png: string;
+  CtaPng: string;
   FacebookIconPng: string;
   LinkedinIconPng: string;
   InstagramIconPng: string;
   TwitterIconPng: string;
+  QuoteIconPng: string;
+  MessagePng: string;
+  HeroSideMarketplacePng: string;
+  HeroBgMarketplacePng: string;
+  FrameMarketplacePng: string;
+  MapPng: string;
   
   // SVG Assets
   UntitledSvg: string;
@@ -96,6 +105,16 @@ export interface Assets {
   TwoAt4xSvg: string;
   Year2002Svg: string;
   StarIconSvg: string;
+  
+  // Plugin Icons
+  WordPluginIconPng: string;
+  FileIconPng: string;
+  ArrowIconPng: string;
+  ExcelPluginIconPng: string;
+  TextExtractIconPng: string;
+  CrossReferenceIconPng: string;
+  DocumentExtractionIconPng: string;
+  ReconciliationIconPng: string;
   
   // Marketplace Auditor Page PNG
   Rectangle9MarketplacePng: string;
@@ -140,6 +159,8 @@ export interface Assets {
   TwoAt4x1MarketplacePng: string;
   Year2006MarketplacePng: string;
   TwoAt4x1DupeMarketplacePng: string;
+  At4x1NewMarketplacePng: string;
+  BorderMarketplacePng: string;
   
   // Marketplace Auditor Page SVG
   Rectangle9MarketplaceSvg: string;
@@ -202,6 +223,8 @@ const assets: Assets = {
   Upload3Png: "/PNG/upload (3).png",
   User4Png: "/PNG/user (4).png",
   UntitledPng: "/PNG/Untitled.png",
+  ImagePng: "/PNG/image.png",
+  SaltedgePng: "/PNG/Saltedge.png",
   Rectangle2Png: "/PNG/Rectangle 2.png",
   SheetSwayFinalLogoWhite2Png: "/PNG/SheetSway-Final-Logo-White 2.png",
   Spy15449010Png: "/PNG/spy_15449010.png",
@@ -241,10 +264,17 @@ const assets: Assets = {
   CtaBgPng: "/Marketplace auditor page/PNG/CTA-bg.png",
   CtaBg1Png: "/cta-bg-1.png",
   CtaBg2Png: "/Marketplace auditor page/PNG/CTA-bg-2.png",
+  CtaPng: "/Marketplace auditor page/PNG/CTA.png",
   FacebookIconPng: "/PNG/4@4x.png",
   LinkedinIconPng: "/PNG/5@4x.png",
   InstagramIconPng: "/PNG/6@4x.png",
   TwitterIconPng: "/PNG/7@4x.png",
+  QuoteIconPng: "/Marketplace auditor page/PNG/quote-icon.png",
+  MessagePng: "/Marketplace auditor page/PNG/message.png",
+  HeroSideMarketplacePng: "/Marketplace auditor page/PNG/hero-side.png",
+  HeroBgMarketplacePng: "/Marketplace auditor page/PNG/hero-bg.png",
+  FrameMarketplacePng: "/Marketplace auditor page/PNG/frame.png",
+  MapPng: "/Marketplace auditor page/PNG/map.png",
   
   // SVG Assets
   UntitledSvg: "/SVG/Untitled.svg",
@@ -284,6 +314,16 @@ const assets: Assets = {
   TwoAt4xSvg: "/SVG/2@4x.svg",
   Year2002Svg: "/SVG/2002.svg",
   StarIconSvg: "/SVG/Icon/Star.svg",
+  
+  // Plugin Icons
+  WordPluginIconPng: "/Marketplace auditor page/PNG/2@4x.png",
+  FileIconPng: "/Marketplace auditor page/PNG/3@4x.png",
+  ArrowIconPng: "/Marketplace auditor page/PNG/4@4x.png",
+  ExcelPluginIconPng: "/Marketplace auditor page/PNG/@4x.png",
+  TextExtractIconPng: "/Marketplace auditor page/PNG/8@4x.png",
+  CrossReferenceIconPng: "/Marketplace auditor page/PNG/5@4x.png",
+  DocumentExtractionIconPng: "/Marketplace auditor page/PNG/6@4x.png",
+  ReconciliationIconPng: "/Marketplace auditor page/PNG/7@4x.png",
   
   // Marketplace Auditor Page PNG
   Rectangle9MarketplacePng: "/Marketplace auditor page/PNG/Rectangle 9.png",
@@ -328,6 +368,8 @@ const assets: Assets = {
   TwoAt4x1MarketplacePng: "/Marketplace auditor page/PNG/2@4x-1.png",
   Year2006MarketplacePng: "/Marketplace auditor page/PNG/2006.png",
   TwoAt4x1DupeMarketplacePng: "/Marketplace auditor page/PNG/2@4x 1.png",
+  At4x1NewMarketplacePng: "/Marketplace auditor page/PNG/@4x-1.png",
+  BorderMarketplacePng: "/Marketplace auditor page/PNG/border.png",
   
   // Marketplace Auditor Page SVG
   Rectangle9MarketplaceSvg: "/Marketplace auditor page/SVG/Rectangle 9.svg",

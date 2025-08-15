@@ -23,12 +23,13 @@ const SecuritySection = () => {
 
   return (
     <section 
-      className="relative min-h-screen py-20 px-4 flex items-center justify-center overflow-hidden security-section-bg"
+      className="relative min-h-screen -mt-15 py-20 px-4 flex items-center justify-center overflow-hidden security-section-bg"
       style={{
         backgroundImage: `url(${assets.CtaBg1Png})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        zIndex: -1
       }}
     >
       <div className="container mx-auto max-w-7xl">

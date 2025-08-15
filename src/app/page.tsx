@@ -6,6 +6,12 @@ import SecuritySection from "@/components/SecuritySection";
 import AuditNeedsSection from "@/components/AuditNeedsSection";
 import RetailHospitalitySection from "@/components/RetailHospitalitySection";
 import AccountingSoftwareIntegrationSection from "@/components/AccountingSoftwareIntegrationSection";
+import OnlineBankingSection from "@/components/OnlineBankingSection";
+import BuiltByAuditorsSection from "@/components/BuiltByAuditorsSection";
+import TestimonialSection from "@/components/TestimonialSection";
+import CTASection from "@/components/CTASection";
+import FAQSection from "@/components/FAQSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +24,12 @@ export default function Home() {
       <AuditNeedsSection />
       <RetailHospitalitySection />
       <AccountingSoftwareIntegrationSection />
+      <OnlineBankingSection />
+      <BuiltByAuditorsSection />
+      <TestimonialSection />
+      <CTASection />
+      <FAQSection />
+      <Footer />
     </div>
   );
 }
