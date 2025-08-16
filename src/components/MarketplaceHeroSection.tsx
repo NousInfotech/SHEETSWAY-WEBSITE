@@ -6,14 +6,23 @@ import assets from '@/data/assets';
 
 const MarketplaceHeroSection = () => {
   return (
-    <section className="relative overflow-hidden min-h-screen flex items-center">
-      {/* Background Image - frame.png */}
+    <section className="relative overflow-hidden min-h-[130vh] flex items-center pt-25 lg:pt-0">
+      {/* Background Image - Desktop: frame.png, Mobile: market-place-hero.png */}
       <div className="absolute inset-0">
+        {/* Desktop Background */}
         <Image
           src={assets.FrameMarketplacePng}
-          alt="Hero Background"
+          alt="Hero Background Desktop"
           fill
-          className="object-cover"
+          className="object-cover hidden lg:block"
+          priority
+        />
+        {/* Mobile Background */}
+        <Image
+          src={assets.MarketPlaceHeroPng}
+          alt="Hero Background Mobile"
+          fill
+          className="object-cover lg:hidden"
           priority
         />
       </div>
@@ -31,9 +40,9 @@ const MarketplaceHeroSection = () => {
               </p>
               
               {/* Main Heading */}
-              <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                Connecting<br />
-                Auditors & Clients.<br />
+              <h1 className="text-2xl md:text-5xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                Connecting
+                Auditors & Clients.
                 Building Careers
               </h1>
               
@@ -60,7 +69,7 @@ const MarketplaceHeroSection = () => {
             </div>
             
             {/* Right Side - Hero Image */}
-            <div className="relative h-96 lg:h-[500px] flex justify-end -mr-10 lg:-mr-69">
+            <div className="relative h-96 lg:h-[500px] flex justify-end -mr-10 lg:-mr-96 mt-16 lg:mt-0">
               <Image
                 src={assets.HeroSideMarketplacePng}
                 alt="Professional Auditor"

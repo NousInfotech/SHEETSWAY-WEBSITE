@@ -113,37 +113,91 @@ const ServicesSection = () => {
        </div>
        
        {/* Top Decorative Image */}
-       <div className="absolute top-0 left-0 right-0 h-32">
+       <div className="absolute top-0 left-0 right-0 h-16 lg:h-32">
          <Image
            src={assets.Rectangle2MarketplacePng}
            alt="Top Decorative Element"
            fill
-           className="object-cover"
+           className="object-cover object-top"
          />
        </div>
 
              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 backdrop-blur-sm rounded-lg">
         {/* Header Section */}
-        <div className="text-center mb-16">
+        <div className="text-center lg:text-center text-left mb-16">
           {/* Badge */}
-                     <div className="inline-flex items-center px-4 py-2 text-white text-sm font-medium rounded-full mb-6" style={{ backgroundColor: '#FFA955' }}>
+          <div className="inline-flex lg:inline-flex block items-center px-4 py-2 text-white text-sm font-medium rounded-full mb-6" style={{ backgroundColor: '#FFA955' }}>
             OUR SERVICES
           </div>
 
           {/* Main Title */}
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl lg:text-3xl font-bold text-gray-800 mb-6 text-left lg:text-center">
             Designed for Audit Professionals Like You
           </h2>
 
           {/* Description */}
-          <div className="max-w-4xl mx-auto text-m text-gray-600 leading-relaxed">
-            <p className="mb-4">
+          <div className="max-w-4xl mx-auto lg:mx-auto mx-0 text-m text-gray-600 leading-relaxed">
+            <p className="mb-4 text-left lg:text-center">
             Connect with clients looking for audits, submit tailored proposals, and deliver high-quality work through your own branded portal. From document collection to trial balance procedures, Sheetsway integrates directly with Excel, Word, and online banking to keep your audits efficient, secure, and professional.
             </p>
           </div>
         </div>
-                 {/* Services Cards */}
-         <div className="mb-12">
+                 {/* Mobile Layout - Single Card with Background Image */}
+        <div className="block lg:hidden mb-12">
+          <div className="relative h-96">
+            {/* Background Image */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-full h-full flex items-center justify-center">
+                <Image
+                  src={services[currentSlide].image}
+                  alt={services[currentSlide].title}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Content Section - White curved background */}
+            <div className="absolute -bottom-25 right-4 left-4 bg-white rounded-2xl shadow-lg p-6">
+              {/* Icon */}
+              <div className="absolute -top-4 right-6 w-8 h-8 bg-blue-400 rounded-full border-2 border-white shadow-lg flex items-center justify-center">
+                <Image
+                  src={services[currentSlide].icon}
+                  alt="Service icon"
+                  width={16}
+                  height={16}
+                  className="object-contain"
+                />
+              </div>
+
+              {/* Small Header */}
+              <p className="text-orange-400 text-sm font-medium mb-2">
+                {services[currentSlide].smallHeader}
+              </p>
+
+              {/* Title */}
+              <h3 className="text-xl font-bold text-gray-800 mb-3 leading-tight">
+                {services[currentSlide].title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                {services[currentSlide].description}
+              </p>
+
+              {/* Button */}
+              <button
+                className="w-auto text-white py-3 px-6 rounded-lg font-medium transition-colors duration-200"
+                style={{ backgroundColor: "#FFA955" }}
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Layout - Services Cards Grid */}
+        <div className="hidden lg:block mb-12">
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
              {services.slice(currentSlide, currentSlide + 3).map((service) => (
               <div key={service.id} className="relative h-96">

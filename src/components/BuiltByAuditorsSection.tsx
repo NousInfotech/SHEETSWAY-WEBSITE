@@ -36,21 +36,22 @@ const BuiltByAuditorsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gray-50 relative overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-4 bg-gray-50 relative overflow-hidden">
       <SectionDivider 
         imageSrc={assets.Rectangle2MarketplacePng}
         position="top"
       />
       
       <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8 order-1 lg:order-1">
             <SectionHeader 
               title="Built by Auditors,"
               subtitle="Backed by"
               logoSrc={assets.LogoPng}
               logoAlt="SheetSway"
+              subtitleClassName="text-gray-600 text-sm"
             />
 
             <div className="relative">
@@ -62,7 +63,7 @@ const BuiltByAuditorsSection = () => {
               />
               
               {/* Learn More Button */}
-              <div className="pl-8 pt-4">
+              <div className="pl-4 sm:pl-6 lg:pl-8 pt-4">
                 <LearnMoreButton 
                   text="Learn More"
                   icon="→"
@@ -74,10 +75,10 @@ const BuiltByAuditorsSection = () => {
           </div>
 
           {/* Right Content - Image */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative max-w-2xl mx-auto">
+          <div className="flex justify-center lg:justify-end order-2 lg:order-2">
+            <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-2xl mx-auto">
               {/* Image Container */}
-              <div className="relative p-5">
+              <div className="relative p-3 sm:p-4 lg:p-5">
                 {/* Image */}
                 <div className="relative z-10">
                   <Image

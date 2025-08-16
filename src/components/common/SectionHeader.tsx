@@ -30,18 +30,20 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
       </h2>
       
       {subtitle && logoSrc && (
-        <div className="flex items-center space-x-3">
+        <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3">
           <span className={subtitleClassName}>{subtitle}</span>
-          <Image
-            src={logoSrc}
-            alt={logoAlt}
-            width={logoWidth}
-            height={logoHeight}
-            className="h-8 w-auto"
-          />
-          <span className={`${subtitleClassName} mt-2`} style={{ display: 'block' }}>
-            Audit Automation Software
-          </span>
+          <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3">
+            <Image
+              src={logoSrc}
+              alt={logoAlt}
+              width={logoWidth}
+              height={logoHeight}
+              className="h-[20px] w-[100px]"
+            />
+            <span className={`${subtitleClassName} sm:mt-2`}>
+              Audit Automation Software
+            </span>
+          </div>
         </div>
       )}
     </div>

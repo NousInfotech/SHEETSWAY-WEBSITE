@@ -23,7 +23,7 @@ export default function Home() {
       <SecuritySection />
       <AuditNeedsSection />
       <RetailHospitalitySection />
-      <AccountingSoftwareIntegrationSection />
+      <AccountingSoftwareIntegrationSection/>
       <OnlineBankingSection />
       <BuiltByAuditorsSection />
       <TestimonialSection />

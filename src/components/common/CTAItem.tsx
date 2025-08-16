@@ -32,12 +32,12 @@ const CTAItem: React.FC<CTAItemProps> = ({
   return (
     <div className={`flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 ${className}`}>
       <div className="text-white space-y-4 flex-1">
-        <h2 className="text-3xl md:text-2xl font-bold leading-tight">
+        <h2 className="text-md sm:text-3xl md:text-2xl font-bold leading-tight">
           {title}
         </h2>
         <div className="space-y-1">
           {description.map((line, index) => (
-            <p key={index} className="text-white/90 text-lg">
+            <p key={index} className="text-white/90 text-sm sm:text-lg">
               {line}
             </p>
           ))}

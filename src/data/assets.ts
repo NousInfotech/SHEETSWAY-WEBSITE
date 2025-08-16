@@ -65,6 +65,7 @@ export interface Assets {
   HeroSideMarketplacePng: string;
   HeroBgMarketplacePng: string;
   FrameMarketplacePng: string;
+  MarketPlaceHeroPng: string;
   MapPng: string;
   
   // SVG Assets
@@ -274,6 +275,7 @@ const assets: Assets = {
   HeroSideMarketplacePng: "/Marketplace auditor page/PNG/hero-side.png",
   HeroBgMarketplacePng: "/Marketplace auditor page/PNG/hero-bg.png",
   FrameMarketplacePng: "/Marketplace auditor page/PNG/frame.png",
+  MarketPlaceHeroPng: "/Marketplace auditor page/PNG/market-place-hero.png",
   MapPng: "/Marketplace auditor page/PNG/map.png",
   
   // SVG Assets

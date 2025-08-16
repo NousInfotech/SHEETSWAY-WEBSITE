@@ -7,19 +7,22 @@ const ProcedureGenerationSection = () => {
   const featureTags = ['Customized', 'Structured', 'Industry Based'];
 
   return (
-         <section className="py-20 px-4 relative overflow-hidden">
-       {/* Background Image */}
-       <div className="absolute inset-0 z-0">
-         <Image
-           src={assets.At4x1MarketplacePng}
-           alt="Background Pattern"
-           fill
-           className="object-cover opacity-10"
-           priority
-         />
-       </div>
+                  <section className="py-20 px-4 relative overflow-hidden rounded-b-[75px] lg:rounded-b-[150px]">
+        {/* White Background */}
+        <div className="absolute inset-0 z-0 bg-white"></div>
+        
+        {/* Background Image */}
+        <div className="absolute inset-0 z-10">
+          <Image
+            src={assets.At4x1MarketplacePng}
+            alt="Background Pattern"
+            fill
+            className="object-cover opacity-10"
+            priority
+          />
+        </div>
        
-       <div className="container mx-auto max-w-7xl relative z-10">
+               <div className="container mx-auto max-w-7xl relative z-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="relative">

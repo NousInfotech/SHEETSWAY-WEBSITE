@@ -17,7 +17,117 @@ const OnlineBankingSection = () => {
       </div>
       
       <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        {/* Mobile Layout */}
+        <div className="lg:hidden space-y-8">
+          {/* Header */}
+          <div className="space-y-4 text-left">
+            <h2 className="text-2xl font-bold text-gray-800 leading-tight">
+              We can also connect directly to your{' '}
+              <span style={{ color: '#E8840C' }}>Online Banking</span>
+            </h2>
+            
+            {/* Powered by Saltedge */}
+            <div className="flex items-center space-x-2">
+              <span className="text-gray-600 text-sm">Powered by</span>
+              <Image
+                src={assets.SaltedgePng}
+                alt="Saltedge"
+                width={120}
+                height={30}
+                className="h-6 w-auto"
+              />
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <div className="text-left">
+            <button
+              className="w-full max-w-md px-6 py-4 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-sm text-left"
+              style={{ backgroundColor: '#E8840C' }}
+            >
+              No Chasing Documents. No Uploads. Just One Login.
+            </button>
+          </div>
+
+          {/* Features List */}
+          <div className="space-y-6">
+            {/* Feature 1 */}
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                <Image
+                  src={assets.Mess1Png}
+                  alt="No more digging through PDFs"
+                  width={20}
+                  height={20}
+                />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                  No more digging through PDFs
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  We can grab your statements for you.
+                </p>
+              </div>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                <Image
+                  src={assets.Upload3Png}
+                  alt="Upload nothing, explain nothing"
+                  width={20}
+                  height={20}
+                />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                  Upload nothing, explain nothing
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Your transactions speak for themselves.
+                </p>
+              </div>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                <Image
+                  src={assets.User4Png}
+                  alt="Bank-Level Security, Built In"
+                  width={20}
+                  height={20}
+                />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                  Bank-Level Security, Built In
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Trusted APIs used by top fintech companies
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile Phone Mockup */}
+          <div className="flex justify-center mt-8">
+            <div className="relative">
+              <Image
+                src={assets.ImagePng}
+                alt="Banking Interface Mockup"
+                width={300}
+                height={600}
+                className="w-64 h-auto drop-shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Layout - Unchanged */}
+        <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 relative z-20">
             {/* Header */}

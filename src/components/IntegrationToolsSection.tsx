@@ -32,12 +32,12 @@ const IntegrationToolsSection = () => {
         
         {/* Main Text */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold leading-tight">
             <span className="text-gray-800">Let&apos;s </span>
             <span style={{ color: '#E8840C' }}>Integrate</span>
             <span className="text-gray-800"> With</span>
           </h2>
-          <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-800">
+          <h3 className="text-2xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-800">
             What You Already Know Best
           </h3>
         </div>
@@ -47,11 +47,11 @@ const IntegrationToolsSection = () => {
           {/* Word Plugin Column */}
           <div className="space-y-8 text-center">
             <div className="space-y-4">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-800">Word Plugin</h3>
-              <p className="text-xl text-gray-700 leading-relaxed max-w-md mx-auto">
+              <h3 className="text-2xl md:text-4xl font-bold text-gray-800">Word Plugin</h3>
+              <p className="text-sm text-gray-700 font-bold leading-relaxed max-w-md mx-auto">
                 Drafting Letters and preparing Financial Statements have never been easier.
               </p>
-              <p className="text-md text-gray-600">
+              <p className="text-sm text-gray-600">
                 Data pulled from the portal, automatically populate your audit letters
               </p>
             </div>
@@ -143,11 +143,11 @@ const IntegrationToolsSection = () => {
           {/* Excel Plugin Column */}
           <div className="flex flex-col h-full space-y-8 text-center">
             <div className="space-y-4">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-800">Excel Plugin</h3>
-              <p className="text-xl text-gray-700 leading-relaxed max-w-md mx-auto">
+              <h3 className="text-2xl md:text-4xl font-bold text-gray-800">Excel Plugin</h3>
+              <p className="text-sm font-bold text-gray-700 leading-relaxed max-w-md mx-auto">
                 Upload Documents and Extract data with a click of a button.
               </p>
-              <p className="text-md text-gray-600">
+              <p className="text-sm text-gray-600">
                 Populate working papers in seconds and keep everything referenced to the portal
               </p>
             </div>
