@@ -6,7 +6,7 @@ import assets from '@/data/assets';
 
 const AuditProcessSection = () => {
   return (
-    <section className="py-8 md:py-16 px-4 bg-white relative" style={{
+    <section className="py-8 md:py-16 px-4 bg-white relative mb-8 md:mb-35" style={{
       borderBottomLeftRadius: '50px',
       borderBottomRightRadius: '50px'
     }}>
@@ -30,7 +30,7 @@ const AuditProcessSection = () => {
             </h1>
             
             {/* Steps List */}
-            <div className="space-y-3 mb-6 lg:mb-8 max-w-xs mx-0">
+            <div className="space-y-3 mb-6 lg:mb-8 max-w-sm sm:max-w-xs mx-0">
               <div className="bg-gray-50 rounded-lg px-4 py-3 shadow-sm">
                 <p className="text-base sm:text-lg text-gray-700 font-medium">Post your audit budget.</p>
               </div>

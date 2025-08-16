@@ -164,11 +164,8 @@ const AccountingSoftwareIntegrationSection = () => {
 
         {/* Bottom Text */}
         <div className="text-left lg:text-center">
-          <p className="text-lg lg:text-3xl font-normal text-gray-700 mb-2" style={{ fontFamily: 'Nunito, sans-serif' }}>
-            Not using a listed software? No problem.
-          </p>
-          <p className="text-lg lg:text-3xl font-normal text-gray-700 mb-4" style={{ fontFamily: 'Nunito, sans-serif' }}>
-            You can upload your accounts manually and we&apos;ll take care of the rest.
+          <p className="text-2xl lg:text-3xl font-bold text-gray-700 mb-2" style={{ fontFamily: 'Nunito, sans-serif' }}>
+            Not using a listed software? No problem. You can upload your accounts manually and we&apos;ll take care of the rest.
           </p>
           <p className="text-base lg:text-lg font-normal text-gray-700" style={{ fontFamily: 'Nunito, sans-serif' }}>
             Feel free to suggest us the software on{' '}

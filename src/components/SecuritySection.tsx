@@ -23,7 +23,7 @@ const SecuritySection = () => {
 
   return (
     <section 
-      className="relative min-h-screen -mt-40 py-20 px-4 flex items-center justify-center overflow-hidden security-section-bg pt-50 pb-50 lg:pt-20 lg:pb-20"
+      className="relative min-h-screen -mt-40 py-20 px-4 flex items-center justify-center overflow-hidden security-section-bg pt-50 pb-50 lg:pt-20 lg:pb-20 sm:-mt-25 md:-mt-20 lg:-mt-40 xl:-mt-68 sm:pt-24 sm:pb-32 md:pt-20 md:pb-32 lg:pt-20 lg:pb-32 xl:pt-30 xl:pb-32"
       style={{
         backgroundImage: `url(${assets.CtaBg1Png})`,
         backgroundSize: 'cover',
@@ -34,7 +34,7 @@ const SecuritySection = () => {
     >
       <div className="container mx-auto max-w-7xl">
         {/* Logo Section */}
-        <div className="flex items-center gap-3 mb-16">
+        <div className="flex items-center gap-3 mb-16 sm:mb-12 lg:mb-16">
           <Image
             src={assets.SheetSwayFinalLogoWhite2Png}
             alt="SheetSway Logo"
@@ -47,11 +47,11 @@ const SecuritySection = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center sm:gap-8 lg:gap-12">
           {/* Left Content */}
-          <div className="text-white space-y-6">
+          <div className="text-white space-y-6 sm:space-y-4 lg:space-y-6">
             <div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+              <h2 className="text-2xl sm:text-4xl lg:text-4xl font-bold mb-4 sm:mb-3 lg:mb-4">
                 <span className="text-orange-400">Your Security,</span>
                 <br />
                 <span className="text-white">Taken Seriously</span>
@@ -81,9 +81,9 @@ const SecuritySection = () => {
           </div>
 
           {/* Right Content - Security Features */}
-          <div className="relative mt-8 lg:mt-0">
+          <div className="relative mt-8 lg:mt-0 sm:mt-6 lg:mt-0">
             <div 
-              className="rounded-3xl border-2 border-orange-400 w-full px-5 sm:px-6 py-4"
+              className="rounded-3xl border-2 border-orange-400 w-full px-5 sm:px-6 py-4 sm:px-4 sm:py-3 lg:px-5 lg:py-4"
               style={{
                 backgroundColor: '#0370A0',
                 maxWidth: '494px',
@@ -91,9 +91,9 @@ const SecuritySection = () => {
                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
               }}
             >
-              <div className="flex flex-col gap-3 sm:gap-2.5">
+              <div className="flex flex-col gap-10 sm:gap-3 lg:gap-5">
                 {securityFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-center gap-3 sm:gap-4">
+                  <div key={index} className="flex items-center gap-3 sm:gap-4 lg:gap-3">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                       <Image
                         src={feature.icon}
@@ -103,7 +103,7 @@ const SecuritySection = () => {
                         className="w-5 h-5 sm:w-6 sm:h-6 object-contain"
                       />
                     </div>
-                    <h3 className="text-white text-base sm:text-lg font-medium leading-tight">
+                    <h3 className="text-white text-base sm:text-lg font-medium leading-tight sm:text-sm lg:text-sm">
                       {feature.title}
                     </h3>
                   </div>

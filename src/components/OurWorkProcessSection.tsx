@@ -50,26 +50,44 @@ const OurWorkProcessSection = () => {
           </div>
 
           {/* Mobile Steps Section */}
-          <div className="md:hidden">
-            <div className="space-y-8">
+          <div className="md:hidden relative">
+            {/* Curved Vertical Line Background */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-24 z-0">
+              <svg
+                width="96"
+                height="100%"
+                viewBox="0 0 96 1000"
+                className="w-full h-full"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M 48 0 Q 72 80 48 160 Q 24 240 48 320 Q 72 400 48 480 Q 24 560 48 640 Q 72 720 48 800"
+                  stroke="#E8840C"
+                  strokeWidth="4"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </div>
+            
+            <div className="space-y-8 relative z-10">
               {/* Step 1 */}
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+              <div className="space-y-4">
+                <div className="relative flex justify-center">
+                  <Image
+                    src={assets.Rectangle10MarketplacePng}
+                    alt="Step 1: Set Up Your Profile"
+                    width={250}
+                    height={150}
+                    className="w-70 h-70 object-cover rounded-lg"
+                  />
+                  {/* Step Number Overlay - Bottom Left, extending beyond image corner */}
+                  <div className="absolute -bottom-6 left-6 w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-2xl">
                     1
                   </div>
                 </div>
-                <div className="flex-1">
-                  <div className="mb-4">
-                    <Image
-                      src={assets.Rectangle10MarketplacePng}
-                      alt="Step 1: Set Up Your Profile"
-                      width={300}
-                      height={200}
-                      className="w-full h-auto rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-10">
                     Step 1: Set Up Your Profile
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -79,23 +97,22 @@ const OurWorkProcessSection = () => {
               </div>
 
               {/* Step 2 */}
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+              <div className="space-y-4">
+                <div className="relative flex justify-center">
+                  <Image
+                    src={assets.Rectangle11MarketplacePng}
+                    alt="Step 2: Send Proposals"
+                    width={250}
+                    height={150}
+                    className="w-70 h-70 object-cover rounded-lg"
+                  />
+                  {/* Step Number Overlay - Bottom Left, extending beyond image corner */}
+                  <div className="absolute -bottom-6 left-6 w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-2xl">
                     2
                   </div>
                 </div>
-                <div className="flex-1">
-                  <div className="mb-4">
-                    <Image
-                      src={assets.Rectangle11MarketplacePng}
-                      alt="Step 2: Send Proposals"
-                      width={300}
-                      height={200}
-                      className="w-full h-auto rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-10">
                     Step 2: Send Proposals
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -105,23 +122,22 @@ const OurWorkProcessSection = () => {
               </div>
 
               {/* Step 3 */}
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+              <div className="space-y-4">
+                <div className="relative flex justify-center">
+                  <Image
+                    src={assets.Rectangle9MarketplacePng}
+                    alt="Step 3: Sign & Start"
+                    width={250}
+                    height={150}
+                    className="w-70 h-70 object-cover rounded-lg"
+                  />
+                  {/* Step Number Overlay - Bottom Left, extending beyond image corner */}
+                  <div className="absolute -bottom-6 left-6 w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-2xl">
                     3
                   </div>
                 </div>
-                <div className="flex-1">
-                  <div className="mb-4">
-                    <Image
-                      src={assets.Rectangle9MarketplacePng}
-                      alt="Step 3: Sign & Start"
-                      width={300}
-                      height={200}
-                      className="w-full h-auto rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 mt-10">
                     Step 3: Sign & Start
                   </h3>
                   <p className="text-gray-600 leading-relaxed">

@@ -40,7 +40,7 @@ const AuditorCallToAction = () => {
           </div>
           
           <button 
-            className="text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-200 mb-6 sm:mb-8 shadow-lg"
+            className="w-full sm:w-auto text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-200 mb-6 sm:mb-8 shadow-lg"
             style={{backgroundColor: 'rgba(0, 70, 102, 1)'}}
             onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(0, 60, 90, 1)'}
             onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(0, 70, 102, 1)'}
@@ -54,7 +54,7 @@ const AuditorCallToAction = () => {
             </p>
             
             {/* Social Media Icons */}
-            <div className="flex justify-center space-x-3 sm:space-x-4">
+            <div className="flex justify-between max-w-xs mx-auto">
               <div className="w-10 h-10 sm:w-12 sm:h-12 cursor-pointer hover:scale-110 transition-transform duration-200">
                 <Image
                   src={assets.FacebookIconPng}
@@ -116,17 +116,17 @@ const AuditorCallToAction = () => {
                 Pick from <span className="font-semibold" style={{color: 'rgba(232, 132, 12, 1)'}}>Verified</span> and <span className="font-semibold" style={{color: 'rgba(232, 132, 12, 1)'}}>Trusted</span>
               </p>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 leading-tight">
-                CERTIFIED &
+                CERTIFIED & REVIEWED
               </h2>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 leading-tight">
-                REVIEWED AUDITORS
+                 AUDITORS
               </h2>
               <p className="text-base sm:text-lg mb-6 sm:mb-8 opacity-90">
                 all in one place
               </p>
               
               <button 
-                className="text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg transition-colors duration-200 mb-4 sm:mb-6 shadow-xl"
+                className="w-full sm:w-auto text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg transition-colors duration-200 mb-4 sm:mb-6 shadow-xl"
                 style={{backgroundColor: 'rgba(232, 132, 12, 1)'}}
                 onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(210, 120, 10, 1)'}
                 onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(232, 132, 12, 1)'}

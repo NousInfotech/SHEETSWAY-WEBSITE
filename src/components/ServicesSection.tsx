@@ -15,7 +15,7 @@ const ServicesSection = () => {
       description:
         "Access a stream of audit requests from real clients. Review scope, budget & due dates.",
       image: assets.Rectangle3MarketplacePng,
-      icon: assets.TwoAt4x1MarketplacePng,
+      icon: assets.EightAt4x1MarketplacePng,
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const ServicesSection = () => {
       description:
         "Run audits under your own domain, colors, and logo. It's your brand, not ours.",
       image: assets.Rectangle4MarketplacePng,
-      icon: assets.EightAt4x1MarketplacePng,
+      icon: assets.TwoAt4x1MarketplacePng,
     },
     {
       id: 3,
@@ -158,14 +158,14 @@ const ServicesSection = () => {
             </div>
 
             {/* Content Section - White curved background */}
-            <div className="absolute -bottom-25 right-4 left-4 bg-white rounded-2xl shadow-lg p-6">
+            <div className="absolute -bottom-25 right-4 bg-white rounded-2xl shadow-lg p-6 min-h-[160px] w-64">
               {/* Icon */}
-              <div className="absolute -top-4 right-6 w-8 h-8 bg-blue-400 rounded-full border-2 border-white shadow-lg flex items-center justify-center">
+              <div className="absolute -top-4 right-6 w-12 h-12 bg-blue-400 rounded-full border-2 border-white shadow-lg flex items-center justify-center">
                 <Image
                   src={services[currentSlide].icon}
                   alt="Service icon"
-                  width={16}
-                  height={16}
+                  width={24}
+                  height={24}
                   className="object-contain"
                 />
               </div>
@@ -215,14 +215,14 @@ const ServicesSection = () => {
                 </div>
 
                 {/* Content Section - White curved background */}
-                <div className="absolute -bottom-20 right-0 left-2 md:left-auto md:w-80 bg-white rounded-2xl shadow-lg p-6">
+                <div className="absolute -bottom-20 right-0 left-2 md:left-auto md:w-80 bg-white rounded-2xl shadow-lg p-6 min-h-[200px]">
                   {/* Icon */}
-                  <div className="absolute -top-4 right-6 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center">
+                  <div className="absolute -top-4 right-6 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center">
                     <Image
                       src={service.icon}
                       alt="Service icon"
-                      width={16}
-                      height={16}
+                      width={24}
+                      height={24}
                       className="object-contain"
                     />
                   </div>

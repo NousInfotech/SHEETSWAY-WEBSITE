@@ -11,7 +11,7 @@ const OnlineBankingSection = () => {
           alt=""
           width={400}
           height={400}
-          className="opacity-80"
+          className="opacity-80 w-45 h-45 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px]"
           priority
         />
       </div>
@@ -53,12 +53,12 @@ const OnlineBankingSection = () => {
           <div className="space-y-6">
             {/* Feature 1 */}
             <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+              <div className="flex-shrink-0 w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
                 <Image
                   src={assets.Mess1Png}
                   alt="No more digging through PDFs"
-                  width={20}
-                  height={20}
+                  width={24}
+                  height={24}
                 />
               </div>
               <div>
@@ -73,12 +73,12 @@ const OnlineBankingSection = () => {
 
             {/* Feature 2 */}
             <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+              <div className="flex-shrink-0 w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
                 <Image
                   src={assets.Upload3Png}
                   alt="Upload nothing, explain nothing"
-                  width={20}
-                  height={20}
+                  width={24}
+                  height={24}
                 />
               </div>
               <div>
@@ -93,12 +93,12 @@ const OnlineBankingSection = () => {
 
             {/* Feature 3 */}
             <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+              <div className="flex-shrink-0 w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
                 <Image
                   src={assets.User4Png}
                   alt="Bank-Level Security, Built In"
-                  width={20}
-                  height={20}
+                  width={24}
+                  height={24}
                 />
               </div>
               <div>

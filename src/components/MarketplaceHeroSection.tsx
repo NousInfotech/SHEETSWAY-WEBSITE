@@ -14,7 +14,8 @@ const MarketplaceHeroSection = () => {
           src={assets.FrameMarketplacePng}
           alt="Hero Background Desktop"
           fill
-          className="object-cover hidden lg:block"
+          className="object-cover object-right hidden lg:block"
+          style={{ objectPosition: '75% center' }}
           priority
         />
         {/* Mobile Background */}
@@ -22,7 +23,8 @@ const MarketplaceHeroSection = () => {
           src={assets.MarketPlaceHeroPng}
           alt="Hero Background Mobile"
           fill
-          className="object-cover lg:hidden"
+          className="object-cover object-right lg:hidden"
+          style={{ objectPosition: '75% center' }}
           priority
         />
       </div>
@@ -42,7 +44,7 @@ const MarketplaceHeroSection = () => {
               {/* Main Heading */}
               <h1 className="text-2xl md:text-5xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 Connecting
-                Auditors & Clients.
+                Auditors <br /> & Clients.
                 Building Careers
               </h1>
               
@@ -69,7 +71,7 @@ const MarketplaceHeroSection = () => {
             </div>
             
             {/* Right Side - Hero Image */}
-            <div className="relative h-96 lg:h-[500px] flex justify-end -mr-10 lg:-mr-96 mt-16 lg:mt-0">
+            <div className="relative h-80 lg:h-[500px] flex justify-start -mr-10 lg:-mr-48 mt-16 lg:mt-0">
               <Image
                 src={assets.HeroSideMarketplacePng}
                 alt="Professional Auditor"

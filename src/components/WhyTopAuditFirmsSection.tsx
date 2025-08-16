@@ -76,7 +76,7 @@ const WhyTopAuditFirmsSection = () => {
                        <div key={index} className={index === 0 ? "relative lg:mt-15" : index === 1 ? "relative lg:mt-5" : "relative lg:-mt-6"}>
                          
                          {/* Feature Content - Mobile: Full width, Desktop: Keep original positioning */}
-                         <div className={index === 0 ? "lg:pr-8 lg:-ml-38" : index === 1 ? "lg:pr-8 lg:-ml-20" : "pr-8 lg:-ml-15"}>
+                         <div className={index === 0 ? "lg:pr-8 lg:-ml-30" : index === 1 ? "lg:pr-8 lg:-ml-20" : "pr-8 lg:-ml-15"}>
                            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
                              {feature.title}
                            </h3>
@@ -119,7 +119,7 @@ const WhyTopAuditFirmsSection = () => {
                  {/* Right Side - Image and Button */}
                  <div className="flex flex-col items-center lg:items-end space-y-4 lg:space-y-0 relative">
                    {/* Professional Man Image */}
-                   <div className="relative w-80 h-80 sm:w-64 sm:h-64 lg:w-80 lg:h-80 order-3 lg:order-none lg:absolute lg:right-20 lg:top-1/2 lg:transform lg:-translate-y-1/2 -mb-15 lg:mb-0 -ml-8 lg:ml-0">
+                   <div className="relative w-80 h-80 sm:w-64 sm:h-64 lg:w-[520px] lg:h-[520px] order-3 lg:order-none lg:absolute lg:right-20 lg:-top-65 lg:h-[202px] -mb-15 lg:mb-0 -ml-8 lg:ml-0">
                      <Image
                        src={assets.Rectangle7MarketplacePng}
                        alt="Professional man working on laptop"

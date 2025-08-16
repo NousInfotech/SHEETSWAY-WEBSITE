@@ -56,13 +56,13 @@ const AuditNeedsSection = () => {
               >
                 {/* Simple line-art illustration */}
                 <div className="flex justify-start mb-4 lg:mb-6">
-                  <div className="w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center">
+                  <div className="w-30 h-30 lg:w-20 lg:h-20 flex items-center justify-center">
                     <Image
                       src={item.icon}
                       alt={item.title}
-                      width={80}
-                      height={80}
-                      className="w-12 h-12 lg:w-16 lg:h-16 object-contain"
+                      width={200}
+                      height={200}
+                      className="w-20 h-20 lg:w-16 lg:h-16 object-contain"
                     />
                   </div>
                 </div>

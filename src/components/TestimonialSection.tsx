@@ -16,9 +16,9 @@ const TestimonialSection = () => {
         {/* Customer Testimonials Section */}
         <div className="flex flex-col lg:grid lg:grid-cols-4 gap-6 md:gap-8 mb-12 md:mb-20">
           {/* Left Side - Quote and Heading */}
-          <div className="flex items-start gap-3 md:gap-4 mb-6 lg:mb-0">
-            {/* Quote Icon */}
-            <div className="relative w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
+          <div className="mb-6 lg:mb-0">
+            {/* Quote Icon - Now positioned above the heading */}
+            <div className="relative w-12 h-12 md:w-16 md:h-16 mb-4">
               <Image
                 src={assets.QuoteIconPng}
                 alt="Quote"
@@ -27,7 +27,7 @@ const TestimonialSection = () => {
               />
             </div>
             {/* Heading */}
-            <div className="pt-1 md:pt-2">
+            <div className="text-left">
               <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
                 What our customers are saying
               </h3>
@@ -37,49 +37,79 @@ const TestimonialSection = () => {
           {/* Right Side - Individual Message Cards */}
           <div className="lg:col-span-3 flex flex-col md:grid md:grid-cols-3 gap-4 md:gap-6">
             {/* Testimonial 1 */}
-            <div className="relative hover:scale-105 transition-transform duration-300 bg-white rounded-lg shadow-md p-4 md:p-6 mb-4 md:mb-0">
-              <div className="flex flex-col justify-center items-center text-center">
-                <p className="text-gray-800 text-sm leading-relaxed mb-4">
-                  &quot;I didn&apos;t know where to start with my audit. This platform made it stupid simple. Loved the process from start to finish.&quot;
-                </p>
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+            <div className="relative hover:scale-105 transition-transform duration-300 overflow-hidden w-full h-62 md:h-56">
+              <div className="relative z-10 w-full h-full">
+                <div className="absolute inset-0 z-0">
+                  <Image
+                    src="/Marketplace auditor page/PNG/message.png"
+                    alt="Message background"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex flex-col justify-center md:justify-start items-start text-start relative z-10 p-10 md:p-6 w-full h-full">
+                  <p className="text-gray-800 text-sm leading-relaxed mb-4">
+                    &quot;I didn&apos;t know where to start with my audit. This platform made it stupid simple. Loved the process from start to finish.&quot;
+                  </p>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Testimonial 2 */}
-            <div className="relative hover:scale-105 transition-transform duration-300 bg-white rounded-lg shadow-md p-4 md:p-6 mb-4 md:mb-0">
-              <div className="flex flex-col justify-center items-center text-center">
-                <p className="text-gray-800 text-sm leading-relaxed mb-4">
-                  &quot;Great service, quick quotes, and helpful support. I had full control over who I worked with. Highly recommend.&quot;
-                </p>
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+            <div className="relative hover:scale-105 transition-transform duration-300 overflow-hidden w-full h-62 md:h-56">
+              <div className="relative z-10 w-full h-full">
+                <div className="absolute inset-0 z-0">
+                  <Image
+                    src="/Marketplace auditor page/PNG/message.png"
+                    alt="Message background"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex flex-col justify-center md:justify-start items-start text-start relative z-10 p-10 md:p-6 w-full h-full">
+                  <p className="text-gray-800 text-sm leading-relaxed mb-4">
+                    &quot;Great service, quick quotes, and helpful support. I had full control over who I worked with. Highly recommend.&quot;
+                  </p>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Testimonial 3 */}
-            <div className="relative hover:scale-105 transition-transform duration-300 bg-white rounded-lg shadow-md p-4 md:p-6 mb-4 md:mb-0">
-              <div className="flex flex-col justify-center items-center text-center">
-                <p className="text-gray-800 text-sm leading-relaxed mb-4">
-                  &quot;I found a legit audit firm at a better price than I was quoted elsewhere. Everything online. was a pleasure.&quot;
-                </p>
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+            <div className="relative hover:scale-105 transition-transform duration-300 overflow-hidden w-full h-62 md:h-56">
+              <div className="relative z-10 w-full h-full">
+                <div className="absolute inset-0 z-0">
+                  <Image
+                    src="/Marketplace auditor page/PNG/message.png"
+                    alt="Message background"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex flex-col justify-center md:justify-start items-start text-start relative z-10 p-10 md:p-6 w-full h-full">
+                  <p className="text-gray-800 text-sm leading-relaxed mb-4">
+                    &quot;I found a legit audit firm at a better price than I was quoted elsewhere. Everything online. was a pleasure.&quot;
+                  </p>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -122,9 +152,9 @@ const TestimonialSection = () => {
               </p>
 
               {/* Clyde Caruana Profile */}
-              <div className="flex items-start gap-3 md:gap-4">
+              <div className="flex flex-col items-start gap-3 md:gap-4">
                 {/* Profile Image */}
-                <div className="relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex-shrink-0">
+                <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden flex-shrink-0">
                   <Image
                     src={assets.TwoAt4x4Svg}
                     alt="Clyde Caruana"
