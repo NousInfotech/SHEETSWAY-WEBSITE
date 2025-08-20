@@ -23,35 +23,35 @@ const AuditProcessSection = () => {
         {/* Main Content Area */}
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12 lg:mb-20">
           {/* Left Content */}
-          <div className="flex-1 text-left w-full">
+          <div className="flex-1 text-left w-full relative z-10">
             <h1 className="text-xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-bold text-gray-800 mb-6 lg:mb-8 leading-tight">
               Get Your Financial Audit<br />
               Done Remotely. <span style={{color: 'rgba(232, 132, 12, 1)'}}>Fully Online.</span>
             </h1>
             
             {/* Steps List */}
-            <div className="space-y-3 mb-6 lg:mb-8 max-w-sm sm:max-w-xs mx-0">
-              <div className="bg-gray-50 rounded-lg px-4 py-3 shadow-sm">
-                <p className="text-base sm:text-lg text-gray-700 font-medium">Post your audit budget.</p>
+            <div className="space-y-8 mb-6 lg:mb-8 max-w-sm sm:max-w-xs mx-0">
+              <div className="bg-white rounded-lg px-4 py-3 shadow-lg">
+                <p className="text-base sm:text-2xl text-gray-700 font-medium">Post your audit budget.</p>
               </div>
-              <div className="bg-gray-50 rounded-lg px-4 py-3 shadow-sm">
-                <p className="text-base sm:text-lg text-gray-700 font-medium">Receive quotes.</p>
+              <div className="bg-white rounded-lg px-4 py-3 shadow-lg">
+                <p className="text-base sm:text-2xl text-gray-700 font-medium">Receive quotes.</p>
               </div>
-              <div className="bg-gray-50 rounded-lg px-4 py-3 shadow-sm">
-                <p className="text-base sm:text-lg text-gray-700 font-medium">Compare live offers.</p>
+              <div className="bg-white rounded-lg px-4 py-3 shadow-lg">
+                <p className="text-base sm:text-2xl text-gray-700 font-medium">Compare live offers.</p>
               </div>
-              <div className="bg-gray-50 rounded-lg px-4 py-3 shadow-sm">
-                <p className="text-base sm:text-lg text-gray-700 font-medium">Choose your auditor.</p>
+              <div className="bg-white rounded-lg px-4 py-3 shadow-lg">
+                <p className="text-base sm:text-2xl text-gray-700 font-medium">Choose your auditor.</p>
               </div>
             </div>
 
             {/* CTA Button */}
             <div className="mb-4 lg:mb-6">
               <button 
-                className="text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-200 shadow-lg w-full sm:w-auto"
-                style={{backgroundColor: 'rgba(232, 132, 12, 1)'}}
-                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(210, 120, 10, 1)'}
-                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(232, 132, 12, 1)'}
+                className="text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-xl transition-colors duration-200 shadow-lg w-full sm:w-auto"
+                style={{backgroundColor: 'rgb(100, 198, 58)'}}
+                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgb(81, 193, 32)'}
+                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgb(81, 193, 32)'}
               >
                 Sit Back - We Handle the Rest.
               </button>
@@ -75,15 +75,22 @@ const AuditProcessSection = () => {
           </div>
 
           {/* Right Content - Illustration */}
-          <div className="flex-1 relative w-full">
-            <div className="relative w-full max-w-lg mx-auto">
+          <div className="lg:flex-1 relative w-full">
+            <div className="relative w-full">
               <Image
                 src={assets.CardsAndBg4Png}
                 alt="Online Audit Process Illustration"
-                width={600}
-                height={400}
-                className="object-contain w-full h-auto"
+                width={1200}
+                height={800}
+                className="object-contain w-full h-auto relative z-0"
                 priority
+                style={{
+                  transform: 'scale(1.56)',
+                  transformOrigin: 'left center',
+                  position: 'relative',
+                  right: '38%',
+                  zIndex: 0
+                }}
               />
             </div>
           </div>
@@ -92,9 +99,12 @@ const AuditProcessSection = () => {
         {/* Statistics Section */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {/* Stat 1 */}
-          <div className="text-center">
-            <div className="flex justify-center mb-3 lg:mb-4">
-              <div className="w-10 h-10 lg:w-12 lg:h-12 relative">
+          <div className="text-center relative">
+            <div className="relative inline-block">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 relative z-10 inline-block">
+                100+
+              </div>
+              <div className="pointer-events-none absolute -top-13 -right-6 w-16 h-16 lg:w-24 lg:h-24 z-0">
                 <Image
                   src={assets.AuditOnlineHeartPng}
                   alt="Heart icon"
@@ -103,9 +113,6 @@ const AuditProcessSection = () => {
                 />
               </div>
             </div>
-            <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2">
-              100<span style={{color: 'rgba(232, 132, 12, 1)'}}>+</span>
-            </div>
             <p className="text-gray-600 text-sm sm:text-base lg:text-lg">
               Certified Auditors ready to<br />
               take on your audit
@@ -113,9 +120,12 @@ const AuditProcessSection = () => {
           </div>
 
           {/* Stat 2 */}
-          <div className="text-center">
-            <div className="flex justify-center mb-3 lg:mb-4">
-              <div className="w-10 h-10 lg:w-12 lg:h-12 relative">
+          <div className="text-center relative">
+            <div className="relative inline-block">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 relative z-10 inline-block">
+                4.8
+              </div>
+              <div className="pointer-events-none absolute -top-13 -right-10 w-16 h-16 lg:w-24 lg:h-24 z-0">
                 <Image
                   src={assets.AuditOnlineStarPng}
                   alt="Star icon"
@@ -124,9 +134,6 @@ const AuditProcessSection = () => {
                 />
               </div>
             </div>
-            <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2">
-              4.8<span style={{color: 'rgba(232, 132, 12, 1)'}}>+</span>
-            </div>
             <p className="text-gray-600 text-sm sm:text-base lg:text-lg">
               Auditors rated 4.8*<br />
               or higher by real clients
@@ -134,9 +141,12 @@ const AuditProcessSection = () => {
           </div>
 
           {/* Stat 3 */}
-          <div className="text-center">
-            <div className="flex justify-center mb-3 lg:mb-4">
-              <div className="w-10 h-10 lg:w-12 lg:h-12 relative">
+          <div className="text-center relative">
+            <div className="relative inline-block">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 relative z-10 inline-block">
+                2000+
+              </div>
+              <div className="pointer-events-none absolute -top-13 -right-6 w-16 h-16 lg:w-24 lg:h-24 z-0">
                 <Image
                   src={assets.AuditOnlineDiamondPng}
                   alt="Diamond icon"
@@ -144,9 +154,6 @@ const AuditProcessSection = () => {
                   className="object-contain"
                 />
               </div>
-            </div>
-            <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2">
-              2000<span style={{color: 'rgba(232, 132, 12, 1)'}}>+</span>
             </div>
             <p className="text-gray-600 text-sm sm:text-base lg:text-lg">
               Audit Requests<br />

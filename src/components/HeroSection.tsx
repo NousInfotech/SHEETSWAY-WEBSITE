@@ -5,7 +5,7 @@ import Image from 'next/image';
 import assets from '@/data/assets';
 
 const HeroSection = () => {
-  const [selectedBusiness, setSelectedBusiness] = useState('Startup or Solo Business');
+  const [selectedBusiness, setSelectedBusiness] = useState('Startup or Solo Business (<10 staff)');
   const [selectedCountry, setSelectedCountry] = useState('MT');
 
   return (
@@ -16,7 +16,7 @@ const HeroSection = () => {
           src={assets.HeroBgPng}
           alt="Hero Background"
           fill
-          className="object-cover sm:object-cover object-center sm:object-center scale-110 sm:scale-100"
+          className="object-cover object-center sm:object-contain sm:object-[50%_40%]"
           priority
         />
       </div>
@@ -39,20 +39,18 @@ const HeroSection = () => {
         {/* Selection Area */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-3 md:gap-4 mb-6 md:mb-8 max-w-4xl mx-auto px-4">
           {/* Business Type Dropdown */}
-          <div className="relative w-full lg:flex-1 max-w-xs lg:max-w-sm">
+          <div className="relative w-full lg:flex-1 max-w-sm lg:max-w-md">
             <select 
               value={selectedBusiness}
               onChange={(e) => setSelectedBusiness(e.target.value)}
-              className="w-full bg-white border border-gray-200 rounded-lg px-3 md:px-4 py-3 md:py-3 text-gray-700 text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none pr-12"
+              className="w-full bg-white border border-gray-200 rounded-lg px-3 md:px-4 py-3 md:py-3 text-gray-700 text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none pr-10"
             >
-              <option>Startup or Solo Business</option>
-              <option>Small Business</option>
-              <option>Medium Business</option>
-              <option>Large Enterprise</option>
+              <option>Startup or Solo Business (&lt;10 staff)</option>
+              <option>Small Company (&lt;50 employees)</option>
+              <option>Mid-Sized Company (&lt;250 employees)</option>
+              <option>Large or Corporate Business (250+ employees)</option>
             </select>
-            <span className="absolute right-12 top-1/2 transform -translate-y-1/2 text-xs text-gray-500 hidden sm:block">
-              (&lt;10 staff)
-            </span>
+
             <div className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
               <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

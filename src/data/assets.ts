@@ -246,7 +246,7 @@ const assets: Assets = {
   Frame15Png: "/PNG/Frame 15.png",
   Frame138Png: "/PNG/Frame 138.png",
   FinancialAuditBacklogLateFilingPng: "/PNG/financial-audit-backlog-late-filing.png",
-  CardsAndBg4Png: "/PNG/cards and bg 4.png",
+  CardsAndBg4Png: "/PNG/cards.png",
   EcommerceHospitalityAuditImagePng: "/PNG/ecommerce-hospitality-audit-image.png",
   BlondBusinessmanHappyExpressionPng: "/PNG/blond-businessman-happy-expression.png",
   AuditOnlineStarPng: "/PNG/audit-online-star.png",

@@ -7,7 +7,7 @@ import assets from '@/data/assets';
 const AuditorCallToAction = () => {
   return (
     <section className="py-6 sm:py-12 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-8 justify-center">
+      <div className="max-w-7xl xl:max-w-none mx-auto flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-8 justify-center">
         {/* Left Section - Orange */}
         <div className="w-full lg:w-[367px] h-[400px] sm:h-[500px] lg:h-[544px] p-6 sm:p-8 lg:p-12 flex flex-col justify-center items-center text-center text-white relative overflow-hidden rounded-2xl shadow-lg">
           {/* Background Image */}
@@ -97,7 +97,7 @@ const AuditorCallToAction = () => {
         </div>
         
         {/* Right Section - Blue */}
-        <div className="w-full lg:w-[881px] h-[600px] sm:h-[700px] lg:h-[544px] p-6 sm:p-8 lg:p-12 flex items-center relative overflow-hidden rounded-2xl shadow-lg">
+        <div className="w-full lg:w-[900px] h-[600px] sm:h-[700px] lg:h-[544px] p-6 sm:p-8 lg:p-12 flex items-center relative overflow-hidden rounded-2xl shadow-lg">
           {/* Background Image */}
           <div className="absolute inset-0 rounded-2xl">
             <Image
@@ -109,10 +109,10 @@ const AuditorCallToAction = () => {
             />
           </div>
           {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-slate-900/60 rounded-2xl"></div>
-          <div className="flex flex-col lg:flex-row items-center justify-start lg:justify-start h-full w-full relative z-10 text-center lg:text-left">
+          <div className="absolute inset-0 rounded-2xl"></div>
+          <div className="flex flex-col lg:flex-row items-center justify-start lg:justify-start h-full w-full relative z-10 text-center">
             <div className="text-white max-w-lg lg:ml-0 mb-6 lg:mb-0">
-              <p className="text-base sm:text-lg mb-3 sm:mb-4">
+              <p className="text-base sm:text-lg mb-3 sm:mb-4" style={{color: 'rgb(0, 0, 0)'}}>
                 Pick from <span className="font-semibold" style={{color: 'rgba(232, 132, 12, 1)'}}>Verified</span> and <span className="font-semibold" style={{color: 'rgba(232, 132, 12, 1)'}}>Trusted</span>
               </p>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 leading-tight">
@@ -121,7 +121,7 @@ const AuditorCallToAction = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 leading-tight">
                  AUDITORS
               </h2>
-              <p className="text-base sm:text-lg mb-6 sm:mb-8 opacity-90">
+              <p className="text-base sm:text-lg mb-6 sm:mb-8 opacity-90" style={{color: 'rgb(0, 0, 0)'}} >
                 all in one place
               </p>
               
@@ -134,14 +134,14 @@ const AuditorCallToAction = () => {
                 Find Your Auditor
               </button>
               
-              <p className="text-sm sm:text-base opacity-80">
+              <p className="text-sm sm:text-base opacity-80" style={{color: 'rgb(0, 0, 0)'}}>
                 Get 10% off your first listing
               </p>
             </div>
           </div>
           
           {/* Businessman Image - Mobile responsive positioning */}
-          <div className="lg:hidden absolute bottom-0 right-0 z-10">
+          <div className="lg:hidden absolute -bottom-8 right-0 z-10">
             <div className="w-80 h-80 sm:w-96 sm:h-96 relative">
               <Image
                 src={assets.BlondBusinessmanHappyExpressionPng}
@@ -153,8 +153,8 @@ const AuditorCallToAction = () => {
             </div>
           </div>
         {/* Businessman Image - Positioned at bottom */}
-        <div className="hidden lg:block absolute bottom-0 right-15 z-10">
-          <div className="w-80 h-[500px] relative">
+        <div className="hidden lg:block absolute -bottom-5 right-15 z-10">
+          <div className="w-80 h-[544px] relative">
             <Image
               src={assets.BlondBusinessmanHappyExpressionPng}
               alt="Professional Auditor"
