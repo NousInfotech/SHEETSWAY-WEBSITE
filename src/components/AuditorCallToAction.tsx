@@ -141,7 +141,7 @@ const AuditorCallToAction = () => {
           </div>
           
           {/* Businessman Image - Mobile responsive positioning */}
-          <div className="lg:hidden absolute -bottom-8 right-0 z-10">
+          <div className="lg:hidden absolute -bottom-13 -right-3 z-10">
             <div className="w-80 h-80 sm:w-96 sm:h-96 relative">
               <Image
                 src={assets.BlondBusinessmanHappyExpressionPng}

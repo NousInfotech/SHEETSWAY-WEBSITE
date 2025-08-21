@@ -60,9 +60,9 @@ const AuditNeedsSection = () => {
                     <Image
                       src={item.icon}
                       alt={item.title}
-                      width={200}
-                      height={200}
-                      className="w-20 h-20 lg:w-16 lg:h-16 object-contain"
+                      width={300}
+                      height={300}
+                      className="w-30 h-30 lg:w-30 lg:h-30 object-contain"
                     />
                   </div>
                 </div>

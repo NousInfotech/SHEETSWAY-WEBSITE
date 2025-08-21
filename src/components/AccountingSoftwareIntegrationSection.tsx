@@ -12,24 +12,49 @@ const AccountingSoftwareIntegrationSection = () => {
     { name: 'banqUP', placeholder: true },
     { name: 'Clear Books', placeholder: true },
     { name: 'Exact Online', placeholder: true },
-    { name: 'Exact Onlin...', placeholder: true },
+    { name: 'Exact Online NL', placeholder: true },
     { name: 'Zoho Books', placeholder: true },
     { name: 'FreeAgent', placeholder: true },
-    { name: 'Acumatica', placeholder: true },
-    { name: 'banqUP', placeholder: true },
-    { name: 'Clear Books', placeholder: true },
-    { name: 'Exact Online', placeholder: true },
-    { name: 'Exact Onlin...', placeholder: true },
-    { name: 'Zoho Books', placeholder: true },
-    { name: 'FreeAgent', placeholder: true },
-    { name: 'Acumatica', placeholder: true },
-    { name: 'banqUP', placeholder: true },
-    { name: 'Clear Books', placeholder: true },
-    { name: 'Exact Online', placeholder: true },
-    { name: 'Exact Onlin...', placeholder: true },
-    { name: 'Zoho Books', placeholder: true },
-    { name: 'FreeAgent', placeholder: true },
+    { name: 'FreshBooks', placeholder: true },
+    { name: 'Kashflow', placeholder: true },
+    { name: 'Microsoft Dynamic', placeholder: true },
+    { name: 'MRI Software', placeholder: true },
+    { name: 'MYOB', placeholder: true },
+    { name: 'MYOB Acumatica', placeholder: true },
+    { name: 'NetSuite', placeholder: true },
+    { name: 'Procountor', placeholder: true },
+    { name: 'QuickBooks', placeholder: true },
+    { name: 'Sage Business Clo...', placeholder: true },
+    { name: 'Sage Intacct', placeholder: true },
+    { name: 'Visma Netvistor', placeholder: true },
+    { name: 'Workday', placeholder: true },
+    { name: 'Xero', placeholder: true },
   ];
+
+  // Map software names to logo assets in public/Logos
+  const logoMap: Record<string, string> = {
+    'Acumatica': '/Logos/acumatica.png',
+    'banqUP': '/Logos/BankUp.png',
+    'Clear Books': '/Logos/Clear-books.png',
+    'Exact Online': '/Logos/Exact.jpeg',
+    'Exact Online NL': '/Logos/Exact.jpeg',
+    'Zoho Books': '/Logos/Zoho-books.png',
+    'FreeAgent': '/Logos/FreeAgent.svg',
+    'FreshBooks': '/Logos/Freshbooks.svg',
+    'Kashflow': '/Logos/KashFlow.png',
+    'Microsoft Dynamic': '/Logos/MicrosoftDy.png',
+    'MRI Software': '/Logos/MRI-1.jpg',
+    'MYOB': '/Logos/myob-logo.png',
+    'MYOB Acumatica': '/Logos/myob-logo.png',
+    'NetSuite': '/Logos/netsuite.svg',
+    'Procountor': '/Logos/procountor.png',
+    'QuickBooks': '/Logos/Quickbook.png',
+    'Sage Business Clo...': '/Logos/Sage.svg',
+    'Sage Intacct': '/Logos/Sage.svg',
+    'Visma Netvistor': '/Logos/visma.png',
+    'Workday': '/Logos/workday.jpeg',
+    'Xero': '/Logos/Xero.svg',
+  };
 
   // Show only first 4 cards on mobile initially, all cards on desktop
   const displayedCards = showAllCards ? softwareList : softwareList.slice(0, 4);
@@ -68,12 +93,13 @@ const AccountingSoftwareIntegrationSection = () => {
                     Live
                   </div>
                   
-                  {/* Circular Checker Pattern Background */}
+                  {/* Circular Checker Pattern Background */
+                  }
                   <div className="flex-1 flex items-center justify-center mb-4">
                     <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
                       <Image
-                        src={assets.CheckerPng}
-                        alt="Software placeholder"
+                        src={logoMap[software.name] || assets.CheckerPng}
+                        alt={`${software.name} logo`}
                         width={64}
                         height={64}
                         className="w-full h-full object-cover opacity-30"
@@ -115,15 +141,16 @@ const AccountingSoftwareIntegrationSection = () => {
                     Live
                   </div>
                   
-                  {/* Circular Checker Pattern Background */}
+                  {/* Circular Checker Pattern Background */
+                  }
                   <div className="flex-1 flex items-center justify-center mb-4">
                     <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
                       <Image
-                        src={assets.CheckerPng}
-                        alt="Software placeholder"
+                        src={logoMap[software.name] || assets.CheckerPng}
+                        alt={`${software.name} logo`}
                         width={64}
                         height={64}
-                        className="w-full h-full object-cover opacity-30"
+                        className="w-full h-full object-cover"
                       />
                     </div>
                   </div>

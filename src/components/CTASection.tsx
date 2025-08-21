@@ -4,7 +4,7 @@ import { CTAItem } from '@/components/common';
 
 const CTASection = () => {
   return (
-    <section className="relative py-50 px-4 bg-gradient-to-r from-[#1E84B2] to-[#004666] -mt-40" style={{
+    <section className="relative pt-10 pb-40 px-4 bg-gradient-to-r from-[#1E84B2] to-[#004666] -mt-40" style={{
       zIndex: -1
     }}>
       <div className="max-w-7xl mx-auto space-y-12 w-full">

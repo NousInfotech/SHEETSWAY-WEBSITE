@@ -17,6 +17,46 @@ const AuditProcessSection = () => {
             border-bottom-right-radius: 150px !important;
           }
         }
+        
+        /* Mobile S - 320px */
+        @media (min-width: 320px) and (max-width: 374px) {
+          .illustration-image {
+            transform: scale(0.8) !important;
+            right: 0% !important;
+          }
+        }
+        
+        /* Mobile M - 375px */
+        @media (min-width: 375px) and (max-width: 424px) {
+          .illustration-image {
+            transform: scale(0.85) !important;
+            right: 0% !important;
+          }
+        }
+        
+        /* Mobile L - 425px */
+        @media (min-width: 425px) and (max-width: 767px) {
+          .illustration-image {
+            transform: scale(0.9) !important;
+            right: 0% !important;
+          }
+        }
+        
+        /* Tablet - 768px */
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .illustration-image {
+            transform: scale(1.1) !important;
+            right: 10% !important;
+          }
+        }
+        
+        /* Laptop - 1024px and above (unchanged) */
+        @media (min-width: 1024px) {
+          .illustration-image {
+            transform: scale(1.35) !important;
+            right: 30% !important;
+          }
+        }
       `}</style>
   
       <div className="max-w-7xl mx-auto relative z-10">
@@ -30,7 +70,7 @@ const AuditProcessSection = () => {
             </h1>
             
             {/* Steps List */}
-            <div className="space-y-8 mb-6 lg:mb-8 max-w-sm sm:max-w-xs mx-0">
+            <div className="space-y-8 mb-6 lg:mb-8 max-w-sm sm:max-w-xs mx-0 mb-10">
               <div className="bg-white rounded-lg px-4 py-3 shadow-lg">
                 <p className="text-base sm:text-2xl text-gray-700 font-medium">Post your audit budget.</p>
               </div>
@@ -80,15 +120,15 @@ const AuditProcessSection = () => {
               <Image
                 src={assets.CardsAndBg4Png}
                 alt="Online Audit Process Illustration"
-                width={1200}
-                height={800}
-                className="object-contain w-full h-auto relative z-0"
+                width={1500}
+                height={1200}
+                className="object-contain w-full h-auto relative z-0 illustration-image"
                 priority
                 style={{
-                  transform: 'scale(1.56)',
+                  transform: 'scale(1.0)',
                   transformOrigin: 'left center',
                   position: 'relative',
-                  right: '38%',
+                  right: '0%',
                   zIndex: 0
                 }}
               />
@@ -104,7 +144,7 @@ const AuditProcessSection = () => {
               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 relative z-10 inline-block">
                 100+
               </div>
-              <div className="pointer-events-none absolute -top-13 -right-6 w-16 h-16 lg:w-24 lg:h-24 z-0">
+              <div className="pointer-events-none absolute -top-5 sm:-top-12 md:-top-12 lg:-top-16 xl:-top-20 2xl:-top-24 -right-4 sm:-right-6 md:-right-8 lg:-right-10 xl:-right-12 2xl:-right-16 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 z-0">
                 <Image
                   src={assets.AuditOnlineHeartPng}
                   alt="Heart icon"
@@ -125,7 +165,7 @@ const AuditProcessSection = () => {
               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 relative z-10 inline-block">
                 4.8
               </div>
-              <div className="pointer-events-none absolute -top-13 -right-10 w-16 h-16 lg:w-24 lg:h-24 z-0">
+              <div className="pointer-events-none absolute -top-5 sm:-top-10 md:-top-12 lg:-top-16 xl:-top-20 2xl:-top-24 -right-6 sm:-right-8 md:-right-10 lg:-right-12 xl:-right-16 2xl:-right-20 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 z-0">
                 <Image
                   src={assets.AuditOnlineStarPng}
                   alt="Star icon"
@@ -134,7 +174,7 @@ const AuditProcessSection = () => {
                 />
               </div>
             </div>
-            <p className="text-gray-600 text-sm sm:text-base lg:text-lg">
+            <p className="text-sm sm:text-base lg:text-lg">
               Auditors rated 4.8*<br />
               or higher by real clients
             </p>
@@ -146,7 +186,7 @@ const AuditProcessSection = () => {
               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 relative z-10 inline-block">
                 2000+
               </div>
-              <div className="pointer-events-none absolute -top-13 -right-6 w-16 h-16 lg:w-24 lg:h-24 z-0">
+              <div className="pointer-events-none absolute -top-5 sm:-top-10 md:-top-12 lg:-top-16 xl:-top-20 2xl:-top-24 -right-4 sm:-right-6 md:-right-8 lg:-right-10 xl:-right-12 2xl:-right-16 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 z-0">
                 <Image
                   src={assets.AuditOnlineDiamondPng}
                   alt="Diamond icon"

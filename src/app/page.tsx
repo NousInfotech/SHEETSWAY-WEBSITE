@@ -7,11 +7,12 @@ import AuditNeedsSection from "@/components/AuditNeedsSection";
 import RetailHospitalitySection from "@/components/RetailHospitalitySection";
 import AccountingSoftwareIntegrationSection from "@/components/AccountingSoftwareIntegrationSection";
 import OnlineBankingSection from "@/components/OnlineBankingSection";
-import BuiltByAuditorsSection from "@/components/BuiltByAuditorsSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
+import IndustryAwareAI from "@/components/IndustryAwareAI"
+import NewsCarousel from "@/components/NewsCarousel"
 
 export default function Home() {
   return (
@@ -23,10 +24,11 @@ export default function Home() {
       <SecuritySection />
       <AuditNeedsSection />
       <RetailHospitalitySection />
-      <AccountingSoftwareIntegrationSection/>
+      <AccountingSoftwareIntegrationSection/> 
       <OnlineBankingSection />
-      <BuiltByAuditorsSection />
+      <IndustryAwareAI/>
       <TestimonialSection />
+      <NewsCarousel/>
       <CTASection />
       <FAQSection />
       <Footer />

@@ -117,6 +117,7 @@ const TestimonialSection = () => {
         </div>
 
         {/* Local Live Event Section */}
+        {false && (
         <div className="bg-white rounded-2xl md:rounded-3xl shadow-lg overflow-hidden">
           <div className="flex flex-col lg:grid lg:grid-cols-2">
             {/* Left Content */}
@@ -185,6 +186,7 @@ const TestimonialSection = () => {
             </div>
           </div>
         </div>
+        )}
       </div>
     </section>
   );

@@ -9,35 +9,35 @@ const HeroSection = () => {
   const [selectedCountry, setSelectedCountry] = useState('MT');
 
   return (
-    <section className="relative overflow-hidden min-h-screen flex items-center pt-16 sm:pt-20 md:pt-24 lg:pt-0 rounded-b-3xl sm:rounded-b-none">
+    <section className="relative overflow-hidden min-h-[55vh] sm:min-h-[55vh] md:min-h-[55vh] lg:min-h-[55vh] flex items-center pt-16 sm:pt-20 md:pt-24 lg:pt-0 rounded-b-3xl sm:rounded-b-none">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
           src={assets.HeroBgPng}
           alt="Hero Background"
           fill
-          className="object-cover object-center sm:object-contain sm:object-[50%_40%]"
+          className="object-cover object-center w-full h-full"
           priority
         />
       </div>
       
-      <div className="relative z-10 w-full py-8 sm:py-12 md:py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 w-full max-w-6xl mx-auto py-8 sm:py-12 md:py-16 lg:py-10 xl:py-10 2xl:py-10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 text-center">
         {/* Main Heading */}
-        <div className="mb-6 md:mb-8 lg:mb-10">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-4 leading-tight">
+        <div className="mt-8 mb-6 sm:mt-12 sm:mb-8 md:mt-16 md:mb-10 lg:mt-20 lg:mb-12 xl:mt-24 xl:mb-16 2xl:mt-32 2xl:mb-20">
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-white mb-2 sm:mb-4 md:mb-2 leading-tight">
             Find Your Auditor Online
           </h1>
-          <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#004666] mb-4 md:mb-6 leading-tight">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-[#004666] mb-4 sm:mb-5 md:mb-6 lg:mb-8 xl:mb-10 2xl:mb-12 leading-tight">
             Fast, Private, and Easy
           </h2>
-          <p className="text-sm sm:text-lg md:text-xl text-gray-800 mb-6 md:mb-8 max-w-2xl mx-auto px-4">
+          <p className="text-sm sm:text-base md:text-sm lg:text-md xl:text-lg 2xl:text-xl text-gray-800 mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 2xl:mb-20 mx-auto px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-5xl">
             Audit Firms Bid. Compare Quotes in Minutes. You Choose. It&apos;s That Simple.
           </p>
         </div>
 
         {/* Selection Area */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-3 md:gap-4 mb-6 md:mb-8 max-w-4xl mx-auto px-4">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto px-4">
           {/* Business Type Dropdown */}
           <div className="relative w-full lg:flex-1 max-w-sm lg:max-w-md">
             <select 
@@ -90,7 +90,7 @@ const HeroSection = () => {
         </div>
 
         {/* Journey Text */}
-        <p className="text-white text-sm md:text-lg mb-6 md:mb-8 px-4">
+        <p className="text-white text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl mb-6 sm:mb-8 md:mb-10 lg:mb-12 xl:mb-16 2xl:mb-20 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
           Start your Easy Online Audit journey here
         </p>
 

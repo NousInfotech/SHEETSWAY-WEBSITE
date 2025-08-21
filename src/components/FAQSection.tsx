@@ -8,16 +8,24 @@ const FAQSection = () => {
 
   const faqData = [
     {
-      question: "What are the primary features of Sheetsway?",
-      answer: "Sheetsway utilizes advanced AI technologies such as Natural Language Processing (NLP) and Optical Character Recognition (OCR) to automate risk assessments, handle large datasets, and significantly reduce audit times. The software also offers customizable templates and an intuitive user interface designed to streamline the auditing process from start to finish."
+      question: "What makes Sheetsway smarter than just hiring an auditor through Google?",
+      answer: "Unlike a generic Google search, Sheetsway only shows you vetted auditors who specialize in your industry and location. You don’t need to cold-call or guess — just list your request, and qualified auditors will come to you with tailored proposals."
     },
     {
-      question: "Is Sheetsway compliant with local and international auditing standards?",
-      answer: "Yes, Sheetsway is fully compliant with both local and international auditing standards including ISA (International Standards on Auditing), GAAS (Generally Accepted Auditing Standards), and other relevant regulatory requirements. Our platform is regularly updated to maintain compliance with evolving standards."
+      question: "How does Sheetsway help me find the right auditor for my business?",
+      answer: "Once you submit your audit request, Sheetsway matches it with relevant auditors. You’ll receive proposals you can compare by experience, budget, deadline, and more — all through a secure portal. No spam, no upsells, just what fits your needs."
     },
     {
-      question: "Does Sheetsway offer white-labeling options?",
-      answer: "Yes, Sheetsway offers comprehensive white-labeling solutions that allow audit firms to customize the platform with their own branding, logos, and corporate identity. This enables firms to provide a seamlessly branded experience to their clients while leveraging our powerful audit automation technology."
+      question: "Can I compare multiple quotes before choosing an auditor?",
+      answer: "Yes. You’ll see all your quotes side by side with key info like firm background, fees, expected timelines, and included services. You’re always in control and can choose based on what matters most to your business."
+    },
+    {
+      question: "What happens after I accept an audit proposal?",
+      answer: "After you accept, the auditor is notified instantly. Your private audit workspace opens up, where you can chat, share documents, and track progress. Everything stays in one place from start to finish."
+    },
+    {
+      question: "What if I don’t know what documents to upload? Will the auditor guide me?",
+      answer: "Don’t worry, you don’t need to be an expert. Our platform gives you a checklist based on your audit type, and once connected, your auditor can request anything specific. You’ll always know what’s needed, and how to upload it."
     }
   ];
 

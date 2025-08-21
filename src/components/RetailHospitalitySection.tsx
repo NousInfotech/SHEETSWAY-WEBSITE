@@ -8,7 +8,7 @@ const RetailHospitalitySection = () => {
         {/* Background Container with specified dimensions and radius */}
         <div 
           style={{ backgroundColor: '#E8840C' }} 
-          className="w-full lg:max-w-[1440px] h-auto lg:h-[271px] mx-auto lg:rounded-lg px-6 lg:px-12 py-8 lg:py-0 flex items-center justify-center"
+          className="w-full lg:max-w-[1440px] h-auto lg:h-[300px] mx-auto lg:rounded-lg px-6 lg:px-12 py-8 lg:py-0 flex items-center justify-center"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
             {/* Left Content */}
@@ -50,9 +50,9 @@ const RetailHospitalitySection = () => {
                 <Image
                   src={assets.EcommerceHospitalityAuditImagePng}
                   alt="Retail, Hospitality & Service Companies Audit"
-                  width={400}
-                  height={250}
-                  className="w-full max-w-[350px] lg:max-w-[400px] h-auto object-contain"
+                  width={500}
+                  height={320}
+                  className="w-full max-w-[450px] lg:max-w-[520px] h-auto object-contain"
                   priority
                 />
               </div>
