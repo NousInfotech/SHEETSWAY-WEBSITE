@@ -16,6 +16,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-montserrat), var(--font-nunito), Arial, Helvetica, sans-serif;
+  /* Improve scroll performance */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Security Section Background */
@@ -24,4 +27,39 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Performance optimized animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+/* Prevent animation re-triggering on scroll */
+.framer-motion-container {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimize scroll performance */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent layout shifts during animations */
+.animation-container {
+  contain: layout style paint;
 }

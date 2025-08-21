@@ -19,7 +19,7 @@ export default function IndustryAwareAI() {
     const durationSec = (Number.isFinite(configuredDuration) && configuredDuration > 0)
       ? configuredDuration
       : (isVideo && mediaDurations[active] ? mediaDurations[active] : 10);
-    const timeoutMs = Math.max(1000, Math.round(durationSec * 1000));
+    const timeoutMs = Math.max(700, Math.round(durationSec * 700));
 
     const id = setTimeout(() => {
       setActive((prev) => (prev === industryAwareData.length - 1 ? 0 : prev + 1));
@@ -211,28 +211,44 @@ export default function IndustryAwareAI() {
           amount={0.5}
         >
           <div className="absolute inset-0 flex items-center justify-center">
-            {industryAwareData[active].images.primarySrc?.toLowerCase().endsWith(".webm") ? (
-              <video
-                src={industryAwareData[active].images.primarySrc}
-                className="rounded-xl z-10 shadow-[0px_1px_20px_rgba(0,0,0,0.4)] max-w-[90%] max-h-[90%] object-contain mx-auto block"
-                autoPlay
-                loop
-                muted
-                playsInline
-                onLoadedMetadata={(e) => {
-                  const dur = e.currentTarget.duration;
-                  if (Number.isFinite(dur) && dur > 0) {
-                    setMediaDurations((prev) => ({ ...prev, [active]: dur }));
-                  }
-                }}
-              />
-            ) : (
-              <img
-                src={industryAwareData[active].images.primarySrc}
-                alt={industryAwareData[active].images.alt}
-                className="rounded-xl z-10 shadow-[0px_1px_20px_rgba(0,0,0,0.4)] max-w-[90%] max-h-[90%] object-contain mx-auto block"
-              />
-            )}
+            {/* Border container with background image */}
+            <div 
+              className="relative p-4 sm:p-6 md:p-8"
+              style={{
+                backgroundImage: 'url("/PNG/video border.png")',
+                backgroundSize: 'contain',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                width: '100%',
+                height: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+            >
+              {industryAwareData[active].images.primarySrc?.toLowerCase().endsWith(".webm") ? (
+                <video
+                  src={industryAwareData[active].images.primarySrc}
+                  className="rounded-xl z-10 shadow-[0px_1px_20px_rgba(0,0,0,0.4)] max-w-[90%] max-h-[90%] object-contain mx-auto block"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  onLoadedMetadata={(e) => {
+                    const dur = e.currentTarget.duration;
+                    if (Number.isFinite(dur) && dur > 0) {
+                      setMediaDurations((prev) => ({ ...prev, [active]: dur }));
+                    }
+                  }}
+                />
+              ) : (
+                <img
+                  src={industryAwareData[active].images.primarySrc}
+                  alt={industryAwareData[active].images.alt}
+                  className="rounded-xl z-10 shadow-[0px_1px_20px_rgba(0,0,0,0.4)] max-w-[90%] max-h-[90%] object-contain mx-auto block"
+                />
+              )}
+            </div>
           </div>
 
           

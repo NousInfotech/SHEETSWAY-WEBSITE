@@ -6,7 +6,7 @@ import assets from '@/data/assets';
 
 const MarketplaceHeroSection = () => {
   return (
-    <section className="relative overflow-hidden min-h-[130vh] flex items-center pt-25 lg:pt-0">
+    <section className="relative overflow-hidden min-h-[90vh] flex items-center pt-25 lg:pt-0">
       {/* Background Image - Desktop: frame.png, Mobile: market-place-hero.png */}
       <div className="absolute inset-0">
         {/* Desktop Background */}
@@ -23,7 +23,7 @@ const MarketplaceHeroSection = () => {
           src={assets.MarketPlaceHeroPng}
           alt="Hero Background Mobile"
           fill
-          className="object-cover object-right lg:hidden"
+          className="object-fill object-center lg:hidden"
           style={{ objectPosition: '75% center' }}
           priority
         />

@@ -68,6 +68,16 @@ export interface Assets {
   MarketPlaceHeroPng: string;
   MapPng: string;
   
+  // New Images for Services Section
+  RectanglePng: string;
+  Rectangle41Png: string;
+  Rectangle51Png: string;
+  
+  // New Icons for Services Section
+  Analysis12176978Png: string;
+  Bank924920Png: string;
+  Puzzle1012329Png: string;
+  
   // SVG Assets
   UntitledSvg: string;
   Upload3Svg: string;
@@ -277,6 +287,16 @@ const assets: Assets = {
   FrameMarketplacePng: "/Marketplace auditor page/PNG/frame.png",
   MarketPlaceHeroPng: "/Marketplace auditor page/PNG/market-place-hero.png",
   MapPng: "/Marketplace auditor page/PNG/map.png",
+  
+  // New Images for Services Section
+  RectanglePng: "/Marketplace auditor page/PNG/Rectangle.png",
+  Rectangle41Png: "/Marketplace auditor page/PNG/Rectangle 4.1.png",
+  Rectangle51Png: "/Marketplace auditor page/PNG/Rectangle 5.1.png",
+  
+  // New Icons for Services Section
+  Analysis12176978Png: "/Marketplace auditor page/PNG/analysis_12176978.png",
+  Bank924920Png: "/Marketplace auditor page/PNG/bank_924920.png",
+  Puzzle1012329Png: "/Marketplace auditor page/PNG/puzzle_1012329.png",
   
   // SVG Assets
   UntitledSvg: "/SVG/Untitled.svg",

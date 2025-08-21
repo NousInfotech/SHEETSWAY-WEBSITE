@@ -6,13 +6,25 @@ import assets from '@/data/assets';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [loginDropdownOpen, setLoginDropdownOpen] = useState(false);
+  const [tryFreeDropdownOpen, setTryFreeDropdownOpen] = useState(false);
 
   const navigationItems = [
-    { name: 'Solution', href: '#', hasDropdown: true },
-    { name: 'Knowledge Base', href: '#', hasDropdown: true },
-    { name: 'Pricing', href: '#' },
-    { name: 'About Us', href: '#' },
+    { name: 'Auditor', href: '/marketplace-auditor' },
+    { name: 'Audit-Software', href: '/audit-software' },
+    { name: 'FAQ', href: '/faq' },
+    { name: 'About Us', href: '/about-us' },
     { name: 'Contact Us', href: '#' },
+  ];
+
+  const loginOptions = [
+    { name: 'Auditor', href: '/login/auditor' },
+    { name: 'Client', href: '/login/client' },
+  ];
+
+  const tryFreeOptions = [
+    { name: 'Auditor', href: '/try-free/auditor' },
+    { name: 'Client', href: '/try-free/client' },
   ];
 
   return (
@@ -41,21 +53,6 @@ const Navbar = () => {
                     className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center"
                   >
                     {item.name}
-                    {item.hasDropdown && (
-                      <svg
-                        className="ml-1 h-4 w-4 text-gray-400"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 9l-7 7-7-7"
-                        />
-                      </svg>
-                    )}
                   </a>
                 </div>
               ))}
@@ -64,18 +61,79 @@ const Navbar = () => {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <a
-              href="#"
-              className="text-gray-700 hover:text-orange-500 px-4 py-2 text-sm font-medium transition-colors duration-200"
-            >
-              Login
-            </a>
-            <a
-              href="#"
-              className="bg-orange-50 hover:bg-orange-100 text-orange-500 px-6 py-2 rounded-xl text-sm font-medium transition-colors duration-200 border border-orange-100"
-            >
-              Try for Free
-            </a>
+            {/* Login Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setLoginDropdownOpen(!loginDropdownOpen)}
+                onBlur={() => setTimeout(() => setLoginDropdownOpen(false), 150)}
+                className="text-gray-700 hover:text-orange-500 px-4 py-2 text-sm font-medium transition-colors duration-200 flex items-center"
+              >
+                Login
+                <svg
+                  className="ml-1 h-4 w-4 text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              {loginDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+                  {loginOptions.map((option) => (
+                    <a
+                      key={option.name}
+                      href={option.href}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
+                    >
+                      {option.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Try for Free Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setTryFreeDropdownOpen(!tryFreeDropdownOpen)}
+                onBlur={() => setTimeout(() => setTryFreeDropdownOpen(false), 150)}
+                className="bg-orange-50 hover:bg-orange-100 text-orange-500 px-6 py-2 rounded-xl text-sm font-medium transition-colors duration-200 border border-orange-100 flex items-center"
+              >
+                Try for Free
+                <svg
+                  className="ml-1 h-4 w-4 text-orange-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              {tryFreeDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+                  {tryFreeOptions.map((option) => (
+                    <a
+                      key={option.name}
+                      href={option.href}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
+                    >
+                      {option.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -136,18 +194,33 @@ const Navbar = () => {
               </a>
             ))}
             <div className="pt-4 pb-3 border-t border-gray-200">
-              <a
-                href="#"
-                className="text-gray-700 hover:text-orange-500 block px-3 py-2 text-base font-medium"
-              >
-                Login
-              </a>
-              <a
-                href="#"
-                className="bg-orange-50 hover:bg-orange-100 text-orange-500 block px-3 py-2 rounded-xl text-base font-medium mt-2 mx-3 text-center transition-colors duration-200 border border-orange-100"
-              >
-                Try for Free
-              </a>
+              {/* Mobile Login Dropdown */}
+              <div className="mb-2">
+                <div className="text-gray-700 px-3 py-2 text-base font-medium">Login</div>
+                {loginOptions.map((option) => (
+                  <a
+                    key={option.name}
+                    href={option.href}
+                    className="text-gray-600 hover:text-orange-500 block px-6 py-2 text-sm font-medium"
+                  >
+                    {option.name}
+                  </a>
+                ))}
+              </div>
+              
+              {/* Mobile Try for Free Dropdown */}
+              <div className="mb-2">
+                <div className="text-gray-700 px-3 py-2 text-base font-medium">Try for Free</div>
+                {tryFreeOptions.map((option) => (
+                  <a
+                    key={option.name}
+                    href={option.href}
+                    className="text-gray-600 hover:text-orange-500 block px-6 py-2 text-sm font-medium"
+                  >
+                    {option.name}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>

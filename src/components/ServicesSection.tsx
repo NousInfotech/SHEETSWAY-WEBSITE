@@ -37,57 +37,30 @@ const ServicesSection = () => {
     },
     {
       id: 4,
-      smallHeader: "Secure & Compliant",
-      title: "Advanced Security Features",
+      smallHeader: "Know Before You Commit",
+      title: "Client-Ready Analysis",
       description:
-        "Bank-level security with encryption, audit trails, and compliance with industry standards.",
-      image: assets.Rectangle3MarketplacePng,
-      icon: assets.TwoAt4x1MarketplacePng,
+        "Our AI checks each audit request for data completeness, bank & accounting links, and file uploads.",
+      image: assets.RectanglePng,
+      icon: assets.Analysis12176978Png,
     },
     {
       id: 5,
-      smallHeader: "Seamless Integration",
-      title: "Excel & Word Integration",
+      smallHeader: "Plug Into the Bank",
+      title: "Live Bank Data Access",
       description:
-        "Direct integration with Excel and Word for seamless document management and reporting.",
-      image: assets.Rectangle4MarketplacePng,
-      icon: assets.EightAt4x1MarketplacePng,
+        "Pull live bank transactions directly from the client's account with our built-in banking tools.",
+      image: assets.Rectangle41Png,
+      icon: assets.Bank924920Png,
     },
     {
       id: 6,
-      smallHeader: "Real-time Collaboration",
-      title: "Team Management Tools",
+      smallHeader: "All Accounts in One Place",
+      title: "20+ Accounting Integrations",
       description:
-        "Collaborate with team members in real-time with role-based permissions and workflows.",
-      image: assets.Rectangle5MarketplacePng,
-      icon: assets.FourAt4x1MarketplacePng,
-    },
-    {
-      id: 7,
-      smallHeader: "Client Portal",
-      title: "Professional Client Interface",
-      description:
-        "Provide clients with a professional portal to upload documents and track progress.",
-      image: assets.Rectangle3MarketplacePng,
-      icon: assets.TwoAt4x1MarketplacePng,
-    },
-    {
-      id: 8,
-      smallHeader: "Automated Workflows",
-      title: "Streamlined Processes",
-      description:
-        "Automate repetitive tasks and create custom workflows to improve efficiency.",
-      image: assets.Rectangle4MarketplacePng,
-      icon: assets.EightAt4x1MarketplacePng,
-    },
-    {
-      id: 9,
-      smallHeader: "Analytics & Reporting",
-      title: "Comprehensive Insights",
-      description:
-        "Get detailed analytics and reports to track performance and identify opportunities.",
-      image: assets.Rectangle5MarketplacePng,
-      icon: assets.FourAt4x1MarketplacePng,
+        "Connect to Xero, QuickBooks, and more. View ledgers, creditor lists, trial balances and journal entries.",
+      image: assets.Rectangle51Png,
+      icon: assets.Puzzle1012329Png,
     },
   ];
 
@@ -99,30 +72,30 @@ const ServicesSection = () => {
     setCurrentSlide((prev) => (prev - 1 + services.length) % services.length);
   };
 
-     return (
-     <section className="py-16 lg:py-24 relative">
-       {/* Background Map Image */}
-       <div className="absolute inset-0">
-         <Image
-           src={assets.MapPng}
-           alt="World Map Background"
-           fill
-           className="object-cover opacity-60"
-           priority
-         />
-       </div>
-       
-       {/* Top Decorative Image */}
-       <div className="absolute top-0 left-0 right-0 h-16 lg:h-32">
-         <Image
-           src={assets.Rectangle2MarketplacePng}
-           alt="Top Decorative Element"
-           fill
-           className="object-cover object-top"
-         />
-       </div>
+  return (
+    <section className="py-16 lg:py-24 relative">
+      {/* Background Map Image */}
+      <div className="absolute inset-0">
+        <Image
+          src={assets.MapPng}
+          alt="World Map Background"
+          fill
+          className="object-cover opacity-60"
+          priority
+        />
+      </div>
+      
+      {/* Top Decorative Image */}
+      <div className="absolute top-0 left-0 right-0 h-16 lg:h-32">
+        <Image
+          src={assets.Rectangle2MarketplacePng}
+          alt="Top Decorative Element"
+          fill
+          className="object-cover object-top"
+        />
+      </div>
 
-             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 backdrop-blur-sm rounded-lg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 backdrop-blur-sm rounded-lg">
         {/* Header Section */}
         <div className="text-center lg:text-center text-left mb-16">
           {/* Badge */}
@@ -138,11 +111,12 @@ const ServicesSection = () => {
           {/* Description */}
           <div className="max-w-4xl mx-auto lg:mx-auto mx-0 text-m text-gray-600 leading-relaxed">
             <p className="mb-4 text-left lg:text-center">
-            Connect with clients looking for audits, submit tailored proposals, and deliver high-quality work through your own branded portal. From document collection to trial balance procedures, Sheetsway integrates directly with Excel, Word, and online banking to keep your audits efficient, secure, and professional.
+              Connect with clients looking for audits, submit tailored proposals, and deliver high-quality work through your own branded portal. From document collection to trial balance procedures, Sheetsway integrates directly with Excel, Word, and online banking to keep your audits efficient, secure, and professional.
             </p>
           </div>
         </div>
-                 {/* Mobile Layout - Single Card with Background Image */}
+
+        {/* Mobile Layout - Single Card with Background Image */}
         <div className="block lg:hidden mb-12">
           <div className="relative h-96">
             {/* Background Image */}
@@ -158,7 +132,7 @@ const ServicesSection = () => {
             </div>
 
             {/* Content Section - White curved background */}
-            <div className="absolute -bottom-25 right-4 bg-white rounded-2xl shadow-lg p-6 min-h-[160px] w-64">
+            <div className="absolute -bottom-25 right-4 bg-white rounded-2xl shadow-lg p-6 h-64 w-64 flex flex-col justify-between">
               {/* Icon */}
               <div className="absolute -top-4 right-6 w-12 h-12 bg-blue-400 rounded-full border-2 border-white shadow-lg flex items-center justify-center">
                 <Image
@@ -215,7 +189,7 @@ const ServicesSection = () => {
                 </div>
 
                 {/* Content Section - White curved background */}
-                <div className="absolute -bottom-20 right-0 left-2 md:left-auto md:w-80 bg-white rounded-2xl shadow-lg p-6 min-h-[200px]">
+                <div className="absolute -bottom-20 right-0 left-2 md:left-auto md:w-80 bg-white rounded-2xl shadow-lg p-6 h-64 flex flex-col justify-between">
                   {/* Icon */}
                   <div className="absolute -top-4 right-6 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center">
                     <Image

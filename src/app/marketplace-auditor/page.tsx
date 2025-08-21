@@ -6,11 +6,12 @@ import ImageSection from "@/components/ImageSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyTopAuditFirmsSection from "@/components/WhyTopAuditFirmsSection";
 import OurWorkProcessSection from "@/components/OurWorkProcessSection";
-import BuiltByAuditorsCTA from "@/components/BuiltByAuditorsCTA";
-import IntegrationToolsSection from "@/components/IntegrationToolsSection";
-import ProcedureGenerationSection from "@/components/ProcedureGenerationSection";
 import MarketplaceCTASection from "@/components/MarketplaceCTASection";
-import FAQSection from "@/components/FAQSection";
+import FAQSection from "@/components/marketplace/FAQSection";
+import IntegrationPage from "@/components/IntegrationPage"
+import IntegrationAwareAI from "@/components/marketplace/IndustryAwareAI"
+
+
 
 export default function MarketplaceAuditor() {
   return (
@@ -22,9 +23,16 @@ export default function MarketplaceAuditor() {
       <ServicesSection />
       <WhyTopAuditFirmsSection />
       <OurWorkProcessSection />
-      <BuiltByAuditorsCTA />
-      <IntegrationToolsSection />
-      <ProcedureGenerationSection />
+      <div className="relative">
+        <div
+          className="absolute inset-0 bg-cover bg-no-repeat bg-center opacity-10 pointer-events-none"
+          style={{ backgroundImage: "url('/Marketplace auditor page/SVG/Background pattern.svg')" }}
+        />
+        <div className="relative z-10">
+          <IntegrationPage/>
+          <IntegrationAwareAI/>
+        </div>
+      </div>
       <MarketplaceCTASection />
       <FAQSection />
       <Footer />
