@@ -7,14 +7,14 @@ import assets from '@/data/assets';
 const AuditProcessSection = () => {
   return (
     <section className="py-8 md:py-16 px-4 bg-white relative mb-8 md:mb-35" style={{
-      borderBottomLeftRadius: '50px',
-      borderBottomRightRadius: '50px'
+      borderBottomLeftRadius: '30px',
+      borderBottomRightRadius: '30px'
     }}>
       <style jsx>{`
         @media (min-width: 1024px) {
           section {
-            border-bottom-left-radius: 150px !important;
-            border-bottom-right-radius: 150px !important;
+            border-bottom-left-radius: 40px !important;
+            border-bottom-right-radius: 40px !important;
           }
         }
         

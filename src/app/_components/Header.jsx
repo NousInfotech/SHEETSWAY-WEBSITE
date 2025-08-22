@@ -10,14 +10,15 @@ import { usePathname } from "next/navigation";
 
 const solutions = [
   {
-    label: "Audit Software",
+    label: "Solution",
     desc: "Manage and execute audit tasks efficiently.",
     icon: "Au",
     href: "audit-software",
+    dropdown: "solution",
     bgImage:"/navbar-solutions/audit-software.jpg"
   },
   {
-    label: "Drafting",
+    label: "Knowledge Base",
     desc: "Editor for financial statements and audit letters.",
     icon: "Dr",
     href: "drafting",

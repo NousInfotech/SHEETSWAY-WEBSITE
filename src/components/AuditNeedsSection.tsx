@@ -31,7 +31,7 @@ const AuditNeedsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 -mt-35 bg-white relative rounded-t-[50px] lg:rounded-t-[150px]" style={{
+    <section className="py-20 px-4 -mt-35 bg-white relative rounded-t-[30px] lg:rounded-t-[40px]" style={{
       zIndex: 10,
     }}> 
     

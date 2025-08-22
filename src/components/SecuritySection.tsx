@@ -23,9 +23,10 @@ const SecuritySection = () => {
 
   return (
     <section 
-      className="relative min-h-screen w-full -mt-20 sm:-mt-25 md:-mt-20 lg:-mt-70 xl:-mt-65 2xl:-mt-70 mb-15 lg:mb-10 xl:mb-10 2xl:mb-0 py-16 sm:py-20 md:py-24 lg:py-20 xl:py-30 2xl:py-40 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 flex items-center justify-center overflow-hidden security-section-bg"
+      className="relative min-h-screen w-full -mt-20 sm:-mt-25 md:-mt-20 lg:-mt-70 xl:-mt-50 2xl:-mt-50 mb-15 lg:mb-10 xl:mb-20 2xl:mb-20 py-16 sm:py-20 md:py-24 lg:py-20 xl:py-30 2xl:py-40 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 flex items-center justify-center overflow-hidden security-section-bg"
       style={{
         backgroundImage: `url(${assets.CtaBg1Png})`,
+        backgroundColor: '#0370A0',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

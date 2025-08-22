@@ -6,25 +6,26 @@ import assets from '@/data/assets';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [loginDropdownOpen, setLoginDropdownOpen] = useState(false);
-  const [tryFreeDropdownOpen, setTryFreeDropdownOpen] = useState(false);
+  const [solutionDropdownOpen, setSolutionDropdownOpen] = useState(false);
+  const [knowledgeBaseDropdownOpen, setKnowledgeBaseDropdownOpen] = useState(false);
 
   const navigationItems = [
-    { name: 'Auditor', href: '/marketplace-auditor' },
-    { name: 'Audit-Software', href: '/audit-software' },
-    { name: 'FAQ', href: '/faq' },
+    { name: 'Solution', href: '#', dropdown: true },
+    { name: 'Knowledge Base', href: '#', dropdown: true },
+    { name: 'Pricing', href: '#' },
     { name: 'About Us', href: '/about-us' },
     { name: 'Contact Us', href: '#' },
   ];
 
-  const loginOptions = [
-    { name: 'Auditor', href: '/login/auditor' },
-    { name: 'Client', href: '/login/client' },
+  const solutionOptions = [
+    { name: 'Audit Platform', href: '/audit-software' },
+    { name: 'Marketplace', href: '/marketplace-auditor' },
   ];
 
-  const tryFreeOptions = [
-    { name: 'Auditor', href: '/try-free/auditor' },
-    { name: 'Client', href: '/try-free/client' },
+  const knowledgeBaseOptions = [
+    { name: 'Documentation', href: '/docs' },
+    { name: 'FAQ', href: '/faq' },
+    { name: 'Support', href: '/support' },
   ];
 
   return (
@@ -39,6 +40,7 @@ const Navbar = () => {
               width={150}
               height={40}
               className="h-8 w-auto"
+              
               priority
             />
           </div>
@@ -48,12 +50,91 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-8">
               {navigationItems.map((item) => (
                 <div key={item.name} className="relative group">
-                  <a
-                    href={item.href}
-                    className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center"
-                  >
-                    {item.name}
-                  </a>
+                  {item.dropdown ? (
+                    <>
+                      {item.name === 'Solution' && (
+                        <div className="relative">
+                          <button
+                            onClick={() => setSolutionDropdownOpen(!solutionDropdownOpen)}
+                            onBlur={() => setTimeout(() => setSolutionDropdownOpen(false), 150)}
+                            className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center"
+                          >
+                            {item.name}
+                            <svg
+                              className="ml-1 h-4 w-4 text-gray-400"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M19 9l-7 7-7-7"
+                              />
+                            </svg>
+                          </button>
+                          {solutionDropdownOpen && (
+                            <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+                              {solutionOptions.map((option) => (
+                                <a
+                                  key={option.name}
+                                  href={option.href}
+                                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
+                                >
+                                  {option.name}
+                                </a>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )}
+                      {item.name === 'Knowledge Base' && (
+                        <div className="relative">
+                          <button
+                            onClick={() => setKnowledgeBaseDropdownOpen(!knowledgeBaseDropdownOpen)}
+                            onBlur={() => setTimeout(() => setKnowledgeBaseDropdownOpen(false), 150)}
+                            className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center"
+                          >
+                            {item.name}
+                            <svg
+                              className="ml-1 h-4 w-4 text-gray-400"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M19 9l-7 7-7-7"
+                              />
+                            </svg>
+                          </button>
+                          {knowledgeBaseDropdownOpen && (
+                            <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+                              {knowledgeBaseOptions.map((option) => (
+                                <a
+                                  key={option.name}
+                                  href={option.href}
+                                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
+                                >
+                                  {option.name}
+                                </a>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <a
+                      href={item.href}
+                      className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                    >
+                      {item.name}
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
@@ -61,79 +142,21 @@ const Navbar = () => {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* Login Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setLoginDropdownOpen(!loginDropdownOpen)}
-                onBlur={() => setTimeout(() => setLoginDropdownOpen(false), 150)}
-                className="text-gray-700 hover:text-orange-500 px-4 py-2 text-sm font-medium transition-colors duration-200 flex items-center"
-              >
-                Login
-                <svg
-                  className="ml-1 h-4 w-4 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-              {loginDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
-                  {loginOptions.map((option) => (
-                    <a
-                      key={option.name}
-                      href={option.href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
-                    >
-                      {option.name}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
+            {/* Login Button */}
+            <a
+              href="/login/auditor"
+              className="text-gray-700 hover:text-orange-500 px-4 py-2 text-sm font-medium transition-colors duration-200"
+            >
+              Login
+            </a>
 
-            {/* Try for Free Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setTryFreeDropdownOpen(!tryFreeDropdownOpen)}
-                onBlur={() => setTimeout(() => setTryFreeDropdownOpen(false), 150)}
-                className="bg-orange-50 hover:bg-orange-100 text-orange-500 px-6 py-2 rounded-xl text-sm font-medium transition-colors duration-200 border border-orange-100 flex items-center"
-              >
-                Try for Free
-                <svg
-                  className="ml-1 h-4 w-4 text-orange-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-              {tryFreeDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
-                  {tryFreeOptions.map((option) => (
-                    <a
-                      key={option.name}
-                      href={option.href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
-                    >
-                      {option.name}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
+            {/* Try for Free Button */}
+            <a
+              href="/try-free/auditor"
+              className="bg-orange-50 hover:bg-orange-100 text-orange-500 px-6 py-2 rounded-xl text-sm font-medium transition-colors duration-200 border border-orange-100"
+            >
+              Try for Free
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -185,42 +208,64 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
             {navigationItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 text-base font-medium transition-colors duration-200"
-              >
-                {item.name}
-              </a>
+              <div key={item.name}>
+                {item.dropdown ? (
+                  <>
+                    {item.name === 'Solution' && (
+                      <div className="mb-2">
+                        <div className="text-gray-700 px-3 py-2 text-base font-medium">Solution</div>
+                        {solutionOptions.map((option) => (
+                          <a
+                            key={option.name}
+                            href={option.href}
+                            className="text-gray-600 hover:text-orange-500 block px-6 py-2 text-sm font-medium"
+                          >
+                            {option.name}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                    {item.name === 'Knowledge Base' && (
+                      <div className="mb-2">
+                        <div className="text-gray-700 px-3 py-2 text-base font-medium">Knowledge Base</div>
+                        {knowledgeBaseOptions.map((option) => (
+                          <a
+                            key={option.name}
+                            href={option.href}
+                            className="text-gray-600 hover:text-orange-500 block px-6 py-2 text-sm font-medium"
+                          >
+                            {option.name}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <a
+                    href={item.href}
+                    className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                  >
+                    {item.name}
+                  </a>
+                )}
+              </div>
             ))}
             <div className="pt-4 pb-3 border-t border-gray-200">
-              {/* Mobile Login Dropdown */}
-              <div className="mb-2">
-                <div className="text-gray-700 px-3 py-2 text-base font-medium">Login</div>
-                {loginOptions.map((option) => (
-                  <a
-                    key={option.name}
-                    href={option.href}
-                    className="text-gray-600 hover:text-orange-500 block px-6 py-2 text-sm font-medium"
-                  >
-                    {option.name}
-                  </a>
-                ))}
-              </div>
+              {/* Mobile Login Button */}
+              <a
+                href="/login/auditor"
+                className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 text-base font-medium transition-colors duration-200"
+              >
+                Login
+              </a>
               
-              {/* Mobile Try for Free Dropdown */}
-              <div className="mb-2">
-                <div className="text-gray-700 px-3 py-2 text-base font-medium">Try for Free</div>
-                {tryFreeOptions.map((option) => (
-                  <a
-                    key={option.name}
-                    href={option.href}
-                    className="text-gray-600 hover:text-orange-500 block px-6 py-2 text-sm font-medium"
-                  >
-                    {option.name}
-                  </a>
-                ))}
-              </div>
+              {/* Mobile Try for Free Button */}
+              <a
+                href="/try-free/auditor"
+                className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 text-base font-medium transition-colors duration-200"
+              >
+                Try for Free
+              </a>
             </div>
           </div>
         </div>

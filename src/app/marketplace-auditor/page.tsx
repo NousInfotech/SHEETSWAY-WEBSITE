@@ -10,6 +10,7 @@ import MarketplaceCTASection from "@/components/MarketplaceCTASection";
 import FAQSection from "@/components/marketplace/FAQSection";
 import IntegrationPage from "@/components/IntegrationPage"
 import IntegrationAwareAI from "@/components/marketplace/IndustryAwareAI"
+import BuiltByAuditorsCTA from "@/components/BuiltByAuditorsCTA";
 
 
 
@@ -23,6 +24,7 @@ export default function MarketplaceAuditor() {
       <ServicesSection />
       <WhyTopAuditFirmsSection />
       <OurWorkProcessSection />
+      <BuiltByAuditorsCTA/>
       <div className="relative">
         <div
           className="absolute inset-0 bg-cover bg-no-repeat bg-center opacity-10 pointer-events-none"
