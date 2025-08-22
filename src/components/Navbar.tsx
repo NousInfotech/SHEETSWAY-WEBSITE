@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import assets from '@/data/assets';
 
 const Navbar = () => {
@@ -34,15 +35,17 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Image
-              src={assets.LogoPng}
-              alt="SheetSway Logo"
-              width={150}
-              height={40}
-              className="h-8 w-auto"
-              
-              priority
-            />
+            <Link href="/" className="cursor-pointer">
+              <Image
+                src={assets.LogoPng}
+                alt="SheetSway Logo"
+                width={150}
+                height={40}
+                className="h-8 w-auto"
+                
+                priority
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
