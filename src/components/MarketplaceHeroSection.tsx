@@ -23,8 +23,8 @@ const MarketplaceHeroSection = () => {
           src={assets.MarketPlaceHeroPng}
           alt="Hero Background Mobile"
           fill
-          className="object-fill object-center lg:hidden"
-          style={{ objectPosition: '75% center' }}
+          className="object-cover object-center lg:hidden"
+          style={{ objectPosition: '75% -10%' }}
           priority
         />
       </div>
@@ -37,12 +37,12 @@ const MarketplaceHeroSection = () => {
             {/* Left Side - Content */}
             <div className="text-left">
               {/* Welcome Text */}
-              <p className="text-white/90 text-base sm:text-lg mb-3 sm:mb-4">
+              <p className="text-white/90 text-base sm:text-lg mb-3 sm:mb-4 mt-10">
                 Welcome to the Audit Marketplace
               </p>
               
               {/* Main Heading */}
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                 Connecting
                 Auditors <br /> & Clients.
                 Building Careers
