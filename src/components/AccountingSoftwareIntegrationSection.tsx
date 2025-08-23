@@ -65,7 +65,7 @@ const AccountingSoftwareIntegrationSection = () => {
         {/* Header */}
         <div className="text-left lg:text-center mb-16">
           <h2 className="text-[22px] lg:text-4xl xl:text-5xl font-bold text-gray-800 mb-6">
-            Your Accountant Will Love Us !
+            Your Accountant Will Love Us!
           </h2>
           <div className="mb-4">
             <span className="text-md font-bold text-gray-600">We integrate with </span>
@@ -102,7 +102,7 @@ const AccountingSoftwareIntegrationSection = () => {
                         alt={`${software.name} logo`}
                         width={64}
                         height={64}
-                        className="w-full h-full object-cover opacity-30"
+                        className="w-full h-full object-cover"
                       />
                     </div>
                   </div>

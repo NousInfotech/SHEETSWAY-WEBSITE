@@ -114,7 +114,7 @@ const WhyTopAuditFirmsSection = () => {
         </div>
 
         {/* CTA Card - Mobile: Full width and height, Desktop: Keep original dimensions */}
-        <div className="-mt-22  flex justify-center">
+        <div className="mt-8 lg:-mt-22 flex justify-center">
           <div
             className="relative rounded-2xl overflow-hidden w-full max-w-6xl lg:w-[1200px] h-auto min-h-[400px] lg:h-[302px]"
             style={{

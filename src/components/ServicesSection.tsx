@@ -132,7 +132,7 @@ const ServicesSection = () => {
             </div>
 
             {/* Content Section - White curved background */}
-            <div className="absolute -bottom-25 right-4 bg-white rounded-2xl shadow-lg p-6 h-64 w-64 flex flex-col justify-between">
+            <div className="absolute -bottom-25 right-4 bg-white rounded-2xl shadow-lg p-6 w-64 min-h-64 flex flex-col">
               {/* Icon */}
               <div className="absolute -top-4 right-6 w-12 h-12 bg-blue-400 rounded-full border-2 border-white shadow-lg flex items-center justify-center">
                 <Image
@@ -144,28 +144,33 @@ const ServicesSection = () => {
                 />
               </div>
 
-              {/* Small Header */}
-              <p className="text-orange-400 text-sm font-medium mb-2">
-                {services[currentSlide].smallHeader}
-              </p>
+              {/* Content wrapper with flex-grow */}
+              <div className="flex-1 flex flex-col">
+                {/* Small Header */}
+                <p className="text-orange-400 text-sm font-medium mb-2">
+                  {services[currentSlide].smallHeader}
+                </p>
 
-              {/* Title */}
-              <h3 className="text-xl font-bold text-gray-800 mb-3 leading-tight">
-                {services[currentSlide].title}
-              </h3>
+                {/* Title */}
+                <h3 className="text-xl font-bold text-gray-800 mb-3 leading-tight">
+                  {services[currentSlide].title}
+                </h3>
 
-              {/* Description */}
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                {services[currentSlide].description}
-              </p>
+                {/* Description */}
+                <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-1">
+                  {services[currentSlide].description}
+                </p>
 
-              {/* Button */}
-              <button
-                className="w-auto text-white py-3 px-6 rounded-lg font-medium transition-colors duration-200"
-                style={{ backgroundColor: "#FFA955" }}
-              >
-                Read More
-              </button>
+                {/* Button - positioned at bottom */}
+                <div className="mt-auto">
+                  <button
+                    className="w-auto text-white py-3 px-6 rounded-lg font-medium transition-colors duration-200"
+                    style={{ backgroundColor: "#FFA955" }}
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

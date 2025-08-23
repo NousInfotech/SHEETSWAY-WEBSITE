@@ -6,7 +6,7 @@ import assets from '@/data/assets';
 
 const MarketplaceHeroSection = () => {
   return (
-    <section className="relative overflow-hidden min-h-[90vh] flex items-center pt-25 lg:pt-0">
+    <section className="relative overflow-hidden min-h-[90vh] flex items-center pt-16 lg:pt-0">
       {/* Background Image - Desktop: frame.png, Mobile: market-place-hero.png */}
       <div className="absolute inset-0">
         {/* Desktop Background */}
@@ -32,31 +32,31 @@ const MarketplaceHeroSection = () => {
       {/* Content Container */}
       <div className="relative z-10 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Left Side - Content */}
             <div className="text-left">
               {/* Welcome Text */}
-              <p className="text-white/90 text-lg mb-4">
+              <p className="text-white/90 text-base sm:text-lg mb-3 sm:mb-4">
                 Welcome to the Audit Marketplace
               </p>
               
               {/* Main Heading */}
-              <h1 className="text-2xl md:text-5xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                 Connecting
                 Auditors <br /> & Clients.
                 Building Careers
               </h1>
               
               {/* Description */}
-              <p className="text-sm text-white/90 mb-8 max-w-lg leading-relaxed">
+              <p className="text-sm sm:text-base text-white/90 mb-6 sm:mb-8 max-w-lg leading-relaxed">
                 Take your business to the next level with our new audit marketplace and audit tools. Sheetsway opens a new horizon of client acquisition.
               </p>
               
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <button
-                  className="text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg flex items-center justify-center gap-2"
+                  className="text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg flex items-center justify-center gap-2 text-sm sm:text-base"
                   style={{ backgroundColor: '#FFA955' }}
                 >
                   Contact Sheetsway
@@ -64,14 +64,14 @@ const MarketplaceHeroSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </button>
-                <button className="bg-white text-gray-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-lg">
+                <button className="bg-white text-gray-800 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-lg text-sm sm:text-base">
                   Log In
                 </button>
               </div>
             </div>
             
             {/* Right Side - Hero Image */}
-            <div className="relative h-80 lg:h-[500px] flex justify-start -mr-10 lg:-mr-48 mt-16 lg:mt-0">
+            <div className="relative h-64 sm:h-72 lg:h-[400px] flex justify-start -mr-4 sm:-mr-6 lg:-mr-32 mt-8 sm:mt-12 lg:mt-0">
               <Image
                 src={assets.HeroSideMarketplacePng}
                 alt="Professional Auditor"
