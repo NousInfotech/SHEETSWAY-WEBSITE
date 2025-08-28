@@ -7,26 +7,14 @@ import assets from '@/data/assets';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [solutionDropdownOpen, setSolutionDropdownOpen] = useState(false);
-  const [knowledgeBaseDropdownOpen, setKnowledgeBaseDropdownOpen] = useState(false);
+
 
   const navigationItems = [
-    { name: 'Solution', href: '#', dropdown: true },
-    { name: 'Knowledge Base', href: '#', dropdown: true },
-    { name: 'Pricing', href: '#' },
+    { name: 'Auditor', href: '/marketplace-auditor' },
+    { name: 'Audit-Software', href: 'https://www.sheetsway.com/', external: true },
+    { name: 'FAQ', href: '/faq' },
     { name: 'About Us', href: '/about-us' },
     { name: 'Contact Us', href: '#' },
-  ];
-
-  const solutionOptions = [
-    { name: 'Audit Platform', href: '/audit-software' },
-    { name: 'Marketplace', href: '/marketplace-auditor' },
-  ];
-
-  const knowledgeBaseOptions = [
-    { name: 'Documentation', href: '/docs' },
-    { name: 'FAQ', href: '/faq' },
-    { name: 'Support', href: '/support' },
   ];
 
   return (
@@ -53,91 +41,14 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-8">
               {navigationItems.map((item) => (
                 <div key={item.name} className="relative group">
-                  {item.dropdown ? (
-                    <>
-                      {item.name === 'Solution' && (
-                        <div className="relative">
-                          <button
-                            onClick={() => setSolutionDropdownOpen(!solutionDropdownOpen)}
-                            onBlur={() => setTimeout(() => setSolutionDropdownOpen(false), 150)}
-                            className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center"
-                          >
-                            {item.name}
-                            <svg
-                              className="ml-1 h-4 w-4 text-gray-400"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M19 9l-7 7-7-7"
-                              />
-                            </svg>
-                          </button>
-                          {solutionDropdownOpen && (
-                            <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
-                              {solutionOptions.map((option) => (
-                                <a
-                                  key={option.name}
-                                  href={option.href}
-                                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
-                                >
-                                  {option.name}
-                                </a>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      )}
-                      {item.name === 'Knowledge Base' && (
-                        <div className="relative">
-                          <button
-                            onClick={() => setKnowledgeBaseDropdownOpen(!knowledgeBaseDropdownOpen)}
-                            onBlur={() => setTimeout(() => setKnowledgeBaseDropdownOpen(false), 150)}
-                            className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center"
-                          >
-                            {item.name}
-                            <svg
-                              className="ml-1 h-4 w-4 text-gray-400"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M19 9l-7 7-7-7"
-                              />
-                            </svg>
-                          </button>
-                          {knowledgeBaseDropdownOpen && (
-                            <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
-                              {knowledgeBaseOptions.map((option) => (
-                                <a
-                                  key={option.name}
-                                  href={option.href}
-                                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
-                                >
-                                  {option.name}
-                                </a>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      )}
-                    </>
-                  ) : (
                     <a
                       href={item.href}
+                      target={item.external ? "_blank" : ""}
+                      rel={item.external ? "noopener noreferrer" : ""}
                       className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200"
                     >
                       {item.name}
                     </a>
-                  )}
                 </div>
               ))}
             </div>
@@ -145,21 +56,81 @@ const Navbar = () => {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* Login Button */}
-            <a
-              href="/login/auditor"
-              className="text-gray-700 hover:text-orange-500 px-4 py-2 text-sm font-medium transition-colors duration-200"
-            >
-              Login
-            </a>
+            {/* Login Dropdown */}
+            <div className="relative group">
+              <button
+                className="text-gray-700 hover:text-orange-500 px-4 py-2 text-sm font-medium transition-colors duration-200 flex items-center cursor-pointer"
+              >
+                Login
+                <svg
+                  className="ml-1 h-4 w-4 text-gray-400 transition-transform duration-200 group-hover:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div className="absolute right-0 top-full pt-2 w-48 z-50 hidden group-hover:block hover:block">
+                <div className="bg-white rounded-md shadow-lg py-1 border border-gray-200">
+                  <a
+                    href="https://sheetsway-audit-marketplace.vercel.app/auth/sign-in"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
+                  >
+                    Client
+                  </a>
+                  <a
+                    href="https://sheetsway-vetted-auditor-portal.vercel.app/auth/sign-in"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
+                  >
+                    Auditor
+                  </a>
+                </div>
+              </div>
+            </div>
 
-            {/* Try for Free Button */}
-            <a
-              href="/try-free/auditor"
-              className="bg-orange-50 hover:bg-orange-100 text-orange-500 px-6 py-2 rounded-xl text-sm font-medium transition-colors duration-200 border border-orange-100"
-            >
-              Try for Free
-            </a>
+            {/* Sign Up Dropdown */}
+            <div className="relative group">
+              <button
+                className="bg-orange-50 hover:bg-orange-100 text-orange-500 px-6 py-2 rounded-xl text-sm font-medium transition-colors duration-200 border border-orange-100 flex items-center cursor-pointer"
+              >
+                Sign Up
+                <svg
+                  className="ml-1 h-4 w-4 text-orange-400 transition-transform duration-200 group-hover:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div className="absolute right-0 top-full pt-2 w-48 z-50 hidden group-hover:block hover:block">
+                <div className="bg-white rounded-md shadow-lg py-1 border border-gray-200">
+                  <a
+                    href="https://sheetsway-audit-marketplace.vercel.app/auth/sign-up"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
+                  >
+                    Client
+                  </a>
+                  <a
+                    href="https://sheetsway-vetted-auditor-portal.vercel.app/auth/sign-up"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors duration-200"
+                  >
+                    Auditor
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -212,63 +183,62 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
             {navigationItems.map((item) => (
               <div key={item.name}>
-                {item.dropdown ? (
-                  <>
-                    {item.name === 'Solution' && (
-                      <div className="mb-2">
-                        <div className="text-gray-700 px-3 py-2 text-base font-medium">Solution</div>
-                        {solutionOptions.map((option) => (
-                          <a
-                            key={option.name}
-                            href={option.href}
-                            className="text-gray-600 hover:text-orange-500 block px-6 py-2 text-sm font-medium"
-                          >
-                            {option.name}
-                          </a>
-                        ))}
-                      </div>
-                    )}
-                    {item.name === 'Knowledge Base' && (
-                      <div className="mb-2">
-                        <div className="text-gray-700 px-3 py-2 text-base font-medium">Knowledge Base</div>
-                        {knowledgeBaseOptions.map((option) => (
-                          <a
-                            key={option.name}
-                            href={option.href}
-                            className="text-gray-600 hover:text-orange-500 block px-6 py-2 text-sm font-medium"
-                          >
-                            {option.name}
-                          </a>
-                        ))}
-                      </div>
-                    )}
-                  </>
-                ) : (
-                  <a
-                    href={item.href}
-                    className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 text-base font-medium transition-colors duration-200"
-                  >
-                    {item.name}
-                  </a>
-                )}
+                <a
+                  href={item.href}
+                  target={item.external ? "_blank" : ""}
+                  rel={item.external ? "noopener noreferrer" : ""}
+                  className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                >
+                  {item.name}
+                </a>
               </div>
             ))}
             <div className="pt-4 pb-3 border-t border-gray-200">
-              {/* Mobile Login Button */}
-              <a
-                href="/login/auditor"
-                className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 text-base font-medium transition-colors duration-200"
-              >
-                Login
-              </a>
+              {/* Mobile Login Menu */}
+              <div className="mb-2">
+                <div className="text-gray-700 px-3 py-2 text-base font-medium">Login</div>
+                <ul className="ml-4 border-l border-gray-200 pl-2">
+                  <li>
+                    <a
+                      href="https://sheetsway-audit-marketplace.vercel.app/auth/sign-in"
+                      className="text-gray-600 hover:text-orange-500 block px-3 py-2 text-sm font-medium"
+                    >
+                      Client
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://sheetsway-vetted-auditor-portal.vercel.app/auth/sign-in"
+                      className="text-gray-600 hover:text-orange-500 block px-3 py-2 text-sm font-medium"
+                    >
+                      Auditor
+                    </a>
+                  </li>
+                </ul>
+              </div>
               
-              {/* Mobile Try for Free Button */}
-              <a
-                href="/try-free/auditor"
-                className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 text-base font-medium transition-colors duration-200"
-              >
-                Try for Free
-              </a>
+              {/* Mobile Sign Up Menu */}
+              <div className="mb-2">
+                <div className="text-gray-700 px-3 py-2 text-base font-medium">Sign Up</div>
+                <ul className="ml-4 border-l border-gray-200 pl-2">
+                  <li>
+                    <a
+                      href="https://sheetsway-audit-marketplace.vercel.app/auth/sign-up"
+                      className="text-gray-600 hover:text-orange-500 block px-3 py-2 text-sm font-medium"
+                    >
+                      Client
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://sheetsway-vetted-auditor-portal.vercel.app/auth/sign-up"
+                      className="text-gray-600 hover:text-orange-500 block px-3 py-2 text-sm font-medium"
+                    >
+                      Auditor
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
