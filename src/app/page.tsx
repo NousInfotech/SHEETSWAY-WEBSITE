@@ -13,6 +13,7 @@ import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import IndustryAwareAI from "@/components/IndustryAwareAI"
 import NewsCarousel from "@/components/NewsCarousel"
+import EmailPopup from "@/components/EmailPopup";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <CTASection />
       <FAQSection />
       <Footer />
+      <EmailPopup />
     </div>
   );
 }
