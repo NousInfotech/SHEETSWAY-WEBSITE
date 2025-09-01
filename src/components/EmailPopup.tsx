@@ -96,7 +96,7 @@ const EmailPopup = () => {
               </h3>
               <p className="text-sm text-center">
                 Discover what an audit really means for<br />
-                your business and whether you're ready.<br />
+                your business and whether you&apos;re ready.<br />
                 Get our <span className="font-bold text-blue-800">FREE PDF CHECKLIST</span> below:
               </p>
             </div>
