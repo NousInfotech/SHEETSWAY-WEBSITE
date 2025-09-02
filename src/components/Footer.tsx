@@ -110,11 +110,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-900">Care Center</h3>
             <ul className="space-y-3">
-              <li>
+              {/* <li>
                 <a href="#" className="text-gray-700 hover:text-gray-900 transition-colors duration-200">
                   Contact Us
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#" className="text-gray-700 hover:text-gray-900 transition-colors duration-200">
                   Meet with us

@@ -14,7 +14,7 @@ const Navbar = () => {
     { name: 'Audit-Software', href: 'https://www.sheetsway.com/', external: true },
     { name: 'FAQ', href: '/faq' },
     { name: 'About Us', href: '/about-us' },
-    { name: 'Contact Us', href: '#' },
+    // { name: 'Contact Us', href: '#' },
   ];
 
   return (

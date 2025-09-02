@@ -9,6 +9,14 @@ const EmailPopup = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
+    // Check if popup has been dismissed or PDF downloaded
+    const popupDismissed = localStorage.getItem('emailPopupDismissed');
+    const pdfDownloaded = localStorage.getItem('emailPopupPdfDownloaded');
+    
+    if (popupDismissed === 'true' || pdfDownloaded === 'true') {
+      return; // Don't show popup if it has been dismissed or PDF downloaded
+    }
+
     const handleScroll = () => {
       // Show popup when user scrolls halfway through the page
       const scrollPosition = window.scrollY;
@@ -25,6 +33,8 @@ const EmailPopup = () => {
 
   const handleClose = () => {
     setIsVisible(false);
+    // Mark popup as dismissed in localStorage
+    localStorage.setItem('emailPopupDismissed', 'true');
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -35,6 +45,18 @@ const EmailPopup = () => {
     setIsSubmitting(true);
     
     try {
+      // Send email to Google Sheets via Apps Script using GET request
+      const appsScriptUrl = 'https://script.google.com/macros/s/AKfycbx69Gno8-odKDARl_GrJis0BW844pCOkalT8kUJ5v2Zm_yzplCdDcXiJay-qgSE5PEmfw/exec';
+      
+      // Use GET request with email as URL parameter (Apps Script CORS limitation)
+      await fetch(`${appsScriptUrl}?email=${encodeURIComponent(email)}`, {
+        method: 'GET',
+        mode: 'no-cors', // This is required for Google Apps Script
+      });
+      
+      // Since we're using no-cors, we can't read the response
+      // But we can assume it worked if no error was thrown
+      
       // Trigger PDF download
       const pdfUrl = '/Popup/Do You Need an Audit and are You Prepared.pdf';
       const link = document.createElement('a');
@@ -44,13 +66,17 @@ const EmailPopup = () => {
       link.click();
       document.body.removeChild(link);
       
+      // Mark PDF as downloaded and close popup
+      localStorage.setItem('emailPopupPdfDownloaded', 'true');
+      
       // Close popup after download starts
       setTimeout(() => {
         setIsSubmitting(false);
         setIsVisible(false);
       }, 1000);
+      
     } catch (error) {
-      console.error('Error downloading PDF:', error);
+      console.error('Error submitting form:', error);
       setIsSubmitting(false);
     }
   };
@@ -58,7 +84,7 @@ const EmailPopup = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 backdrop-blur-md bg-black/30">
       <div className="relative w-full max-w-[95%] sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-5xl h-auto max-h-[95vh] rounded-lg overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
@@ -67,7 +93,7 @@ const EmailPopup = () => {
             alt="Background"
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 1200px"
-            className="object-cover"
+            className="object-cover sm:object-cover object-right"
             priority
           />
           <div className="absolute inset-0"></div>
@@ -76,7 +102,7 @@ const EmailPopup = () => {
         {/* Close Button */}
         <button 
           onClick={handleClose}
-          className="absolute top-2 right-2 sm:top-4 sm:right-4 text-xl sm:text-2xl font-bold z-20 text-white"
+          className="absolute top-2 right-2 sm:top-4 sm:right-4 text-xl sm:text-2xl font-bold z-20 text-white cursor-pointer"
           aria-label="Close popup"
         >
           &#x2715;
