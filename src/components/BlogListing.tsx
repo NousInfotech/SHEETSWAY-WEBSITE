@@ -89,6 +89,7 @@ const BlogListing: React.FC<BlogListingProps> = ({ blogs }) => {
                   <span className="px-2 sm:px-3 py-1 text-orange-800 text-xs sm:text-sm rounded-full" style={{ backgroundColor: '#fef3c7' }}>
                     {selectedTag}
                   </span>
+
                 )}
                 <button
                   onClick={() => {
@@ -206,30 +207,6 @@ const BlogListing: React.FC<BlogListingProps> = ({ blogs }) => {
         </div>
       </section>
 
-      {/* Newsletter Signup */}
-      <section className="text-white py-8 sm:py-12 lg:py-16" style={{ background: 'linear-gradient(to right, #E8840C, #d97706)' }}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">
-              Stay Updated
-            </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-orange-100 mb-6 sm:mb-8 px-4">
-              Get the latest insights on audit requirements and business compliance delivered to your inbox.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-3 sm:px-4 py-2 sm:py-3 rounded-lg text-gray-900 focus:ring-2 focus:outline-none text-sm sm:text-base"
-                style={{ '--tw-ring-color': '#E8840C' } as React.CSSProperties}
-              />
-              <button className="px-6 sm:px-8 py-2 sm:py-3 bg-white font-semibold rounded-lg hover:bg-gray-100 transition-colors text-sm sm:text-base" style={{ color: '#E8840C' }}>
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

@@ -12,6 +12,7 @@ interface BlogTemplateProps {
   relatedBlogs?: BlogPost[];
 }
 
+
 const BlogTemplate: React.FC<BlogTemplateProps> = ({ blog, relatedBlogs = [] }) => {
   const handleShare = () => {
     if (navigator.share) {

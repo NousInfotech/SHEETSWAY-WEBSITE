@@ -81,6 +81,7 @@ export function getAllBlogs(): BlogPost[] {
         const wordCount = content.split(/\s+/).length;
         const readingTime = Math.ceil(wordCount / 200);
 
+        
         // Extract excerpt from first paragraph
         const excerpt = content.split('\n\n')[0].replace(/[#*`]/g, '').substring(0, 160) + '...';
 
