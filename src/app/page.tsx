@@ -24,16 +24,9 @@ export default function Home() {
       <AuditProcessSection />
       <SecuritySection />
       <AuditNeedsSection />
-      <RetailHospitalitySection />
-      <AccountingSoftwareIntegrationSection/> 
-      <OnlineBankingSection />
-      <IndustryAwareAI/>
-      <TestimonialSection />
-      <NewsCarousel/>
-      <CTASection />
-      <FAQSection />
+      
       <Footer />
-      <EmailPopup />
+      
     </div>
   );
 }

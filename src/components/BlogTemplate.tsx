@@ -4,6 +4,7 @@ import React from 'react';
 import { format } from 'date-fns';
 import { Calendar, Clock, User, ArrowLeft, Share2 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BlogPost } from '@/utils/blog';
 import MarkdownRenderer from './MarkdownRenderer';
 
@@ -92,11 +93,16 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ blog, relatedBlogs = [] }) 
       {blog.featuredImage && (
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
           <div className="max-w-4xl mx-auto">
-            <img
-              src={blog.featuredImage}
-              alt={blog.title}
-              className="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-lg shadow-lg"
-            />
+            <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src={blog.featuredImage}
+                alt={blog.title}
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+              />
+            </div>
           </div>
         </div>
       )}
@@ -131,11 +137,15 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ blog, relatedBlogs = [] }) 
                     className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                   >
                     {relatedBlog.featuredImage && (
-                      <img
-                        src={relatedBlog.featuredImage}
-                        alt={relatedBlog.title}
-                        className="w-full h-40 sm:h-48 object-cover"
-                      />
+                      <div className="relative w-full h-40 sm:h-48">
+                        <Image
+                          src={relatedBlog.featuredImage}
+                          alt={relatedBlog.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                      </div>
                     )}
                     
                     <div className="p-4 sm:p-6">
@@ -204,4 +214,4 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ blog, relatedBlogs = [] }) 
   );
 };
 
-export default BlogTemplate; 
+export default BlogTemplate;
