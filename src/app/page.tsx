@@ -24,16 +24,16 @@ export default function Home() {
       <AuditProcessSection />
       <SecuritySection />
       <AuditNeedsSection />
-      {/* <RetailHospitalitySection />
+      <RetailHospitalitySection />
       <AccountingSoftwareIntegrationSection/> 
       <OnlineBankingSection />
       <IndustryAwareAI/>
       <TestimonialSection />
       <NewsCarousel/>
       <CTASection />
-      <FAQSection /> */}
+      <FAQSection />
       <Footer />
-      {/* <EmailPopup /> */}
+      <EmailPopup />
     </div>
   );
 }

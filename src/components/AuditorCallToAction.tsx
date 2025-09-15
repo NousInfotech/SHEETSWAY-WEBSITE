@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Image from 'next/image'
 import { TrendingUp, DollarSign } from 'lucide-react'
 
 const ReferralSection = () => {
@@ -11,9 +12,11 @@ const ReferralSection = () => {
           {/* Left side - Hero Image */}
           <div className='flex-1 w-full'>
             <div className='relative w-full max-w-lg mx-auto lg:mx-0'>
-              <img
+              <Image
                 src='/images/blog/image circle.png'
                 alt='Two men shaking hands'
+                width={671}
+                height={422}
                 className='w-[671px] h-[422px]'
               />
             </div>
@@ -28,7 +31,7 @@ const ReferralSection = () => {
                   Helping you earn through referrals.
                 </h2>
                 <p className='text-gray-600 text-base mb-6 leading-relaxed'>
-                  Whether you're an entrepreneur or individual or dealing with
+                  Whether you&apos;re an entrepreneur or individual or dealing with
                   promotional offers, you can still earn commissions and cash
                   from the profits.
                 </p>

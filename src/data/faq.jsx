@@ -17,6 +17,38 @@ export const faqData = [
   }
 ]
 
+export const faqs = [
+  {
+    heading: "General",
+    questions: [
+      {
+        key: "general-1",
+        question: "What are the primary features of Sheetsway?",
+        answer:
+          "Sheetsway utilizes advanced AI technologies such as Natural Language Processing (NLP) and Optical Character Recognition (OCR) to automate risk assessments, handle large datasets, and significantly reduce audit times. This software also offers customizable templates and an intuitive user interface designed to streamline the auditing process from start to finish."
+      },
+      {
+        key: "general-2",
+        question: "Is Sheetsway compliant with local and international auditing standards?",
+        answer:
+          "Yes, Sheetsway is fully compliant with local and international auditing standards including GAAP, IFRS, and other regulatory requirements."
+      }
+    ]
+  },
+  {
+    heading: "Customization",
+    questions: [
+      {
+        key: "custom-1",
+        question: "Does Sheetsway offer white-labeling options?",
+        answer:
+          "Yes, Sheetsway offers comprehensive white-labeling solutions for businesses looking to integrate our audit software under their own brand."
+      }
+    ]
+  }
+];
+
+
 export const statsData = [
   {
     icon: '/images/goodwill.png',

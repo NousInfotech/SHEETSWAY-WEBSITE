@@ -23,8 +23,8 @@ const ServicesSection = () => {
               No Extra Work.
             </h1>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-              Whether you're an entrepreneur, small firm, or a business advisor,
-              Greenway's declaring Platform helps you navigate your network.
+              Whether you&apos;re an entrepreneur, small firm, or a business advisor,
+              Greenway&apos;s declaring Platform helps you navigate your network.
               Share your expertise, and become the agent for businesses who
               need. Get rewards from partners who joined through your network.
             </p>
