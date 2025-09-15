@@ -1,88 +1,67 @@
-import Image from 'next/image';
-import assets from '@/data/assets';
+'use client'
+import React, { useState } from 'react'
+import { ChevronDown, ChevronRight } from 'lucide-react'
+import { faqData } from '../data/faq'
 
-const AuditNeedsSection = () => {
-  const auditNeeds = [
-    {
-      icon: assets.FreelancerFinancialAuditMalePng,
-      title: "Freelancers & Micro Businesses",
-              description: "In some countries, even small entities need audits. We&apos;ll guide you through what&apos;s required and match you with a cost-effective solution."
-    },
-    {
-      icon: assets.OnlineAuditSmallBusinessPng,
-      title: "Small Businesses",
-      description: "Need an annual financial audit for compliance? We make it easy, fast, and affordable to get started."
-    },
-    {
-      icon: assets.MediumLargeCompanyAuditIconPng,
-      title: "Medium & Large Companies",
-      description: "Get matched with the right auditor to meet your regulatory or investor financial audit requirements."
-    },
-    {
-      icon: assets.InternationalAuditGlobeIconPng,
-      title: "International Entities with Local Obligations",
-              description: "If you operate in Europe and need a country-specific financial audit, we&apos;ll connect you with local licensed providers."
-    },
-    {
-      icon: assets.FinancialAuditBacklogLateFilingPng,
-      title: "Backlogged or Late Filings",
-              description: "Fell behind on last year&apos;s audit? We&apos;ll help you catch up quickly and professionally."
-    }
-  ];
+const FAQSection = () => {
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
+
+  const [showMore, setShowMore] = useState(false)
+
+  const toggleFaq = (index: number) => {
+  setOpenFaq(openFaq === index ? null : index)
+}
 
   return (
-    <section className="py-20 px-4 -mt-35 bg-white relative rounded-t-[30px] lg:rounded-t-[40px]" style={{
-      zIndex: 10,
-    }}> 
-    
-      <div className="container mx-auto max-w-7xl">
-        {/* Header */}
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 lg:mb-4" style={{ fontFamily: 'Nunito, sans-serif' }}>
-            Do You Need an Audit?
-          </h2>
-          <p className="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto px-4" style={{ fontFamily: 'Nunito, sans-serif' }}>
-            If you&apos;re asking the question, we&apos;ve probably got the answer.
-          </p>
-        </div>
+    <div className='max-w-4xl mx-auto px-4 py-16'>
+      <div className='p-8'>
+        <h2 className='text-2xl font-bold text-gray-900 mb-8'>
+          General Information
+        </h2>
 
-        {/* Mobile: Single column layout, Desktop: Grid layout */}
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8">
-            {auditNeeds.map((item, index) => (
-              <div 
-                key={index}
-                className="text-left mb-8 lg:mb-0"
-              >
-                {/* Simple line-art illustration */}
-                <div className="flex justify-start mb-4 lg:mb-6">
-                  <div className="w-30 h-30 lg:w-20 lg:h-20 flex items-center justify-center">
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={300}
-                      height={300}
-                      className="w-30 h-30 lg:w-30 lg:h-30 object-contain"
-                    />
+        <div className='space-y-4'>
+          {faqData
+            .slice(0, showMore ? faqData.length : 3)
+            .map((faq, index) => (
+              <div key={index} className='border-b border-gray-200 last:border-b-0'>
+                <button
+                  onClick={() => toggleFaq(index)}
+                  className='w-full flex justify-between items-center py-4 text-left hover:bg-gray-50 transition-colors'
+                >
+                  <span className='font-medium text-gray-900'>
+                    {index + 1}. {faq.question}
+                  </span>
+                  <ChevronDown
+                    className={`w-5 h-5 text-gray-500 transition-transform ${
+                      openFaq === index ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                {openFaq === index && (
+                  <div className='pb-4 pl-6 pr-4'>
+                    <p className='text-gray-600 leading-relaxed'>
+                      {faq.answer}
+                    </p>
                   </div>
-                </div>
-
-                {/* Orange heading */}
-                <h3 className="text-base lg:text-lg font-bold mb-2 lg:mb-3 leading-tight text-left" style={{ color: '#E8840C', fontFamily: 'Nunito, sans-serif' }}>
-                  {item.title}
-                </h3>
-
-                {/* Grey body text */}
-                <p className="text-sm lg:text-sm text-gray-600 leading-relaxed text-left" style={{ fontFamily: 'Nunito, sans-serif' }}>
-                  {item.description}
-                </p>
+                )}
               </div>
             ))}
-          </div>
         </div>
-      </div>
-    </section>
-  );
-};
 
-export default AuditNeedsSection;
+        <button
+          onClick={() => setShowMore(!showMore)}
+          className='flex items-center mt-6 text-blue-600 hover:text-blue-800 font-medium'
+        >
+          {showMore ? 'View Less' : 'View More'}
+          <ChevronRight
+            className={`w-4 h-4 ml-1 transition-transform ${
+              showMore ? 'rotate-90' : ''
+            }`}
+          />
+        </button>
+      </div>
+    </div>
+  )
+}
+
+export default FAQSection
