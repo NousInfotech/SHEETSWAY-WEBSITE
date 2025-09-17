@@ -6,7 +6,7 @@ import assets from '@/data/assets';
 
 const MarketplaceHeroSection = () => {
   return (
-    <section className="relative overflow-hidden min-h-[90vh] flex items-center pt-16 lg:pt-0">
+    <section className="relative overflow-hidden min-h-[100vh] flex items-center pt-16 lg:pt-0">
       {/* Background Image - Desktop: frame.png, Mobile: market-place-hero.png */}
       <div className="absolute inset-0">
         {/* Desktop Background */}
@@ -35,7 +35,8 @@ const MarketplaceHeroSection = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Left Side - Content */}
-            <div className="text-left">
+            <div className="text-left relative -top-[75px] sm:-top-[40px] md:-top-[60px] lg:-top-[22px]
+">
               {/* Welcome Text */}
               <p className="text-white/90 text-base sm:text-lg mb-3 sm:mb-4 mt-10">
                 Welcome to the Audit Marketplace
