@@ -58,7 +58,7 @@ const FAQSection = () => {
         </div>
 
         {/* View More Button */}
-        <div className="mt-8">
+       <div className="mt-8">
           <button className="bg-white hover:bg-gray-50 text-gray-700 font-medium text-base px-6 py-3 rounded-lg border border-gray-300 shadow-md hover:shadow-lg transition-all duration-200 flex items-center">
             View More
             <svg

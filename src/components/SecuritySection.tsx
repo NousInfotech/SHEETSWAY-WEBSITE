@@ -23,7 +23,7 @@ const SecuritySection = () => {
 
   return (
     <section 
-      className="relative w-full -mt-20 sm:-mt-25 md:-mt-20 lg:-mt-70 xl:-mt-50 2xl:-mt-50 mb-15 lg:mb-10 xl:mb-20 2xl:mb-20 py-16 sm:py-20 md:py-24 lg:py-20 xl:py-28 2xl:py-32 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 flex items-center justify-center overflow-hidden security-section-bg"
+      className="relative w-full -mt-8 sm:-mt-12 md:-mt-16 lg:-mt-20 xl:-mt-50 2xl:-mt-50 mb-15 lg:mb-10 xl:mb-20 2xl:mb-20 pt-16 pb-24 sm:pt-20 sm:pb-32 md:pt-24 md:pb-36 lg:py-20 xl:py-28 2xl:py-32 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 flex items-center justify-center overflow-hidden security-section-bg min-h-[700px] sm:min-h-[800px] md:min-h-[850px] lg:min-h-[auto]"
       style={{
         backgroundImage: `url(${assets.CtaBg1Png})`,
         backgroundColor: '#0370A0',
@@ -33,11 +33,11 @@ const SecuritySection = () => {
         zIndex: -1,
       }}
     >
-      <div className="container mx-auto max-w-7xl">
+      <div className="container mx-auto max-w-7xl w-full">
         {/* Main Content - Horizontal Layout */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 w-full">
           {/* Left Content with Logo */}
-          <div className="text-white space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-6 xl:space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start">
+          <div className="text-white space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-6 xl:space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start flex-1">
             {/* Logo Section */}
             <div className="flex items-center gap-2 sm:gap-3 md:gap-3 lg:gap-3 mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-8 2xl:mb-10">
               <Image
@@ -51,14 +51,14 @@ const SecuritySection = () => {
                 <span className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl font-medium -ml-1">Audit Place</span>
               </div>
             </div>
-            <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-4 lg:mb-4 xl:mb-6 2xl:mb-8">
+            <div className="w-full">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4 sm:mb-5 md:mb-6 lg:mb-4 xl:mb-6 2xl:mb-8">
                 <span className="text-orange-400">Your Security,</span>
                 <br />
                 <span className="text-white">Taken Seriously</span>
               </h2>
-              <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl text-gray-200 leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl mb-6 sm:mb-8 md:mb-8 lg:mb-8 xl:mb-10 2xl:mb-12">
-                We protect your audit data like it&apos;s our own,<br/>
+              <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl text-gray-200 leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl mb-8 sm:mb-10 md:mb-12 lg:mb-8 xl:mb-10 2xl:mb-12 mx-auto lg:mx-0">
+                We protect your audit data like it&apos;s our own,<br className="hidden sm:block"/>
                 from your first upload to final report.
               </p>
             </div>
@@ -82,26 +82,24 @@ const SecuritySection = () => {
           </div>
 
           {/* Right Content - Security Features Card */}
-          <div className="relative flex justify-center">
+          <div className="relative flex justify-center w-full lg:flex-1 lg:max-w-none">
             {/* Orange Border Container */}
             <div 
-              className="rounded-3xl border-2 border-orange-400 p-4 sm:p-5 md:p-6 lg:p-5 xl:p-6 2xl:p-7"
+              className="rounded-3xl border-2 border-orange-400 p-4 sm:p-5 md:p-6 lg:p-5 xl:p-6 2xl:p-7 w-full max-w-[400px] sm:max-w-[420px] md:max-w-[450px] lg:max-w-[400px] xl:max-w-[450px]"
               style={{
-                maxWidth: '450px',
-                minWidth: '400px',
                 borderRadius: '40px',
               }}
             >
               {/* Inner Card */}
               <div 
-                className="rounded-2xl w-full px-6 sm:px-7 md:px-8 lg:px-6 xl:px-7 2xl:px-8 py-6 sm:py-7 md:py-8 lg:py-6 xl:py-7 2xl:py-8"
+                className="rounded-2xl w-full px-4 sm:px-6 md:px-7 lg:px-6 xl:px-7 2xl:px-8 py-6 sm:py-7 md:py-8 lg:py-6 xl:py-7 2xl:py-8"
                 style={{
                   backgroundColor: '#0370A0',
                   borderRadius: '30px',
                   boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
                 }}
               >
-                <div className="flex flex-col gap-5 sm:gap-6 md:gap-7 lg:gap-5 xl:gap-6 2xl:gap-7">
+                <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-5 xl:gap-6 2xl:gap-7">
                   {securityFeatures.map((feature, index) => (
                     <div key={index} className="flex items-center gap-3 sm:gap-4 md:gap-4 lg:gap-3 xl:gap-4 2xl:gap-5">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 bg-white rounded-xl flex items-center justify-center flex-shrink-0">
@@ -113,7 +111,7 @@ const SecuritySection = () => {
                           className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8 object-contain"
                         />
                       </div>
-                      <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-medium leading-tight">
+                      <h3 className="text-white text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-xl font-medium leading-tight flex-1">
                         {feature.title}
                       </h3>
                     </div>

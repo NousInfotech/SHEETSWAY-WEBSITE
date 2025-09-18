@@ -9,7 +9,10 @@ const HeroSection = () => {
   const [selectedCountry, setSelectedCountry] = useState('MT');
 
   return (
-    <section className="relative overflow-hidden min-h-[55vh] sm:min-h-[55vh] md:min-h-[55vh] lg:min-h-[55vh] flex items-center pt-16 sm:pt-20 md:pt-24 lg:pt-0 rounded-b-[80px] sm:rounded-b-[100px] md:rounded-b-[140px] lg:rounded-b-[170px]">
+    <section className="relative overflow-hidden h-screen flex items-center" style={{
+      borderBottomLeftRadius: 'clamp(80px, 16vw, 180px)',
+      borderBottomRightRadius: 'clamp(80px, 16vw, 180px)'
+    }}>
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

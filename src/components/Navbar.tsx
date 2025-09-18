@@ -12,6 +12,7 @@ const Navbar = () => {
   const navigationItems = [
     { name: 'Auditor', href: '/marketplace-auditor' },
     { name: 'Audit-Software', href: 'https://www.sheetsway.com/', external: true },
+    { name: 'Reseller', href: '/reseller' },
     { name: 'FAQ', href: '/faq' },
     { name: 'About Us', href: '/about-us' },
     // { name: 'Contact Us', href: '#' },

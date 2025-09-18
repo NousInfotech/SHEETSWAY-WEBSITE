@@ -10,10 +10,10 @@ export default function ResellerPage() {
   return (
     <div className="font-sans min-h-screen">
       <Navbar />
-      <div className="pt-16">
+      <div className="pt-0">
         <ResellerHero />
-        <ServicesSection />
         <ReferralSection />
+        <ServicesSection />
         <CTASection />
         <FAQSection />
       </div>

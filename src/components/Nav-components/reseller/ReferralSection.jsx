@@ -11,13 +11,14 @@ const ReferralSection = () => {
         <div className='flex flex-col lg:flex-row items-center gap-12 mb-16 w-full'>
           {/* Left side - Hero Image */}
           <div className='flex-1 w-full'>
-            <div className='relative w-full max-w-lg mx-auto lg:mx-0'>
+            <div className='relative w-full max-w-7xl mx-auto'>
               <Image
                 src='/images/blog/image circle.png'
                 alt='Two men shaking hands'
-                width={671}
-                height={422}
-                className='w-[671px] h-[422px]'
+                width={3840} // 4K width
+                height={2160} // 4K height
+                className='w-full h-auto object-contain'
+                priority
               />
             </div>
           </div>
@@ -31,9 +32,9 @@ const ReferralSection = () => {
                   Helping you earn through referrals.
                 </h2>
                 <p className='text-gray-600 text-base mb-6 leading-relaxed'>
-                  Whether you&apos;re an entrepreneur or individual or dealing with
-                  promotional offers, you can still earn commissions and cash
-                  from the profits.
+                  Whether you&apos;re an entrepreneur or individual or dealing
+                  with promotional offers, you can still earn commissions and
+                  cash from the profits.
                 </p>
 
                 {/* Features list */}
@@ -47,8 +48,8 @@ const ReferralSection = () => {
                         Referral Dashboard
                       </h4>
                       <p className='text-sm text-gray-600 leading-relaxed'>
-                        Track your referrals performance with digital tools,
-                        and get complete control over all the details.
+                        Track your referrals performance with digital tools, and
+                        get complete control over all the details.
                       </p>
                     </div>
                   </div>
@@ -73,7 +74,6 @@ const ReferralSection = () => {
           </div>
         </div>
       </div>
-      
     </div>
   )
 }

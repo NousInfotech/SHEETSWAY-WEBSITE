@@ -47,17 +47,24 @@ const FAQSection = () => {
             ))}
         </div>
 
-        <button
-          onClick={() => setShowMore(!showMore)}
-          className='flex items-center mt-6 text-blue-600 hover:text-blue-800 font-medium'
-        >
-          {showMore ? 'View Less' : 'View More'}
-          <ChevronRight
-            className={`w-4 h-4 ml-1 transition-transform ${
-              showMore ? 'rotate-90' : ''
-            }`}
-          />
-        </button>
+       <div className="mt-8">
+          <button className="bg-white hover:bg-gray-50 text-gray-700 font-medium text-base px-6 py-3 rounded-lg border border-gray-300 shadow-md hover:shadow-lg transition-all duration-200 flex items-center">
+            View More
+            <svg
+              className="w-4 h-4 ml-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   )

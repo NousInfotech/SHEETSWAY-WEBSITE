@@ -3,7 +3,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className='relative bg-gradient-to-bl from-orange-100 via-orange to-white'>
+    <div className='relative bg-gradient-to-bl from-orange-100 via-orange to-white '>
       <div className='max-w-7xl mx-auto px-6 py-12 lg:py-6'>
         <div className='grid lg:grid-cols-2 gap-18 items-center'>
           {/* Left Content */}
