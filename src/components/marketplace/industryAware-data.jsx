@@ -21,4 +21,14 @@ export const industryAwareData = [
       alt: "",
     },
   },
+   {
+    title: "AI Chat Bot (coming soon)",
+    description:
+      "Your client's smart assistant, 24/7. The upcoming AI bot helps clients understand what’s needed, guides them through document uploads, and answers questions so you can handle fewer emails and smoother audits.",
+    tags: ["Guided Uploads", "Smart Support", "Coming Soon"],
+    images: {
+      primarySrc: "/Marketplace auditor page/PNG/Vector Smart Object.png",
+      alt: "AI Chat Bot Interface",
+    },
+  },
 ];

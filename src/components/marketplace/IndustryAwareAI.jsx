@@ -34,7 +34,6 @@ export default function IndustryAwareAI() {
           "Automatic FS Mapping",
           "Procedures Generation",
           "AI Driven Answers",
-          "AI Chat Bot",
         ].map((el, i) => (
           <div key={i} className="relative">
             <div
