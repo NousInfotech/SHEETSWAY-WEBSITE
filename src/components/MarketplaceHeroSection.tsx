@@ -82,14 +82,14 @@ const MarketplaceHeroSection = () => {
                     </svg>
                   </div>
                 </button>
-                <button className="bg-white text-gray-800 px-6 sm:px-8 lg:px-10 xl:px-10 py-3 lg:py-4 xl:py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-lg text-sm sm:text-base lg:text-base xl:text-lg">
+                <button className="bg-white text-orange-600 px-6 sm:px-8 lg:px-10 xl:px-10 py-3 lg:py-4 xl:py-4 rounded-lg font-extrabold hover:bg-gray-50 transition-colors duration-200 shadow-lg text-sm sm:text-base lg:text-base xl:text-lg ">
                   Log In
                 </button>
               </div>
             </div>
 
             {/* Right Side - Hero Image */}
-            <div className="relative h-64 sm:h-72 lg:h-[400px] xl:h-[450px] flex justify-start -mr-4 sm:-mr-6 lg:-mr-32 xl:-mr-40 mt-8 sm:mt-12 lg:mt-0">
+            <div className="relative h-64 sm:h-72 lg:h-[400px] xl:h-[450px] flex justify-start -mr-4 sm:-mr-6 lg:-mr-32 xl:-mr-40 mt-8 sm:mt-12 lg:mt-0 ">
               <Image
                 src={assets.HeroSideMarketplacePng}
                 alt="Professional Auditor"

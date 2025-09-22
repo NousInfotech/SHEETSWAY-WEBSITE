@@ -84,15 +84,13 @@ const SecuritySection = () => {
           {/* Right Content - Security Features Card */}
           <div className="relative flex justify-center w-full lg:flex-1">
             {/* Orange Border Container */}
-            <div 
-              className="rounded-2xl sm:rounded-3xl border-2 border-orange-400 p-2 sm:p-3 md:p-3 lg:p-2 xl:p-3 2xl:p-4 w-full max-w-[380px] sm:max-w-[480px] md:max-w-[520px] lg:max-w-[500px] xl:max-w-[580px] 2xl:max-w-[650px]"
-              style={{
-                borderRadius: '20px',
-              }}
-            >
+             <div 
+              className="rounded-xl xs:rounded-2xl sm:rounded-2xl md:rounded-3xl border-2 border-orange-400
+                p-1 xs:p-1 sm:p-1.5 md:p-2 lg:p-1.5 xl:p-2 2xl:p-2.5 
+                w-full max-w-[300px] xs:max-w-[340px] sm:max-w-[380px] md:max-w-[450px] lg:max-w-[400px] xl:max-w-[480px] 2xl:max-w-[550px]">
               {/* Inner Card */}
               <div 
-                className="rounded-xl sm:rounded-2xl w-full px-4 sm:px-6 md:px-8 lg:px-6 xl:px-8 2xl:px-10 py-6 sm:py-7 md:py-8 lg:py-6 xl:py-8 2xl:py-10"
+                className="rounded-xl sm:rounded-2xl w-full px-4 sm:px-6 md:px-8 lg:px-6 xl:px-8 2xl:px-10 py-6 sm:py-7 md:py-4 lg:py-4 xl:py- 2xl:py-10"
                 style={{
                   backgroundColor: '#0370A0',
                   borderRadius: '16px',

@@ -8,14 +8,11 @@ import assets from '@/data/assets';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
   const navigationItems = [
     { name: 'Auditor', href: '/marketplace-auditor' },
-    { name: 'Audit-Software', href: 'https://www.sheetsway.com/', external: true },
     { name: 'Reseller', href: '/reseller' },
     { name: 'FAQ', href: '/faq' },
     { name: 'About Us', href: '/about-us' },
-    // { name: 'Contact Us', href: '#' },
   ];
 
   return (
@@ -31,7 +28,6 @@ const Navbar = () => {
                 width={150}
                 height={40}
                 className="h-8 w-auto"
-                
                 priority
               />
             </Link>
@@ -42,16 +38,26 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-8">
               {navigationItems.map((item) => (
                 <div key={item.name} className="relative group">
-                    <a
-                      href={item.href}
-                      target={item.external ? "_blank" : ""}
-                      rel={item.external ? "noopener noreferrer" : ""}
-                      className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200"
-                    >
-                      {item.name}
-                    </a>
+                  <a
+                    href={item.href}
+                    className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  >
+                    {item.name}
+                  </a>
                 </div>
               ))}
+              
+              {/* Audit Software Button - Special Styling */}
+              <div className="relative group">
+                <a
+                  href="https://www.sheetsway.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-orange-100 text-orange-600 hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-600 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 border border-orange-200"
+                >
+                  Audit-Software
+                </a>
+              </div>
             </div>
           </div>
 
@@ -186,14 +192,25 @@ const Navbar = () => {
               <div key={item.name}>
                 <a
                   href={item.href}
-                  target={item.external ? "_blank" : ""}
-                  rel={item.external ? "noopener noreferrer" : ""}
                   className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 text-base font-medium transition-colors duration-200"
                 >
                   {item.name}
                 </a>
               </div>
             ))}
+            
+            {/* Mobile Audit Software Button */}
+            <div>
+              <a
+                href="https://www.sheetsway.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-orange-100 text-orange-500 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white block px-3 py-2 text-base font-medium transition-all duration-200 border border-orange-200 rounded-lg mx-3 my-2 text-center"
+              >
+                Audit-Software
+              </a>
+            </div>
+            
             <div className="pt-4 pb-3 border-t border-gray-200">
               {/* Mobile Login Menu */}
               <div className="mb-2">

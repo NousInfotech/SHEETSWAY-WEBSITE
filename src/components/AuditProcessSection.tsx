@@ -1,45 +1,60 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import assets from '@/data/assets';
+import React from "react";
+import Image from "next/image";
+import assets from "@/data/assets";
 
 const AuditProcessSection = () => {
   return (
-    <section className="py-8 md:py-16 lg:py-20 xl:py-24 px-4 lg:px-6 xl:px-8 bg-white relative mb-8 md:mb-16 lg:mb-20 xl:mb-35" style={{
-      borderBottomLeftRadius: '20px',
-      borderBottomRightRadius: '20px'
-    }}>
+    <section
+      className="pt-8 md:pt-16 lg:pt-20 xl:pt-24 pb-16 md:pb-20 lg:pb-28 xl:pb-32 px-4 lg:px-6 xl:px-8 bg-white relative mb-8 md:mb-16 lg:mb-20 xl:mb-35"
+      style={{
+        borderBottomLeftRadius: "40px",
+        borderBottomRightRadius: "40px",
+      }}
+    >
       <style jsx>{`
-        /* Enhanced responsive border radius */
+        /* Enhanced responsive border radius with increased roundness and proper bottom padding */
         @media (min-width: 640px) {
           section {
-            border-bottom-left-radius: 25px !important;
-            border-bottom-right-radius: 25px !important;
+            border-bottom-left-radius: 100px !important;
+            border-bottom-right-radius: 100px !important;
+            padding-bottom: 5rem !important;
           }
         }
-        
+
         @media (min-width: 768px) {
           section {
-            border-bottom-left-radius: 30px !important;
-            border-bottom-right-radius: 30px !important;
+            border-bottom-left-radius: 60px !important;
+            border-bottom-right-radius: 60px !important;
+            padding-bottom: 6rem !important;
           }
         }
-        
+
         @media (min-width: 1024px) {
           section {
-            border-bottom-left-radius: 40px !important;
-            border-bottom-right-radius: 40px !important;
+            border-bottom-left-radius: 80px !important;
+            border-bottom-right-radius: 80px !important;
+            padding-bottom: 7rem !important;
           }
         }
-        
+
         @media (min-width: 1440px) {
           section {
-            border-bottom-left-radius: 50px !important;
-            border-bottom-right-radius: 50px !important;
+            border-bottom-left-radius: 70px !important;
+            border-bottom-right-radius: 70px !important;
+            padding-bottom: 4rem !important;
           }
         }
-        
+
+        @media (min-width: 1920px) {
+          section {
+            border-bottom-left-radius: 120px !important;
+            border-bottom-right-radius: 120px !important;
+            padding-bottom: 9rem !important;
+          }
+        }
+
         /* Mobile S - 320px */
         @media (min-width: 320px) and (max-width: 374px) {
           .illustration-image {
@@ -47,7 +62,7 @@ const AuditProcessSection = () => {
             right: 0% !important;
           }
         }
-        
+
         /* Mobile M - 375px */
         @media (min-width: 375px) and (max-width: 424px) {
           .illustration-image {
@@ -55,7 +70,7 @@ const AuditProcessSection = () => {
             right: 0% !important;
           }
         }
-        
+
         /* Mobile L - 425px */
         @media (min-width: 425px) and (max-width: 767px) {
           .illustration-image {
@@ -63,7 +78,7 @@ const AuditProcessSection = () => {
             right: 0% !important;
           }
         }
-        
+
         /* Tablet - 768px */
         @media (min-width: 768px) and (max-width: 1023px) {
           .illustration-image {
@@ -71,7 +86,7 @@ const AuditProcessSection = () => {
             right: 10% !important;
           }
         }
-        
+
         /* Laptop - 1024px to 1439px */
         @media (min-width: 1024px) and (max-width: 1439px) {
           .illustration-image {
@@ -79,7 +94,7 @@ const AuditProcessSection = () => {
             right: 30% !important;
           }
         }
-        
+
         /* Large Desktop - 1440px and above */
         @media (min-width: 1440px) {
           .illustration-image {
@@ -87,7 +102,7 @@ const AuditProcessSection = () => {
             right: 25% !important;
           }
         }
-        
+
         /* Extra Large - 1920px and above */
         @media (min-width: 1920px) {
           .illustration-image {
@@ -96,40 +111,50 @@ const AuditProcessSection = () => {
           }
         }
       `}</style>
-  
+
       <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto relative z-10">
         {/* Main Content Area */}
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 xl:gap-20 2xl:gap-24 mb-12 lg:mb-20 xl:mb-24">
           {/* Left Content */}
           <div className="flex-1 text-left w-full relative z-10">
             <h1 className="text-xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-bold text-gray-800 mb-6 lg:mb-8 leading-tight">
-              Get Your Financial Audit<br />
-              Done Remotely. <span style={{color: 'rgba(232, 132, 12, 1)'}}>Fully Online.</span>
+              Get Your Financial Audit
+              <br />
+              Done Remotely.{" "}
+              <span style={{ color: "rgba(232, 132, 12, 1)" }}>
+                Fully Online.
+              </span>
             </h1>
-            
+
             {/* Steps List */}
             <div className="space-y-6 lg:space-y-8 mb-6 lg:mb-8 max-w-sm sm:max-w-xs mx-0">
               <div className="bg-white rounded-lg px-4 py-3 shadow-lg">
-                <p className="text-base sm:text-2xl text-gray-700 font-medium">Post your audit budget.</p>
+                <p className="text-base sm:text-2xl text-gray-700 font-medium">
+                  Post your audit budget.
+                </p>
               </div>
               <div className="bg-white rounded-lg px-4 py-3 shadow-lg">
-                <p className="text-base sm:text-2xl text-gray-700 font-medium">Receive quotes.</p>
+                <p className="text-base sm:text-2xl text-gray-700 font-medium">
+                  Receive quotes.
+                </p>
               </div>
               <div className="bg-white rounded-lg px-4 py-3 shadow-lg">
-                <p className="text-base sm:text-2xl text-gray-700 font-medium">Compare live offers.</p>
+                <p className="text-base sm:text-2xl text-gray-700 font-medium">
+                  Compare live offers.
+                </p>
               </div>
               <div className="bg-white rounded-lg px-4 py-3 shadow-lg">
-                <p className="text-base sm:text-2xl text-gray-700 font-medium">Choose your auditor.</p>
+                <p className="text-base sm:text-2xl text-gray-700 font-medium">
+                  Choose your auditor.
+                </p>
               </div>
             </div>
 
             {/* CTA Button */}
             <div className="mb-4 lg:mb-6">
-              <button 
-                className="text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-xl transition-colors duration-200 shadow-lg w-full sm:w-auto"
-                style={{backgroundColor: 'rgba(232, 132, 12, 1)'}}
-                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgb(81, 193, 32)'}
-                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgb(81, 193, 32)'}
+              <button
+                className="text-white px-6 sm:px-8 lg:px-8 py-3 sm:py-4 lg:py-4 rounded-lg font-semibold text-base sm:text-xl lg:text-2xl transition-colors duration-200 shadow-lg w-full sm:w-[300px] lg:w-[400px] xl:w-[400px] max-w-full"
+                style={{ backgroundColor: "rgba(232, 132, 12, 1)" }}
               >
                 Sit Back - We Handle the Rest.
               </button>
@@ -137,16 +162,26 @@ const AuditProcessSection = () => {
 
             {/* Learn How Button */}
             <div className="flex items-center justify-start">
-              <button 
+              <button
                 className="bg-white text-gray-800 font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-3xl flex items-center justify-center sm:justify-start transition-all duration-200 hover:scale-105 text-sm sm:text-base w-full sm:w-auto"
                 style={{
-                  boxShadow: '0px 0px 17.5px 0px rgba(255, 138, 0, 0.14)',
-                  border: 'none'
+                  boxShadow: "0px 0px 17.5px 0px rgba(255, 138, 0, 0.14)",
+                  border: "none",
                 }}
               >
-                Learn How 
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2 sm:ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                Learn How
+                <svg
+                  className="w-4 h-4 sm:w-5 sm:h-5 ml-2 sm:ml-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
                 </svg>
               </button>
             </div>
@@ -163,11 +198,11 @@ const AuditProcessSection = () => {
                 className="object-contain w-full h-auto relative z-0 illustration-image"
                 priority
                 style={{
-                  transform: 'scale(1.0)',
-                  transformOrigin: 'left center',
-                  position: 'relative',
-                  right: '0%',
-                  zIndex: 0
+                  transform: "scale(1.0)",
+                  transformOrigin: "left center",
+                  position: "relative",
+                  right: "0%",
+                  zIndex: 0,
                 }}
               />
             </div>
@@ -192,7 +227,8 @@ const AuditProcessSection = () => {
               </div>
             </div>
             <p className="text-gray-600 text-sm sm:text-base lg:text-lg">
-              Certified Auditors ready to<br />
+              Certified Auditors ready to
+              <br />
               take on your audit
             </p>
           </div>
@@ -213,7 +249,8 @@ const AuditProcessSection = () => {
               </div>
             </div>
             <p className="text-sm sm:text-base lg:text-lg">
-              Auditors rated 4.8*<br />
+              Auditors rated 4.8*
+              <br />
               or higher by real clients
             </p>
           </div>
@@ -234,7 +271,8 @@ const AuditProcessSection = () => {
               </div>
             </div>
             <p className="text-gray-600 text-sm sm:text-base lg:text-lg">
-              Audit Requests<br />
+              Audit Requests
+              <br />
               Completed Fully Online
             </p>
           </div>

@@ -25,8 +25,23 @@ const HeroSection = () => {
               audits.
             </p>
             <div className='flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 items-center lg:items-start'>
-              <button className='bg-[#F59E0B] text-white px-6 h-[44px] sm:h-[48px] rounded-lg font-semibold hover:bg-yellow-500 transition-colors flex items-center justify-center w-full sm:w-auto'>
+              <button className='bg-[#F59E0B] text-white px-6 h-[44px] sm:h-[48px] rounded-lg font-semibold hover:bg-yellow-500 transition-colors flex items-center justify-center w-full sm:w-auto gap-2 lg:gap-3'>
                 Contact Sheetsway
+                <div className='bg-white rounded p-1 sm:p-1.5 lg:p-2 flex items-center justify-center'>
+                  <svg
+                    className='w-3 h-3 sm:w-4 sm:h-4 lg:w-4 lg:h-4'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='#F59E0B'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth={2}
+                      d='M5 13l4 4L19 7'
+                    />
+                  </svg>
+                </div>
               </button>
               <button className='bg-white border border-gray-200 px-6 h-[44px] sm:h-[48px] rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-colors shadow-sm w-full sm:w-auto'>
                 Log In

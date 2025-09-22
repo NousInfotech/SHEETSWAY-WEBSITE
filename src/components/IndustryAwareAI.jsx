@@ -6,6 +6,8 @@ import { useMobile } from "@/hooks/useMobile";
 import assets from "@/data/assets";
 import { SectionDivider } from "@/components/common";
 import { useEffect, useState } from "react";
+import Image from 'next/image';
+// import assets from '@/data/assets';
 
 export default function IndustryAwareAI() {
   const [active, setActive] = useState(0);
@@ -122,6 +124,15 @@ export default function IndustryAwareAI() {
 
   return (
     <div className="text-gray-900 bg-gradient-to-b from-white via-orange-50 to-white px-4 sm:px-6 md:px-8 lg:px-12 relative overflow-hidden">
+       <div className="absolute inset-0 z-0">
+        <Image
+          src={assets.At4x1MarketplacePng}
+          alt="Background Pattern"
+          fill
+          className="object-cover opacity-10"
+          priority
+        />
+      </div>
       <SectionDivider imageSrc={assets.Rectangle2MarketplacePng} position="top" />
       {/* Left-aligned Header */}
       <FadeUpAnimation className="pt-16 sm:pt-20 mb-8 mt-15 lg:mt-15">
@@ -213,7 +224,7 @@ export default function IndustryAwareAI() {
           <div className="absolute inset-0 flex items-center justify-center">
             {/* Border container with background image */}
             <div 
-              className="relative p-4 sm:p-6 md:p-8"
+              className="relative p-4 sm:p-6 md:p-0"
               style={{
                 backgroundImage: 'url("/PNG/video border.png")',
                 backgroundSize: 'contain',
