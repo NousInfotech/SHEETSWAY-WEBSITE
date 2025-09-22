@@ -3,7 +3,7 @@ import assets from "@/data/assets";
 
 const TestimonialSection = () => {
   return (
-    <section className="bg-white py-8 md:py-16 px-4 rounded-b-[50px] md:rounded-b-[150px]">
+    <section className="bg-white py-8 md:py-26 px-4 rounded-b-[50px] md:rounded-b-[150px]">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-8 md:mb-16">

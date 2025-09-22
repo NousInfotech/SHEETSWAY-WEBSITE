@@ -8,7 +8,7 @@ const MarketplaceHeroSection = () => {
   return (
     <section className="relative overflow-hidden min-h-screen flex items-center pt-16 lg:pt-0">
       {/* Background Image - High Quality 4K */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900">
+      <div className="absolute inset-0 bg-gradient-to-br ">
         {/* Desktop Background */}
         <Image
           src={assets.FrameMarketplacePng}
