@@ -35,9 +35,9 @@ const SecuritySection = () => {
     >
       <div className="container mx-auto max-w-7xl w-full">
         {/* Main Content - Horizontal Layout */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-10 md:gap-12 lg:gap-12 xl:gap-16 2xl:gap-20 w-full">
           {/* Left Content with Logo */}
-          <div className="text-white space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-6 xl:space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start flex-1">
+          <div className="text-white space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-6 xl:space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start flex-1 lg:max-w-lg xl:max-w-xl">
             {/* Logo Section */}
             <div className="flex items-center gap-2 sm:gap-3 md:gap-3 lg:gap-3 mb-4 sm:mb-5 md:mb-6 lg:mb-6 xl:mb-8 2xl:mb-10">
               <Image
@@ -82,26 +82,26 @@ const SecuritySection = () => {
           </div>
 
           {/* Right Content - Security Features Card */}
-          <div className="relative flex justify-center w-full lg:flex-1 lg:max-w-none">
+          <div className="relative flex justify-center w-full lg:flex-1">
             {/* Orange Border Container */}
             <div 
-              className="rounded-3xl border-2 border-orange-400 p-4 sm:p-5 md:p-6 lg:p-5 xl:p-6 2xl:p-7 w-full max-w-[400px] sm:max-w-[420px] md:max-w-[450px] lg:max-w-[400px] xl:max-w-[450px]"
+              className="rounded-2xl sm:rounded-3xl border-2 border-orange-400 p-2 sm:p-3 md:p-3 lg:p-2 xl:p-3 2xl:p-4 w-full max-w-[380px] sm:max-w-[480px] md:max-w-[520px] lg:max-w-[500px] xl:max-w-[580px] 2xl:max-w-[650px]"
               style={{
-                borderRadius: '40px',
+                borderRadius: '20px',
               }}
             >
               {/* Inner Card */}
               <div 
-                className="rounded-2xl w-full px-4 sm:px-6 md:px-7 lg:px-6 xl:px-7 2xl:px-8 py-6 sm:py-7 md:py-8 lg:py-6 xl:py-7 2xl:py-8"
+                className="rounded-xl sm:rounded-2xl w-full px-4 sm:px-6 md:px-8 lg:px-6 xl:px-8 2xl:px-10 py-6 sm:py-7 md:py-8 lg:py-6 xl:py-8 2xl:py-10"
                 style={{
                   backgroundColor: '#0370A0',
-                  borderRadius: '30px',
+                  borderRadius: '16px',
                   boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
                 }}
               >
                 <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-5 xl:gap-6 2xl:gap-7">
                   {securityFeatures.map((feature, index) => (
-                    <div key={index} className="flex items-center gap-3 sm:gap-4 md:gap-4 lg:gap-3 xl:gap-4 2xl:gap-5">
+                    <div key={index} className="flex items-center gap-3 sm:gap-4 md:gap-5 lg:gap-4 xl:gap-5 2xl:gap-6">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-12 lg:h-12 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16 bg-white rounded-xl flex items-center justify-center flex-shrink-0">
                         <Image
                           src={feature.icon}

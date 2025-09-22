@@ -36,7 +36,7 @@ const BuiltByAuditorsSection = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-4 bg-gray-50 relative overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-4 bg-gray-50 relative overflow-hidden mt-0 sm:mt-[0px] md:mt-[0px] lg:mt-[10px] xl:mt-[40px]">
       <SectionDivider 
         imageSrc={assets.Rectangle2MarketplacePng}
         position="top"

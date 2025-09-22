@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import assets from "@/data/assets";
 
 const ServicesSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isAutoPlay, setIsAutoPlay] = useState(true);
 
   const services = [
     {
@@ -64,6 +65,17 @@ const ServicesSection = () => {
     },
   ];
 
+  // Auto-play functionality
+  useEffect(() => {
+    if (!isAutoPlay) return;
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % services.length);
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [isAutoPlay, services.length]);
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % services.length);
   };
@@ -71,6 +83,19 @@ const ServicesSection = () => {
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + services.length) % services.length);
   };
+
+  // Get services for desktop view (3 at a time, with proper looping)
+  const getDesktopServices = () => {
+    const result = [];
+    for (let i = 0; i < 3; i++) {
+      result.push(services[(currentSlide + i) % services.length]);
+    }
+    return result;
+  };
+
+  // Pause auto-play on hover
+  const handleMouseEnter = () => setIsAutoPlay(false);
+  const handleMouseLeave = () => setIsAutoPlay(true);
 
   return (
     <section className="py-16 lg:py-24 relative">
@@ -95,7 +120,11 @@ const ServicesSection = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 backdrop-blur-sm rounded-lg">
+      <div 
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 bg-white/80 backdrop-blur-sm rounded-lg mt-15"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         {/* Header Section */}
         <div className="text-center lg:text-center text-left mb-16">
           {/* Badge */}
@@ -178,8 +207,8 @@ const ServicesSection = () => {
         {/* Desktop Layout - Services Cards Grid */}
         <div className="hidden lg:block mb-12">
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-             {services.slice(currentSlide, currentSlide + 3).map((service) => (
-              <div key={service.id} className="relative h-96">
+             {getDesktopServices().map((service, index) => (
+              <div key={`${service.id}-${currentSlide}-${index}`} className="relative h-96">
                 {/* Background Image */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-full h-full flex items-center justify-center">
@@ -234,8 +263,21 @@ const ServicesSection = () => {
           </div>
         </div>
 
+        {/* Progress Indicators */}
+        <div className="flex justify-center items-center space-x-2 mb-6">
+          {services.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2 h-2 rounded-full transition-colors duration-200 ${
+                index === currentSlide ? 'bg-orange-400' : 'bg-gray-300'
+              }`}
+            />
+          ))}
+        </div>
+
         {/* Navigation Arrows */}
-        <div className="flex justify-center items-center space-x-4 mt-28">
+        <div className="flex justify-center items-center space-x-4 pt-14">
           <button
             onClick={prevSlide}
             className="w-12 h-12 border border-gray-300 rounded-full bg-white flex items-center justify-center hover:bg-gray-50 transition-colors duration-200"

@@ -29,7 +29,7 @@ function Plugin({ heading, p1, p2, p3, link, videoSrc, shadow, linkName }) {
 const IntegrationPage = () => {
   return (
     // <div className="px-2 sm:px-14 min-h-screen flex flex-col items-center mb-16">
-    <div className="px-2 py-10 sm:px-14 flex flex-col items-center">
+    <div className="px-2 py-10 sm:px-14 flex flex-col items-center mt-0 sm:mt-[0px] md:mt-[0px] lg:mt-[10px] xl:mt-[40px]">
       {/* Our Tools Button */}
       <FadeUpAnimation>
         <div className="mb-8">
@@ -64,8 +64,7 @@ const IntegrationPage = () => {
           }
         />
 
-        {/* Divider */}
-        <div className="hidden md:flex w-[2px] bg-gray-100 min-h-[500px] mx-8"></div>
+  
 
         <Plugin
           linkName={"Extraction"}

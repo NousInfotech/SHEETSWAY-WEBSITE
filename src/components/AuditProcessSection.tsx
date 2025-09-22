@@ -6,15 +6,37 @@ import assets from '@/data/assets';
 
 const AuditProcessSection = () => {
   return (
-    <section className="py-8 md:py-16 px-4 bg-white relative mb-8 md:mb-35" style={{
-      borderBottomLeftRadius: '30px',
-      borderBottomRightRadius: '30px'
+    <section className="py-8 md:py-16 lg:py-20 xl:py-24 px-4 lg:px-6 xl:px-8 bg-white relative mb-8 md:mb-16 lg:mb-20 xl:mb-35" style={{
+      borderBottomLeftRadius: '20px',
+      borderBottomRightRadius: '20px'
     }}>
       <style jsx>{`
+        /* Enhanced responsive border radius */
+        @media (min-width: 640px) {
+          section {
+            border-bottom-left-radius: 25px !important;
+            border-bottom-right-radius: 25px !important;
+          }
+        }
+        
+        @media (min-width: 768px) {
+          section {
+            border-bottom-left-radius: 30px !important;
+            border-bottom-right-radius: 30px !important;
+          }
+        }
+        
         @media (min-width: 1024px) {
           section {
             border-bottom-left-radius: 40px !important;
             border-bottom-right-radius: 40px !important;
+          }
+        }
+        
+        @media (min-width: 1440px) {
+          section {
+            border-bottom-left-radius: 50px !important;
+            border-bottom-right-radius: 50px !important;
           }
         }
         
@@ -50,18 +72,34 @@ const AuditProcessSection = () => {
           }
         }
         
-        /* Laptop - 1024px and above (unchanged) */
-        @media (min-width: 1024px) {
+        /* Laptop - 1024px to 1439px */
+        @media (min-width: 1024px) and (max-width: 1439px) {
           .illustration-image {
             transform: scale(1.35) !important;
             right: 30% !important;
           }
         }
+        
+        /* Large Desktop - 1440px and above */
+        @media (min-width: 1440px) {
+          .illustration-image {
+            transform: scale(1.5) !important;
+            right: 25% !important;
+          }
+        }
+        
+        /* Extra Large - 1920px and above */
+        @media (min-width: 1920px) {
+          .illustration-image {
+            transform: scale(1.6) !important;
+            right: 20% !important;
+          }
+        }
       `}</style>
   
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto relative z-10">
         {/* Main Content Area */}
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12 lg:mb-20">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 xl:gap-20 2xl:gap-24 mb-12 lg:mb-20 xl:mb-24">
           {/* Left Content */}
           <div className="flex-1 text-left w-full relative z-10">
             <h1 className="text-xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-bold text-gray-800 mb-6 lg:mb-8 leading-tight">
@@ -70,7 +108,7 @@ const AuditProcessSection = () => {
             </h1>
             
             {/* Steps List */}
-            <div className="space-y-8 mb-6 lg:mb-8 max-w-sm sm:max-w-xs mx-0 ">
+            <div className="space-y-6 lg:space-y-8 mb-6 lg:mb-8 max-w-sm sm:max-w-xs mx-0">
               <div className="bg-white rounded-lg px-4 py-3 shadow-lg">
                 <p className="text-base sm:text-2xl text-gray-700 font-medium">Post your audit budget.</p>
               </div>

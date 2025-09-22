@@ -124,7 +124,7 @@ export default function IndustryAwareAI() {
     <div className="text-gray-900 bg-gradient-to-b from-white via-orange-50 to-white px-4 sm:px-6 md:px-8 lg:px-12 relative overflow-hidden">
       <SectionDivider imageSrc={assets.Rectangle2MarketplacePng} position="top" />
       {/* Left-aligned Header */}
-      <FadeUpAnimation className="pt-16 sm:pt-20 mb-8">
+      <FadeUpAnimation className="pt-16 sm:pt-20 mb-8 mt-15 lg:mt-15">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold font-bodoni text-gray-900">
             Built by Auditors,
