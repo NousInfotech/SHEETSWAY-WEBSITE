@@ -36,18 +36,7 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              {navigationItems.map((item) => (
-                <div key={item.name} className="relative group">
-                  <a
-                    href={item.href}
-                    className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200"
-                  >
-                    {item.name}
-                  </a>
-                </div>
-              ))}
-              
-              {/* Audit Software Button - Special Styling */}
+              {/* Audit Software Button - First Position */}
               <div className="relative group">
                 <a
                   href="https://www.sheetsway.com/"
@@ -58,6 +47,17 @@ const Navbar = () => {
                   Audit-Software
                 </a>
               </div>
+              
+              {navigationItems.map((item) => (
+                <div key={item.name} className="relative group">
+                  <a
+                    href={item.href}
+                    className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  >
+                    {item.name}
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -188,18 +188,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
-            {navigationItems.map((item) => (
-              <div key={item.name}>
-                <a
-                  href={item.href}
-                  className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 text-base font-medium transition-colors duration-200"
-                >
-                  {item.name}
-                </a>
-              </div>
-            ))}
-            
-            {/* Mobile Audit Software Button */}
+            {/* Mobile Audit Software Button - First Position */}
             <div>
               <a
                 href="https://www.sheetsway.com/"
@@ -210,6 +199,17 @@ const Navbar = () => {
                 Audit-Software
               </a>
             </div>
+            
+            {navigationItems.map((item) => (
+              <div key={item.name}>
+                <a
+                  href={item.href}
+                  className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                >
+                  {item.name}
+                </a>
+              </div>
+            ))}
             
             <div className="pt-4 pb-3 border-t border-gray-200">
               {/* Mobile Login Menu */}

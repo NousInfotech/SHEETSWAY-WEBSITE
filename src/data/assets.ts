@@ -172,6 +172,8 @@ export interface Assets {
   TwoAt4x1DupeMarketplacePng: string;
   At4x1NewMarketplacePng: string;
   BorderMarketplacePng: string;
+
+    IndustrybackPng: string;
   
   // Marketplace Auditor Page SVG
   Rectangle9MarketplaceSvg: string;
@@ -229,6 +231,7 @@ const assets: Assets = {
   NextSvg: "/Icons/next.svg",
   GlobeSvg: "/Icons/globe.svg",
   FileSvg: "/Icons/file.svg",
+  
   
   // PNG Assets
   Upload3Png: "/PNG/upload (3).png",
@@ -346,6 +349,8 @@ const assets: Assets = {
   CrossReferenceIconPng: "/Marketplace auditor page/PNG/5@4x.png",
   DocumentExtractionIconPng: "/Marketplace auditor page/PNG/6@4x.png",
   ReconciliationIconPng: "/Marketplace auditor page/PNG/7@4x.png",
+
+  IndustrybackPng: "/images/blog/Industryback.png",
   
   // Marketplace Auditor Page PNG
   Rectangle9MarketplacePng: "/Marketplace auditor page/PNG/Rectangle 9.png",

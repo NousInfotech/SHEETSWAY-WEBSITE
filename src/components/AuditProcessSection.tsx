@@ -7,110 +7,13 @@ import assets from "@/data/assets";
 const AuditProcessSection = () => {
   return (
     <section
-      className="pt-8 md:pt-16 lg:pt-20 xl:pt-24 pb-16 md:pb-20 lg:pb-28 xl:pb-32 px-4 lg:px-6 xl:px-8 bg-white relative mb-8 md:mb-16 lg:mb-20 xl:mb-35"
+      className="pt-8 md:pt-16 lg:pt-20 xl:pt-24 pb-16 md:pb-20 lg:pb-28 xl:pb-12 px-4 lg:px-6 xl:px-8 bg-white relative mb-8 md:mb-16 lg:mb-20 xl:mb-25"
       style={{
-        borderBottomLeftRadius: "40px",
-        borderBottomRightRadius: "40px",
+        borderBottomLeftRadius: "100px",
+        borderBottomRightRadius: "100px",
       }}
     >
-      <style jsx>{`
-        /* Enhanced responsive border radius with increased roundness and proper bottom padding */
-        @media (min-width: 640px) {
-          section {
-            border-bottom-left-radius: 100px !important;
-            border-bottom-right-radius: 100px !important;
-            padding-bottom: 5rem !important;
-          }
-        }
-
-        @media (min-width: 768px) {
-          section {
-            border-bottom-left-radius: 60px !important;
-            border-bottom-right-radius: 60px !important;
-            padding-bottom: 6rem !important;
-          }
-        }
-
-        @media (min-width: 1024px) {
-          section {
-            border-bottom-left-radius: 80px !important;
-            border-bottom-right-radius: 80px !important;
-            padding-bottom: 7rem !important;
-          }
-        }
-
-        @media (min-width: 1440px) {
-          section {
-            border-bottom-left-radius: 70px !important;
-            border-bottom-right-radius: 70px !important;
-            padding-bottom: 4rem !important;
-          }
-        }
-
-        @media (min-width: 1920px) {
-          section {
-            border-bottom-left-radius: 120px !important;
-            border-bottom-right-radius: 120px !important;
-            padding-bottom: 9rem !important;
-          }
-        }
-
-        /* Mobile S - 320px */
-        @media (min-width: 320px) and (max-width: 374px) {
-          .illustration-image {
-            transform: scale(0.8) !important;
-            right: 0% !important;
-          }
-        }
-
-        /* Mobile M - 375px */
-        @media (min-width: 375px) and (max-width: 424px) {
-          .illustration-image {
-            transform: scale(0.85) !important;
-            right: 0% !important;
-          }
-        }
-
-        /* Mobile L - 425px */
-        @media (min-width: 425px) and (max-width: 767px) {
-          .illustration-image {
-            transform: scale(0.9) !important;
-            right: 0% !important;
-          }
-        }
-
-        /* Tablet - 768px */
-        @media (min-width: 768px) and (max-width: 1023px) {
-          .illustration-image {
-            transform: scale(1.1) !important;
-            right: 10% !important;
-          }
-        }
-
-        /* Laptop - 1024px to 1439px */
-        @media (min-width: 1024px) and (max-width: 1439px) {
-          .illustration-image {
-            transform: scale(1.35) !important;
-            right: 30% !important;
-          }
-        }
-
-        /* Large Desktop - 1440px and above */
-        @media (min-width: 1440px) {
-          .illustration-image {
-            transform: scale(1.5) !important;
-            right: 25% !important;
-          }
-        }
-
-        /* Extra Large - 1920px and above */
-        @media (min-width: 1920px) {
-          .illustration-image {
-            transform: scale(1.6) !important;
-            right: 20% !important;
-          }
-        }
-      `}</style>
+      {/*  */}
 
       <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto relative z-10">
         {/* Main Content Area */}

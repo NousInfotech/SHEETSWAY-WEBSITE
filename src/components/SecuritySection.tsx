@@ -23,7 +23,7 @@ const SecuritySection = () => {
 
   return (
     <section 
-      className="relative w-full -mt-8 sm:-mt-12 md:-mt-16 lg:-mt-20 xl:-mt-50 2xl:-mt-50 mb-15 lg:mb-10 xl:mb-20 2xl:mb-20 pt-16 pb-24 sm:pt-20 sm:pb-32 md:pt-24 md:pb-36 lg:py-20 xl:py-28 2xl:py-32 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 flex items-center justify-center overflow-hidden security-section-bg min-h-[700px] sm:min-h-[800px] md:min-h-[850px] lg:min-h-[auto]"
+      className="relative w-full -mt-8 sm:-mt-12 md:-mt-16 lg:-mt-20 xl:-mt-50 2xl:-mt-50 mb-15 lg:mb-10 xl:mb-20 2xl:mb-25 pt-16 pb-24 sm:pt-20 sm:pb-32 md:pt-24 md:pb-36 lg:py-20 xl:py-28 2xl:py-32 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 flex items-center justify-center overflow-hidden security-section-bg min-h-[700px] sm:min-h-[800px] md:min-h-[850px] lg:min-h-[auto]"
       style={{
         backgroundImage: `url(${assets.CtaBg1Png})`,
         backgroundColor: '#0370A0',

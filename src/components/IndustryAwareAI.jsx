@@ -5,6 +5,7 @@ import { industryAwareData } from "@/app/_constants/industryAware-data";
 import { useMobile } from "@/hooks/useMobile";
 import assets from "@/data/assets";
 import { useEffect, useState } from "react";
+import { SectionDivider } from "@/components/common";
 import Image from "next/image";
 
 export default function IndustryAwareAI() {
@@ -136,6 +137,7 @@ export default function IndustryAwareAI() {
   return (
     <div className="relative">
       <div className="text-gray-900 bg-gradient-to-b from-white via-orange-50 to-white px-4 sm:px-6 md:px-8 lg:px-12 relative overflow-hidden pb-20">
+        <SectionDivider imageSrc={assets.Rectangle2MarketplacePng} position="top" />
         <div className="absolute inset-0 z-0">
           <Image
             src={assets.At4x1MarketplacePng}
