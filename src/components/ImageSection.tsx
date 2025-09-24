@@ -76,7 +76,7 @@ const ImageSection = () => {
       </div>
 
       {isVideoOpen && (
-        <div className="fixed inset-0 bg-gradient-to-br from-orange-100 via-orange-200 to-orange-300 bg-opacity-95 flex items-center justify-center z-50 p-2 sm:p-3 md:p-4 lg:p-6 xl:p-8">
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-[2px] flex items-center justify-center z-50 p-2 sm:p-3 md:p-4 lg:p-6 xl:p-8">
           <div className="relative w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
             {/* Close Button */}
             <button

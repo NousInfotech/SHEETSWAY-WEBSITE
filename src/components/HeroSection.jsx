@@ -15,20 +15,19 @@ const HeroSection = () => {
       className='relative overflow-hidden h-screen flex items-center bg-gradient-to-t from-orange-400/80 via-orange-400/95 to-orange-400'
       style={{
         boxShadow: 'inset 0 -20px 40px rgba(0,0,0,0.1)',
-        borderBottomLeftRadius: 'clamp(80px, 15vw, 260px)',
-        borderBottomRightRadius: 'clamp(80px, 15vw, 260px)'
+        borderBottomLeftRadius: 'clamp(100px, 20vw, 280px)',
+        borderBottomRightRadius: 'clamp(100px, 20vw, 280px)'
       }}
     >
-      {/* Background Image */}
-      {/* <div className="absolute inset-0">
-        <Image
-          src={assets.HeroBgPng}
-          alt="Hero Background"
-          fill
-          className="object-cover object-center w-full h-full"
-          priority
-        />
-      </div> */}
+      <div className="absolute inset-0 z-0">
+          <Image
+            src={assets.At4x1MarketplacePng}
+            alt="Background Pattern"
+            fill
+            className="object-cover opacity-10"
+            priority
+          />
+        </div>
 
       <div className='relative z-10 w-full max-w-none mx-auto py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 2xl:py-16'>
         <div className='max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-14 text-center'>

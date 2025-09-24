@@ -29,18 +29,20 @@ const ArticleCarousel = () => {
 '
       >
         {/* Logos Section */}
-        <div className='grid grid-cols-3 lg:grid-cols-6 relative justify-items-center gap-4 gap-y-6 items-center mt-10 bg-white p-5 border-2 border-gray-200'>
-          {logos.map((logo, index) => (
-            <img
-              onClick={() => setCurrentIndex(index)}
-              key={index}
-              src={logo.activeSrc}
-              alt={logo.alt}
-              className={`lg:w-32 md:w-24 w-20 cursor-pointer ${
-                index === currentIndex ? '' : 'grayscale opacity-75'
-              }`}
-            />
-          ))}
+        <div className='relative bg-white border-t-2 border-b-2 border-gray-200 overflow-x-hidden'>
+          <div className='grid grid-cols-3 lg:grid-cols-6 justify-items-center gap-4 gap-y-6 items-center p-5 w-full'>
+            {logos.map((logo, index) => (
+              <img
+                onClick={() => setCurrentIndex(index)}
+                key={index}
+                src={logo.activeSrc}
+                alt={logo.alt}
+                className={`lg:w-32 md:w-24 w-20 cursor-pointer ${
+                  index === currentIndex ? '' : 'grayscale opacity-75'
+                }`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Carousel */}
@@ -86,7 +88,7 @@ function Carousel ({ currentIndex, setCurrentIndex }) {
   }, [setCurrentIndex, totalSlides])
 
   return (
-    <div className='overflow-hidden lg:max-w-4xl md:max-w-2xl sm:max-w-xl max-w-sm mx-auto rounded-3xl shadow-[0px_1px_20px_rgba(0,0,0,0.2)]'>
+    <div className='overflow-hidden lg:max-w-4xl md:max-w-2xl sm:max-w-xl max-w-sm mx-auto rounded-3xl shadow-[0px_1px_20px_rgba(0,0,0,0.2)] mt-10'>
       <div
         className='flex transition-transform duration-500 ease-in-out'
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}

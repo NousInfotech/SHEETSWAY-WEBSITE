@@ -9,6 +9,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigationItems = [
+    { name: 'Marketplace', href: '/marketplace-auditor' },
     { name: 'Auditor', href: '/marketplace-auditor' },
     { name: 'Reseller', href: '/reseller' },
     { name: 'FAQ', href: '/faq' },
@@ -36,18 +37,6 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              {/* Audit Software Button - First Position */}
-              <div className="relative group">
-                <a
-                  href="https://www.sheetsway.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-orange-100 text-orange-600 hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-600 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 border border-orange-200"
-                >
-                  Audit-Software
-                </a>
-              </div>
-              
               {navigationItems.map((item) => (
                 <div key={item.name} className="relative group">
                   <a
@@ -58,6 +47,18 @@ const Navbar = () => {
                   </a>
                 </div>
               ))}
+              
+              {/* Audit Software Button - Special Styling */}
+              <div className="relative group">
+                <a
+                  href="https://www.sheetsway.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-orange-100 text-orange-600 hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-600 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 border border-orange-200"
+                >
+                  Audit-Software
+                </a>
+              </div>
             </div>
           </div>
 
@@ -188,18 +189,6 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
-            {/* Mobile Audit Software Button - First Position */}
-            <div>
-              <a
-                href="https://www.sheetsway.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-orange-100 text-orange-500 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white block px-3 py-2 text-base font-medium transition-all duration-200 border border-orange-200 rounded-lg mx-3 my-2 text-center"
-              >
-                Audit-Software
-              </a>
-            </div>
-            
             {navigationItems.map((item) => (
               <div key={item.name}>
                 <a
@@ -210,6 +199,18 @@ const Navbar = () => {
                 </a>
               </div>
             ))}
+            
+            {/* Mobile Audit Software Button */}
+            <div>
+              <a
+                href="https://www.sheetsway.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-orange-100 text-orange-500 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white block px-3 py-2 text-base font-medium transition-all duration-200 border border-orange-200 rounded-lg mx-3 my-2 text-center"
+              >
+                Audit-Software
+              </a>
+            </div>
             
             <div className="pt-4 pb-3 border-t border-gray-200">
               {/* Mobile Login Menu */}

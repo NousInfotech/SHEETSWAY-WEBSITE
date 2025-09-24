@@ -3,6 +3,9 @@
 import FadeUpAnimation from '@/components/FadeUpAnimation'
 import { industryAwareData } from '@/components/marketplace/industryAware-data'
 import { useMobile } from '@/hooks/useMobile'
+import assets from '@/data/assets'
+import Image from "next/image";
+
 
 import { useEffect, useState } from 'react'
 
@@ -136,6 +139,15 @@ export default function IndustryAwareAI () {
     <div className='relative bg-gradient-to-r from-[#1E84B2] to-[#004666] pt-10 pb-10'>
       <div className='relative -mt-16 sm:-mt-24 md:-mt-32 lg:-mt-40 xl:-mt-48 px-4 lg:px-6 xl:px-8 py-6 sm:py-20 lg:py-12 bg-white rounded-b-[40px] sm:rounded-b-[60px] md:rounded-b-[100px] lg:rounded-b-[140px] xl:rounded-b-[200px] 2xl:rounded-b-[250px] shadow-lg'>
         {/* Left-aligned Header */}
+          <div className="absolute inset-0 z-0">
+                  <Image
+                    src={assets.At4x1MarketplacePng}
+                    alt="Background Pattern"
+                    fill
+                    className="object-cover opacity-10"
+                    priority
+                  />
+                </div>
         <FadeUpAnimation className='pt-16 sm:pt-20 mb-8'>
           <div className='max-w-6xl mx-auto'>
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold font-bodoni text-gray-900'>

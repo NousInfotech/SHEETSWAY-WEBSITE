@@ -173,7 +173,7 @@ export interface Assets {
   At4x1NewMarketplacePng: string;
   BorderMarketplacePng: string;
 
-    IndustrybackPng: string;
+    IndustrybackWebp: string;
   
   // Marketplace Auditor Page SVG
   Rectangle9MarketplaceSvg: string;
@@ -350,7 +350,7 @@ const assets: Assets = {
   DocumentExtractionIconPng: "/Marketplace auditor page/PNG/6@4x.png",
   ReconciliationIconPng: "/Marketplace auditor page/PNG/7@4x.png",
 
-  IndustrybackPng: "/images/blog/Industryback.png",
+  IndustrybackWebp: "/public/Industryback.webp",
   
   // Marketplace Auditor Page PNG
   Rectangle9MarketplacePng: "/Marketplace auditor page/PNG/Rectangle 9.png",

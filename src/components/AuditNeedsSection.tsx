@@ -38,7 +38,7 @@ const AuditNeedsSection = () => {
   return (
     <section
       className="/* Your current class already has rounded-t- which affects both sides equally */
-py-8 px-3 -mt-32 bg-white relative rounded-t-[60px] md:py-9 md:px-4 md:-mt-36 md:rounded-t-[80px] lg:py-10 lg:px-6 lg:-mt-45 lg:rounded-t-[110px] xl:py-12 xl:px-8 xl:-mt-48 xl:rounded-t-[100px]"
+py-0 px-3 -mt-32 bg-white relative rounded-t-[30px] md:py-9 md:px-4 md:-mt-36 md:rounded-t-[50px] lg:py-10 lg:px-6 lg:-mt-45 lg:rounded-t-[50px] xl:py-12 xl:px-8 xl:-mt-48 xl:rounded-t-[50px]"
       style={{
         zIndex: 10,
       }}
@@ -47,7 +47,7 @@ py-8 px-3 -mt-32 bg-white relative rounded-t-[60px] md:py-9 md:px-4 md:-mt-36 md
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <h2
-            className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-3 lg:mb-4 xl:mb-6"
+            className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 mb-3 lg:mb-4 xl:mb-6 mt-10"
             style={{ fontFamily: "Nunito, sans-serif" }}
           >
             Do You Need an Audit?

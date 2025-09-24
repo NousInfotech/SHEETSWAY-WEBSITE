@@ -23,7 +23,7 @@ const SecuritySection = () => {
 
   return (
     <section 
-      className="relative w-full -mt-8 sm:-mt-12 md:-mt-16 lg:-mt-20 xl:-mt-50 2xl:-mt-50 mb-15 lg:mb-10 xl:mb-20 2xl:mb-25 pt-16 pb-24 sm:pt-20 sm:pb-32 md:pt-24 md:pb-36 lg:py-20 xl:py-28 2xl:py-32 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 flex items-center justify-center overflow-hidden security-section-bg min-h-[700px] sm:min-h-[800px] md:min-h-[850px] lg:min-h-[auto]"
+      className="relative w-full -mt-8 sm:-mt-12 md:-mt-16 lg:-mt-20 xl:-mt-50 2xl:-mt-50 mb-15 lg:mb-20 xl:mb-30 2xl:mb-35 pt-16 pb-24 sm:pt-20 sm:pb-32 md:pt-24 md:pb-36 lg:py-20 xl:py-28 2xl:py-32 px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 flex items-center justify-center overflow-hidden security-section-bg min-h-[700px] sm:min-h-[800px] md:min-h-[850px] lg:min-h-[auto]"
       style={{
         backgroundImage: `url(${assets.CtaBg1Png})`,
         backgroundColor: '#0370A0',
@@ -63,7 +63,7 @@ const SecuritySection = () => {
               </p>
             </div>
             
-            <button className="bg-white text-orange-500 px-6 sm:px-8 md:px-10 lg:px-10 xl:px-12 2xl:px-14 py-3 sm:py-4 md:py-4 lg:py-4 xl:py-5 2xl:py-6 rounded-lg font-semibold text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center gap-2 w-fit">
+            <button className="bg-white text-orange-500 px-6 sm:px-8 md:px-10 lg:px-10 xl:px-12 2xl:px-14 py-3 sm:py-4 md:py-4 lg:py-4 xl:py-5 2xl:py-6 rounded-lg font-semibold text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center gap-2 w-fit -top-10">
               Learn More
               <svg 
                 className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8" 

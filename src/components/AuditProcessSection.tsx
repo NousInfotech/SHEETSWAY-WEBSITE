@@ -9,8 +9,8 @@ const AuditProcessSection = () => {
     <section
       className="pt-8 md:pt-16 lg:pt-20 xl:pt-24 pb-16 md:pb-20 lg:pb-28 xl:pb-12 px-4 lg:px-6 xl:px-8 bg-white relative mb-8 md:mb-16 lg:mb-20 xl:mb-25"
       style={{
-        borderBottomLeftRadius: "100px",
-        borderBottomRightRadius: "100px",
+        borderBottomLeftRadius: "60px",
+        borderBottomRightRadius: "60px",
       }}
     >
       {/*  */}
@@ -30,7 +30,7 @@ const AuditProcessSection = () => {
             </h1>
 
             {/* Steps List */}
-            <div className="space-y-6 lg:space-y-8 mb-6 lg:mb-8 max-w-sm sm:max-w-xs mx-0">
+            <div className="space-y-6 lg:space-y-4 mb-6 lg:mb-8 max-w-sm sm:max-w-xs mx-0">
               <div className="bg-white rounded-lg px-4 py-3 shadow-lg">
                 <p className="text-base sm:text-2xl text-gray-700 font-medium">
                   Post your audit budget.
@@ -92,7 +92,7 @@ const AuditProcessSection = () => {
 
           {/* Right Content - Illustration */}
           <div className="lg:flex-1 relative w-full">
-            <div className="relative w-full">
+            <div className="relative w-full flex justify-end">
               <Image
                 src={assets.CardsAndBg4Png}
                 alt="Online Audit Process Illustration"
@@ -101,10 +101,8 @@ const AuditProcessSection = () => {
                 className="object-contain w-full h-auto relative z-0 illustration-image"
                 priority
                 style={{
-                  transform: "scale(1.0)",
-                  transformOrigin: "left center",
-                  position: "relative",
-                  right: "0%",
+                  transform: "scale(1.5) translateX(7%)", // move slightly left
+                  transformOrigin: "right center",
                   zIndex: 0,
                 }}
               />
@@ -120,7 +118,7 @@ const AuditProcessSection = () => {
               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 relative z-10 inline-block">
                 100+
               </div>
-              <div className="pointer-events-none absolute -top-5 sm:-top-12 md:-top-12 lg:-top-16 xl:-top-10 2xl:-top-24 -right-4 sm:-right-6 md:-right-8 lg:-right-10 xl:-right-12 2xl:-right-16 w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-14 lg:h-14 xl:w-28 xl:h-18 2xl:w-12 2xl:h-12 z-0">
+              <div className="pointer-events-none absolute -top-5 sm:-top-12 md:-top-2 lg:-top-6 xl:-top-0 2xl:-top-4 -right-2 sm:-right-2 md:-right-4 lg:-right-2 xl:-right-2 2xl:-right-2 w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-14 lg:h-14 xl:w-28 xl:h-18 2xl:w-12 2xl:h-12 z-0">
                 <Image
                   src={assets.AuditOnlineHeartPng}
                   alt="Heart icon"
