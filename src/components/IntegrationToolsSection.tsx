@@ -10,7 +10,7 @@ const IntegrationToolsSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={assets.At4x1MarketplacePng}
+          src='/images/blog/LineBg.svg'
           alt="Background Pattern"
           fill
           className="object-cover opacity-10"

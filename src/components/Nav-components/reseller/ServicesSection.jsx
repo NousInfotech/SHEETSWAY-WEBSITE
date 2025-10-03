@@ -29,9 +29,10 @@ const ServicesSection = () => {
             </h1>
             <p className='text-gray-600 max-w-3xl mx-auto leading-relaxed'>
               Whether you&apos;re an influencer, an audit firm, or a business
-              advisor, Sheetsway&apos;s Reseller  <br />Program lets you monetize your
-              network. Share your referral link, we handle the audit,  <br />you earn a
-              commission when it completes.
+              advisor, Sheetsway&apos;s Reseller <br />
+              Program lets you monetize your network. Share your referral link,
+              we handle the audit, <br />
+              you earn a commission when it completes.
             </p>
           </div>
 
@@ -49,11 +50,11 @@ const ServicesSection = () => {
                   />
                 </div>
                 <h3 className='font-bold text-gray-800 text-lg mb-2 group-hover:text-white transition-all duration-300'>
-                  Commissions
+                  Influencers <br />& Communities
                 </h3>
                 <p className='text-gray-600 text-sm group-hover:text-white group-hover:opacity-90 transition-all duration-300'>
-                  Get your commission on every referral that gets signed up with
-                  us to expand the network.
+                  Turn your audience into revenue: share a trusted audit route,
+                  no client handling required.
                 </p>
               </div>
 
@@ -70,11 +71,14 @@ const ServicesSection = () => {
                 </div>
 
                 <h3 className='font-bold text-gray-800 text-lg mb-2 group-hover:text-white transition-all duration-300'>
-                  Audit & Accounting Firms
+                  Audit & Accounting Firms <br />
+                  <span className='font-bold text-sm'>
+                    (Overflow / Cross-Border)
+                  </span>
                 </h3>
                 <p className='text-gray-600 text-sm group-hover:text-white group-hover:opacity-90 transition-all duration-300'>
-                  Refer clients to our business entity formation and get rewards
-                  and great monetary incentives.
+                  Refer overflow or cross-border audits, keep client trust, and
+                  earn commissions on finalized work.
                 </p>
               </div>
 
@@ -93,8 +97,8 @@ const ServicesSection = () => {
                   Advisory & Corporate Services
                 </h3>
                 <p className='text-gray-600 text-sm group-hover:text-white group-hover:opacity-90 transition-all duration-300'>
-                  Join hands with us as business setup specialist and get great
-                  income and investment earnings.
+                  Offer clients an easy, compliant audit path while
+                  strengthening your advisory role across industries.
                 </p>
               </div>
 
@@ -113,8 +117,8 @@ const ServicesSection = () => {
                   Freelancers & App Integrations
                 </h3>
                 <p className='text-gray-600 text-sm group-hover:text-white group-hover:opacity-90 transition-all duration-300'>
-                  Proper financial health of your app or business platform with
-                  flexible and secure payments.
+                  Embed “Request Audit” in your app to deliver instant audit
+                  access and earn commissions.
                 </p>
               </div>
             </div>

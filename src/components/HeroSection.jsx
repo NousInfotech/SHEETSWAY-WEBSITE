@@ -21,7 +21,7 @@ const HeroSection = () => {
     >
       <div className='absolute inset-0 z-0'>
         <Image
-          src={assets.At4x1MarketplacePng}
+          src='/images/blog/LineBg.svg'
           alt='Background Pattern'
           fill
           className='object-cover opacity-10'
@@ -136,11 +136,11 @@ const HeroSection = () => {
 
           {/* Action Buttons */}
           <div className='flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8 justify-center items-center max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto px-4'>
-            <button className='w-full sm:w-auto bg-white hover:bg-gray-50 text-gray-800 px-6 sm:px-8 md:px-10 lg:px-12 xl:px-14 py-3 sm:py-3 md:py-4 lg:py-4 xl:py-4 rounded-full font-medium text-sm sm:text-base md:text-base lg:text-lg xl:text-xl transition-colors duration-200 shadow-lg'>
-             <h3 className="text-lg font-semibold  text-gray-900">I need an Audit</h3>
+            <button className='flex-1 sm:flex-none bg-white hover:bg-gray-50 text-gray-900 px-8 md:px-10 py-4 rounded-full font-bold text-base md:text-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105'>
+              I need an Audit
             </button>
-            <button className='w-full sm:w-auto bg-white hover:bg-gray-50 text-gray-800 px-6 sm:px-8 md:px-10 lg:px-12 xl:px-14 py-3 sm:py-3 md:py-4 lg:py-4 xl:py-4 rounded-full font-medium text-sm sm:text-base md:text-base lg:text-lg xl:text-xl transition-colors duration-200 shadow-lg'>
-              <h3 className="text-lg font-semibold  text-gray-900">I&apos;m an Auditor</h3>
+            <button className='flex-1 sm:flex-none bg-white hover:bg-gray-50 text-gray-900 px-8 md:px-10 py-4 rounded-full font-bold text-base md:text-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105'>
+              I&apos;m an Auditor
             </button>
           </div>
         </div>
