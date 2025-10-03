@@ -4,7 +4,7 @@ import React from 'react'
 const HeroSection = () => {
   return (
     <div className='relative bg-gradient-to-bl from-orange-100 via-orange-50 to-white overflow-x-hidden mt-12 lg:mt-16'>
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-14 lg:py-10'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-14 lg:py-5'>
         <div className='grid lg:grid-cols-2 gap-8 lg:gap-18 items-center'>
           {/* Left Content */}
           <div className='space-y-4 mb-8 lg:mb-12 text-center lg:text-left'>
@@ -25,7 +25,7 @@ const HeroSection = () => {
               audits.
             </p>
             <div className='flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 items-center lg:items-start'>
-              <button className='bg-[#F59E0B] text-white px-6 h-[44px] sm:h-[48px] rounded-lg font-semibold hover:bg-yellow-500 transition-colors flex items-center justify-center w-full sm:w-auto gap-2 lg:gap-3'>
+              <button className='bg-gradient-to-r from-[rgba(255,218,120,1)] via-[rgba(250,154,29,1)] to-[rgba(250,154,29,1)] text-white px-6 h-[44px] sm:h-[48px] rounded-lg font-semibold hover:bg-yellow-500 transition-colors flex items-center justify-center w-full sm:w-auto gap-2 lg:gap-3'>
                 Contact Sheetsway
                 <div className='bg-white rounded p-1 sm:p-1.5 lg:p-2 flex items-center justify-center'>
                   <svg
@@ -53,69 +53,19 @@ const HeroSection = () => {
           <div className='relative order-first lg:order-last'>
             <div className='relative'>
               <img
-                src='/images/blog/guy.png'
+                src='/images/blog/ResellerHero.png'
                 alt='Professional with laptop'
                 width={350}
                 height={300}
-                className='w-full max-w-[280px] sm:max-w-sm lg:max-w-md mx-auto h-[300px] sm:h-[350px] lg:h-[400px] object-contain'
-              />
-            </div>
-
-            {/* Floating Elements */}
-            <div className='absolute top-4 sm:top-6 right-2 sm:right-2 lg:right-8 bg-white rounded-lg shadow-lg p-2 lg:p-3 flex items-center space-x-2 lg:space-x-3'>
-              <div className='bg-yellow-100 rounded-lg p-1.5 lg:p-2 flex items-center justify-center'>
-                <img
-                  src='/images/blog/Vector.png'
-                  alt='Folder Icon'
-                  width={28}
-                  height={28}
-                  className='w-7 h-7 lg:w-7 lg:h-7'
-                />
-              </div>
-              <div>
-                <div className='text-xl sm:text-2xl lg:text-3xl font-extrabold text-black'>
-                  30+
-                </div>
-                <div className='text-[10px] sm:text-xs lg:text-sm text-gray-600'>
-                  Referred Clients
-                </div>
-              </div>
-            </div>
-
-            <div className='absolute top-16 sm:top-24 lg:top-32 left-0 bg-white rounded-lg shadow-lg p-2 sm:p-3 lg:p-4 flex items-center space-x-2 lg:space-x-3'>
-              <div className='bg-yellow-100 rounded-lg p-1.5 lg:p-2'>
-                <img
-                  src='/images/blog/euro.png'
-                  alt='Folder Icon'
-                  width={20}
-                  height={20}
-                  className='w-5 h-5 lg:w-5 lg:h-5'
-                />
-              </div>
-              <div>
-                <div className='text-[10px] sm:text-xs lg:text-sm text-gray-600'>
-                  New Clients
-                </div>
-                <div className='text-sm sm:text-lg lg:text-xl font-bold text-black'>
-                  $ 64,500
-                </div>
-              </div>
-            </div>
-
-            <div className='absolute bottom-6 lg:bottom-8 right-2 lg:right-4 bg-white rounded-lg shadow-lg p-3'>
-              <img
-                src='/images/blog/diagram.png'
-                alt='Growth Chart'
-                width={90}
-                height={55}
+                className='w-full max-w-[250px] sm:max-w-md lg:max-w-lg xl:max-w-xl mx-auto h-[300px] sm:h-[350px] lg:h-[400px] xl:h-[450px] object-contain'
               />
             </div>
           </div>
         </div>
 
         {/* Stats Section - Integrated into Hero */}
-        <div className='relative mt-8 sm:mt-12 lg:mt-[-20px]'>
-          <div className='bg-white py-4 sm:py-6 lg:py-2 px-4 sm:px-6 rounded-2xl shadow-xl max-w-8xl mx-auto'>
+        <div className='relative mt-8 sm:mt-12 lg:mt-[-30px]'>
+          <div className='bg-white py-4 sm:py-6 lg:py-2 px-4 sm:px-6 rounded-3xl shadow-xl max-w-8xl mx-auto'>
             <div className='max-w-6xl mx-auto px-2 sm:px-4 lg:px-8'>
               <div className='text-center mb-6 lg:mb-8'>
                 <h2 className='text-[18px] sm:text-[24px] lg:text-[20px] font-bold text-gray-900'>

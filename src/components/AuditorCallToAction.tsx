@@ -44,7 +44,7 @@ const AuditorCallToAction = () => {
             </div>
             
             <button 
-              className="w-full sm:w-auto text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-200 mb-6 sm:mb-8 shadow-lg"
+              className="w-full sm:w-auto text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-bold text-base sm:text-lg transition-colors duration-200 mb-6 sm:mb-8 shadow-lg"
               style={{backgroundColor: 'rgba(0, 70, 102, 1)'}}
               onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(0, 60, 90, 1)'}
               onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(0, 70, 102, 1)'}

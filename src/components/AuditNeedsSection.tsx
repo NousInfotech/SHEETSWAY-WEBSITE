@@ -6,30 +6,35 @@ const AuditNeedsSection = () => {
     {
       icon: assets.FreelancerFinancialAuditMalePng,
       title: "Freelancers & Micro Businesses",
+      alt: "Freelancers & Micro Businesses",
       description:
         "In some cases, even small entities need audits. We'll guide you throughwhat's required and match you with a cost-effective solution.",
     },
     {
       icon: assets.OnlineAuditSmallBusinessPng,
-      title: "Small Businesses",
+      title: <>Small <br/> Businesses</>,
+      alt: "Small Businesses",
       description:
         "Need an annual financial audit for compliance? We make it easy, fast, and affordable to get started.",
     },
     {
       icon: assets.MediumLargeCompanyAuditIconPng,
       title: "Medium & Large Companies",
+      alt: "Medium & Large Companies",
       description:
         "Get matched with the right auditor to meet your regulatory or board-level financial audit requirements.",
     },
     {
       icon: assets.InternationalAuditGlobeIconPng,
       title: "International Entities with Local Obligations",
+      alt: "International Entities with Local Obligations",
       description:
         "If you operate in Europe and need a country-specific financial audit, we'll connect you with local licensed providers.",
     },
     {
       icon: assets.FinancialAuditBacklogLateFilingPng,
       title: "Backlogged or Late Filings",
+      alt: "Backlogged or Late Filings",
       description:
         "Fell behind on last year's audit? We'll help you catch up quickly and professionally.",
     },
@@ -63,7 +68,7 @@ py-0 px-3 -mt-32 bg-white relative rounded-t-[30px] md:py-9 md:px-4 md:-mt-36 md
 
         {/* Mobile: Single column layout, Desktop: Grid layout */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-3 lg:gap-5">
             {auditNeeds.map((item, index) => (
               <div key={index} className="text-left mb-8 lg:mb-0">
                 {/* Simple line-art illustration */}
@@ -71,7 +76,7 @@ py-0 px-3 -mt-32 bg-white relative rounded-t-[30px] md:py-9 md:px-4 md:-mt-36 md
                   <div className="w-32 h-32 flex items-center justify-center">
                     <Image
                       src={item.icon}
-                      alt={item.title}
+                      alt={item.alt}
                       width={128}
                       height={128}
                       className="w-full h-full object-contain"
@@ -81,7 +86,7 @@ py-0 px-3 -mt-32 bg-white relative rounded-t-[30px] md:py-9 md:px-4 md:-mt-36 md
 
                 {/* Orange heading */}
                 <h3
-                  className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold mb-2 lg:mb-3 xl:mb-4 leading-tight text-left"
+                  className="text-base lg:text-xl font-bold mb-2 lg:mb-3 xl:mb-4 leading-tight text-left"
                   style={{ color: "#E8840C", fontFamily: "Nunito, sans-serif" }}
                 >
                   {item.title}

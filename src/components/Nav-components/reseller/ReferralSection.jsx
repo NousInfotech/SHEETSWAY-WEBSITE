@@ -24,8 +24,10 @@ const ReferralSection = () => {
           </div>
 
           {/* Arrow - match style from design */}
-           <div className='hidden lg:flex justify-center items-center flex-shrink-0 relative -mt-18 left-10
-'>
+          <div
+            className='hidden lg:flex justify-center items-center flex-shrink-0 relative -mt-18 left-10
+'
+          >
             <Image
               src='/images/blog/Arrow.png'
               alt='Arrow pointing to content'
@@ -49,7 +51,7 @@ const ReferralSection = () => {
               <div className='space-y-4 lg:space-y-6'>
                 <div>
                   <h2 className='text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-3 lg:mb-4 leading-tight'>
-                    Helping you earn through referrals.
+                    Helping you earn <br/>through referrals.
                   </h2>
                   <p className='text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 lg:mb-8'>
                     Whether you&apos;re an influencer, an auditor with overflow,
@@ -60,9 +62,15 @@ const ReferralSection = () => {
 
                 {/* Features list */}
                 <div className='space-y-4 lg:space-y-5'>
-                  <div className='flex items-start gap-3 lg:gap-4'>
-                    <div className='w-10 h-10 lg:w-12 lg:h-12 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5'>
-                      <TrendingUp className='w-5 h-5 lg:w-6 lg:h-6 text-orange-600' />
+                  <div className='flex items-start gap-1 lg:gap-2'>
+                    <div className='w-10 h-10 lg:w-12 lg:h-12  rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5'>
+                      <Image
+                        src='/images/blog/Referral.png'
+                        alt='Arrow pointing to content'
+                        width={30}
+                        height={16}
+                        className='object-contain'
+                      />
                     </div>
                     <div className='flex-1'>
                       <h4 className='font-semibold text-gray-800 text-base lg:text-lg mb-1 lg:mb-2'>
@@ -75,9 +83,15 @@ const ReferralSection = () => {
                     </div>
                   </div>
 
-                  <div className='flex items-start gap-3 lg:gap-4'>
-                    <div className='w-10 h-10 lg:w-12 lg:h-12 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5'>
-                      <DollarSign className='w-5 h-5 lg:w-6 lg:h-6 text-orange-600' />
+                  <div className='flex items-start gap-1 lg:gap-2'>
+                     <div className='w-10 h-10 lg:w-12 lg:h-12  rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5'>
+                      <Image
+                        src='/images/blog/Referralwallet.png'
+                        alt='Arrow pointing to content'
+                        width={30}
+                        height={16}
+                        className='object-contain'
+                      />
                     </div>
                     <div className='flex-1'>
                       <h4 className='font-semibold text-gray-800 text-base lg:text-lg mb-1 lg:mb-2'>
