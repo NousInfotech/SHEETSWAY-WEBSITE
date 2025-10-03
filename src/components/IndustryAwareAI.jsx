@@ -8,10 +8,12 @@ import { useEffect, useState } from 'react'
 import { SectionDivider } from '@/components/common'
 import Image from 'next/image'
 
+
 export default function IndustryAwareAI () {
   const [active, setActive] = useState(0)
   const [isMobile] = useMobile(700)
   const [mediaDurations, setMediaDurations] = useState({})
+  const [bgImageError, setBgImageError] = useState(false)
 
   useEffect(() => {
     const primarySrc =
@@ -139,9 +141,11 @@ export default function IndustryAwareAI () {
           imageSrc={assets.Rectangle2MarketplacePng}
           position='top'
         />
+
+        {/* Background Image with Error Handling */}
         <div className='absolute inset-0 z-0'>
           <Image
-            src='/Industryback.webp' // ✅ points directly to public folder file
+            src={assets.At4x1MarketplacePng}
             alt='Background Pattern'
             fill
             className='object-cover opacity-10'
@@ -150,7 +154,7 @@ export default function IndustryAwareAI () {
         </div>
 
         {/* Left-aligned Header */}
-        <FadeUpAnimation className='pt-16 sm:pt-20 mb-8 mt-15 lg:mt-15'>
+        <FadeUpAnimation className='pt-16 sm:pt-20 mb-8 mt-15 lg:mt-15 relative z-10'>
           <div className='max-w-6xl mx-auto'>
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold font-bodoni text-gray-900'>
               Built by Auditors,
@@ -166,7 +170,7 @@ export default function IndustryAwareAI () {
         </FadeUpAnimation>
 
         {/* Automatic FS Mapping Section */}
-        <div className='max-w-6xl mx-auto flex flex-col lg:flex-row justify-between gap-8 sm:gap-10 md:gap-16 lg:gap-20'>
+        <div className='max-w-6xl mx-auto flex flex-col lg:flex-row justify-between gap-8 sm:gap-10 md:gap-16 lg:gap-20 relative z-10'>
           {/* Text Section */}
           <FadeUpAnimation
             className='w-full lg:w-[450px] flex flex-col'
