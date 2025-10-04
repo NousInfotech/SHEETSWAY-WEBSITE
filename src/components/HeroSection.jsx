@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import assets from '@/data/assets'
+import config from '@/utils/constants'
 
 const HeroSection = () => {
   const [selectedBusiness, setSelectedBusiness] = useState(
@@ -136,12 +137,16 @@ const HeroSection = () => {
 
           {/* Action Buttons */}
           <div className='flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 lg:gap-6 xl:gap-8 justify-center items-center max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto px-4'>
-            <button className='flex-1 sm:flex-none bg-white hover:bg-gray-50 text-gray-900 px-8 md:px-10 py-4 rounded-full font-bold text-base md:text-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105'>
+            <a href={config.clientSignup} target='_blank' className='cursor-pointer'>
+            <button className='flex-1 sm:flex-none bg-white hover:bg-gray-50 cursor-pointer text-gray-900 px-8 md:px-10 py-4 rounded-full font-bold text-base md:text-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105'>
               I need an Audit
             </button>
-            <button className='flex-1 sm:flex-none bg-white hover:bg-gray-50 text-gray-900 px-8 md:px-10 py-4 rounded-full font-bold text-base md:text-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105'>
+            </a>
+            <a href={config.auditorSignup} target='_blank' className='cursor-pointer'>
+            <button className='flex-1 sm:flex-none bg-white hover:bg-gray-50 cursor-pointer text-gray-900 px-8 md:px-10 py-4 rounded-full font-bold text-base md:text-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105'>
               I&apos;m an Auditor
             </button>
+            </a>
           </div>
         </div>
       </div>

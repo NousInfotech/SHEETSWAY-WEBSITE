@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import assets from '@/data/assets';
+import React from "react";
+import Image from "next/image";
+import assets from "@/data/assets";
+import config from "@/utils/constants";
 
 const AuditorCallToAction = () => {
   return (
@@ -25,7 +26,10 @@ const AuditorCallToAction = () => {
             />
           </div>
           {/* Overlay for consistent styling */}
-          <div className="absolute inset-0 rounded-2xl" style={{backgroundColor: 'rgba(232, 132, 12, 0.2)'}}></div>
+          <div
+            className="absolute inset-0 rounded-2xl"
+            style={{ backgroundColor: "rgba(232, 132, 12, 0.2)" }}
+          ></div>
           <div className="max-w-md relative z-10">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2">
               Need an Audit?
@@ -33,7 +37,7 @@ const AuditorCallToAction = () => {
             <p className="text-base sm:text-lg mb-4 sm:mb-6 opacity-90">
               Let Auditors Come to You
             </p>
-            
+
             <div className="mb-6 sm:mb-8">
               <div className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-2">
                 10% off
@@ -42,21 +46,29 @@ const AuditorCallToAction = () => {
                 with your initial sign up
               </p>
             </div>
-            
-            <button 
-              className="w-full sm:w-auto text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-bold text-base sm:text-lg transition-colors duration-200 mb-6 sm:mb-8 shadow-lg"
-              style={{backgroundColor: 'rgba(0, 70, 102, 1)'}}
-              onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(0, 60, 90, 1)'}
-              onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(0, 70, 102, 1)'}
-            >
-              Sign Up for Free
-            </button>
-            
+
+            <a href={config.clientSignup} target="_blank">
+              <button
+                className="w-full cursor-pointer sm:w-auto text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-bold text-base sm:text-lg transition-colors duration-200 mb-6 sm:mb-8 shadow-lg"
+                style={{ backgroundColor: "rgba(0, 70, 102, 1)" }}
+                onMouseEnter={(e) =>
+                  ((e.target as HTMLButtonElement).style.backgroundColor =
+                    "rgba(0, 60, 90, 1)")
+                }
+                onMouseLeave={(e) =>
+                  ((e.target as HTMLButtonElement).style.backgroundColor =
+                    "rgba(0, 70, 102, 1)")
+                }
+              >
+                Sign Up for Free
+              </button>
+            </a>
+
             <div className="mb-4">
               <p className="text-xs sm:text-sm opacity-80 mb-3 sm:mb-4">
                 Follow our pages for occasional promo codes to sweeten the deal.
               </p>
-              
+
               {/* Social Media Icons - 4K Optimized */}
               <div className="flex justify-between max-w-xs mx-auto">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 cursor-pointer hover:scale-110 transition-transform duration-200 relative">
@@ -103,7 +115,7 @@ const AuditorCallToAction = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Right Section - Blue */}
         <div className="w-full lg:w-[900px] h-[600px] sm:h-[700px] lg:h-[544px] p-6 sm:p-8 lg:p-12 flex items-center relative overflow-hidden rounded-2xl shadow-lg">
           {/* Background Image - 4K Optimized */}
@@ -124,34 +136,62 @@ const AuditorCallToAction = () => {
           <div className="absolute inset-0 rounded-2xl"></div>
           <div className="flex flex-col lg:flex-row items-center justify-start lg:justify-start h-full w-full relative z-10 text-center">
             <div className="text-white max-w-lg lg:ml-0 mb-6 lg:mb-0">
-              <p className="text-base sm:text-lg mb-3 sm:mb-4" style={{color: 'rgb(0, 0, 0)'}}>
-                Pick from <span className="font-semibold" style={{color: 'rgba(232, 132, 12, 1)'}}>Verified</span> and <span className="font-semibold" style={{color: 'rgba(232, 132, 12, 1)'}}>Trusted</span>
+              <p
+                className="text-base sm:text-lg mb-3 sm:mb-4"
+                style={{ color: "rgb(0, 0, 0)" }}
+              >
+                Pick from{" "}
+                <span
+                  className="font-semibold"
+                  style={{ color: "rgba(232, 132, 12, 1)" }}
+                >
+                  Verified
+                </span>{" "}
+                and{" "}
+                <span
+                  className="font-semibold"
+                  style={{ color: "rgba(232, 132, 12, 1)" }}
+                >
+                  Trusted
+                </span>
               </p>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 leading-tight">
                 CERTIFIED & REVIEWED
               </h2>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 leading-tight">
-                 AUDITORS
+                AUDITORS
               </h2>
-              <p className="text-base sm:text-lg mb-6 sm:mb-8 opacity-90" style={{color: 'rgb(0, 0, 0)'}} >
+              <p
+                className="text-base sm:text-lg mb-6 sm:mb-8 opacity-90"
+                style={{ color: "rgb(0, 0, 0)" }}
+              >
                 all in one place
               </p>
-              
-              <button 
+
+              <button
                 className="w-full sm:w-auto text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg transition-colors duration-200 mb-4 sm:mb-6 shadow-xl"
-                style={{backgroundColor: 'rgba(232, 132, 12, 1)'}}
-                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(210, 120, 10, 1)'}
-                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'rgba(232, 132, 12, 1)'}
+                style={{ backgroundColor: "rgba(232, 132, 12, 1)" }}
+                onMouseEnter={(e) =>
+                  ((e.target as HTMLButtonElement).style.backgroundColor =
+                    "rgba(210, 120, 10, 1)")
+                }
+                onMouseLeave={(e) =>
+                  ((e.target as HTMLButtonElement).style.backgroundColor =
+                    "rgba(232, 132, 12, 1)")
+                }
               >
                 Find Your Auditor
               </button>
-              
-              <p className="text-sm sm:text-base opacity-80" style={{color: 'rgb(0, 0, 0)'}}>
+
+              <p
+                className="text-sm sm:text-base opacity-80"
+                style={{ color: "rgb(0, 0, 0)" }}
+              >
                 Get 10% off your first listing
               </p>
             </div>
           </div>
-          
+
           {/* Businessman Image - Mobile responsive positioning - 4K Optimized */}
           <div className="lg:hidden absolute -bottom-13 -right-3 z-10">
             <div className="w-80 h-80 sm:w-96 sm:h-96 relative">
