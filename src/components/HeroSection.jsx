@@ -46,88 +46,88 @@ const HeroSection = () => {
           </div>
 
           {/* Selection Area */}
-          <div className='flex flex-col lg:flex-row items-center justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 mb-6 sm:mb-8 md:mb-9 lg:mb-10 xl:mb-12 2xl:mb-14 max-w-full sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto px-4'>
-            {/* Business Type Dropdown */}
-            <div className='flex items-center bg-white border border-gray-300 rounded-lg overflow-hidden shadow-sm'>
-              {/* Business Type Dropdown */}
-              <div className='relative'>
-                <select
-                  value={selectedBusiness}
-                  onChange={e => setSelectedBusiness(e.target.value)}
-                  className='bg-transparent px-4 py-4 pr-10 text-gray-700 text-base focus:outline-none appearance-none cursor-pointer border-none'
-                  style={{ minWidth: '280px' }}
-                >
-                  <option>Startup or Solo Business (&lt;10 staff)</option>
-                  <option>Small Company (&lt;50 employees)</option>
-                  <option>Mid-Sized Company (&lt;250 employees)</option>
-                  <option>Large or Corporate Business (250+ employees)</option>
-                </select>
-                <div className='absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none'>
-                  <svg
-                    className='w-4 h-4 text-gray-400'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M19 9l-7 7-7-7'
-                    />
-                  </svg>
-                </div>
-              </div>
-
-              {/* Divider */}
-              <div className='h-10 w-px bg-gray-300'></div>
-
-              {/* Country Selector */}
-              <div className='relative'>
-                <select
-                  value={selectedCountry}
-                  onChange={e => setSelectedCountry(e.target.value)}
-                  className='bg-transparent pl-11 pr-9 py-4 text-gray-700 text-base focus:outline-none appearance-none cursor-pointer border-none'
-                >
-                  <option value='MT'>MT</option>
-                  <option value='US'>US</option>
-                  <option value='UK'>UK</option>
-                  <option value='EU'>EU</option>
-                </select>
-
-                {/* Flag */}
-                <div className='absolute left-3 top-1/2 transform -translate-y-1/2 pointer-events-none'>
-                  <div className='w-6 h-4 bg-red-600 rounded-sm flex items-center justify-center'>
-                    <span className='text-white text-xs font-bold'>
-                      {selectedCountry}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Dropdown Icon */}
-                <div className='absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none'>
-                  <svg
-                    className='w-4 h-4 text-gray-400'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M19 9l-7 7-7-7'
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* List Audit Button */}
-            <button className='w-full sm:w-auto bg-[#004666] hover:bg-[#004666] text-white px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 py-3 sm:py-3 md:py-4 lg:py-4 xl:py-4 rounded-lg font-medium text-sm sm:text-base md:text-base lg:text-lg xl:text-lg transition-colors duration-200 whitespace-nowrap'>
-              List your Audit Now
-            </button>
+           <div className='flex flex-col lg:flex-row items-center justify-center gap-3 sm:gap-4 md:gap-4 lg:gap-5 xl:gap-6 mb-6 sm:mb-8 md:mb-9 lg:mb-10 xl:mb-12 2xl:mb-14 max-w-full sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto px-4'>
+      {/* Dropdowns Container */}
+      <div className='w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center bg-white border border-gray-300 rounded-lg overflow-hidden shadow-sm'>
+        {/* Business Type Dropdown */}
+        <div className='relative flex-1 sm:flex-initial'>
+          <select
+            value={selectedBusiness}
+            onChange={e => setSelectedBusiness(e.target.value)}
+            className='w-full bg-transparent px-4 py-4 pr-10 text-gray-700 text-base focus:outline-none appearance-none cursor-pointer border-none'
+            style={{ minWidth: '0' }}
+          >
+            <option>Startup or Solo Business (&lt;10 staff)</option>
+            <option>Small Company (&lt;50 employees)</option>
+            <option>Mid-Sized Company (&lt;250 employees)</option>
+            <option>Large or Corporate Business (250+ employees)</option>
+          </select>
+          <div className='absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none'>
+            <svg
+              className='w-4 h-4 text-gray-400'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M19 9l-7 7-7-7'
+              />
+            </svg>
           </div>
+        </div>
+
+        {/* Divider */}
+        <div className='h-px w-full sm:h-10 sm:w-px bg-gray-300'></div>
+
+        {/* Country Selector */}
+        <div className='relative'>
+          <select
+            value={selectedCountry}
+            onChange={e => setSelectedCountry(e.target.value)}
+            className='w-full bg-transparent pl-11 pr-9 py-4 text-gray-700 text-base focus:outline-none appearance-none cursor-pointer border-none'
+          >
+            <option value='MT'>MT</option>
+            <option value='US'>US</option>
+            <option value='UK'>UK</option>
+            <option value='EU'>EU</option>
+          </select>
+
+          {/* Flag */}
+          <div className='absolute left-3 top-1/2 transform -translate-y-1/2 pointer-events-none'>
+            <div className='w-6 h-4 bg-red-600 rounded-sm flex items-center justify-center'>
+              <span className='text-white text-xs font-bold'>
+                {selectedCountry}
+              </span>
+            </div>
+          </div>
+
+          {/* Dropdown Icon */}
+          <div className='absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none'>
+            <svg
+              className='w-4 h-4 text-gray-400'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M19 9l-7 7-7-7'
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      {/* List Audit Button */}
+      <button className='w-full sm:w-auto bg-[#004666] hover:bg-[#004666] text-white px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 py-3 sm:py-3 md:py-4 lg:py-4 xl:py-4 rounded-lg font-medium text-sm sm:text-base md:text-base lg:text-lg xl:text-lg transition-colors duration-200 whitespace-nowrap'>
+        List your Audit Now
+      </button>
+    </div>
 
           {/* Journey Text */}
           <p className='text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-6 sm:mb-8 md:mb-9 lg:mb-10 xl:mb-12 2xl:mb-14 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10 leading-relaxed'>
