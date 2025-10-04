@@ -1,3 +1,12 @@
+---
+title: "How to Earn Passive Income Referring Audits Online"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Passive Income", "Referral Program", "Audit Referrals", "Side Hustle", "Commission"]
+featuredImage: "/images/blog/earn-passive-income-referring-audits.webp"
+excerpt: "Everyone is looking for ways to earn extra income in 2025. Side hustles are everywhere — from freelance work to affiliate programs. But here's one you might not have thought of: referring companies that need audits."
+---
+
 # How to Earn Passive Income Referring Audits Online
 
 Everyone is looking for ways to earn extra income in 2025. Side hustles are everywhere — from freelance work to affiliate programs. But here’s one you might not have thought of: **referring companies that need audits**.
@@ -6,7 +15,7 @@ With platforms like **Sheetsway Marketplace**, you can earn money simply by intr
 
 ---
 
-![earn-passive-income-referring-audits.webp](earn-passive-income-referring-audits.webp)
+![earn-passive-income-referring-audits.webp](/images/blog/earn-passive-income-referring-audits.webp)
 
 ## Why Audit Referrals Work
 

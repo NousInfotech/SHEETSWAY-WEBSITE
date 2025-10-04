@@ -1,3 +1,12 @@
+---
+title: "Preparing for Your First Audit in Malta: Step-by-Step Guide"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["First Audit", "Malta", "Preparation", "Step-by-Step", "Compliance"]
+featuredImage: "/images/blog/first-audit-preparation-malta.webp"
+excerpt: "Getting ready for your first audit can feel overwhelming — especially if you've never been through the process before. The good news is that with the right preparation, an audit doesn't have to be stressful."
+---
+
 # Preparing for Your First Audit in Malta: Step-by-Step Guide
 
 Getting ready for your first audit can feel overwhelming — especially if you’ve never been through the process before. The good news is that with the right preparation, an audit doesn’t have to be stressful.
@@ -6,7 +15,7 @@ In Malta, all limited liability companies are required to have an annual audit u
 
 ---
 
-![first-audit-preparation-malta.webp](first-audit-preparation-malta.webp)
+![first-audit-preparation-malta.webp](/images/blog/first-audit-preparation-malta.webp)
 
 ## Step 1: Close Your Accounts
 

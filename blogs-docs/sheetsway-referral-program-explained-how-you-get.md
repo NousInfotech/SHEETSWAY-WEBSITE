@@ -1,3 +1,12 @@
+---
+title: "Sheetsway Referral Program Explained: How You Get Paid for Referrals"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Referral Program", "Sheetsway", "Commission", "Passive Income", "Audit Referrals"]
+featuredImage: "/images/blog/sheetsway-referral-program.webp"
+excerpt: "Earning money from referrals sounds exciting, but how does it actually work? At Sheetsway Marketplace, we've designed our referral program to be simple, transparent, and rewarding."
+---
+
 # Sheetsway Referral Program Explained: How You Get Paid for Referrals
 
 Earning money from referrals sounds exciting, but how does it actually work? At **Sheetsway Marketplace**, we’ve designed our referral program to be **simple, transparent, and rewarding**.
@@ -8,7 +17,7 @@ Here’s exactly how the program works — and how you get paid.
 
 ---
 
-![sheetsway-referral-program.webp](sheetsway-referral-program.webp)
+![sheetsway-referral-program.webp](/images/blog/sheetsway-referral-program.webp)
 
 ## Step 1: Sign Up for the Referral Program
 

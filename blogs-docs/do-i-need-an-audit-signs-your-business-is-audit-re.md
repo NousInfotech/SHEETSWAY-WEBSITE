@@ -1,3 +1,12 @@
+---
+title: "Do I Need an Audit? Signs Your Business Is Audit-Ready"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Audit Requirements", "Business Readiness", "Compliance", "SME", "Financial Statements"]
+featuredImage: "/images/blog/Audit_startup_how_to_requirements.webp"
+excerpt: "Running a business is already stressful and the word audit often makes it worse. Many SME owners aren't sure if they actually need one, or if their books are prepared for review."
+---
+
 # Do I Need an Audit? Signs Your Business Is Audit-Ready
 
 Running a business is already stressful and the word *audit* often makes it worse. Many SME owners aren’t sure if they actually need one, or if their books are prepared for review. Missing an audit requirement can lead to compliance issues, delays with banks or investors, and unnecessary penalties.
@@ -6,7 +15,7 @@ The good news? Knowing the **signs your business needs an audit** and whether yo
 
 ---
 
-![Audit_startup_how_to_requirements.webp](Audit_startup_how_to_requirements.webp)
+![Audit_startup_how_to_requirements.webp](/images/blog/Audit_startup_how_to_requirements.webp)
 
 ## What Is an Audit and Why Does It Matter?
 

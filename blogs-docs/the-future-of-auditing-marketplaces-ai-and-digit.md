@@ -1,3 +1,12 @@
+---
+title: "The Future of Auditing: Marketplaces, AI, and Digital Tools"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Future of Auditing", "AI", "Digital Tools", "Marketplace", "Technology"]
+featuredImage: "/images/blog/future-of-auditing-marketplaces-ai.webp"
+excerpt: "Auditing has always been seen as a traditional profession — stacks of paperwork, manual checks, and long timelines. But times are changing fast."
+---
+
 # The Future of Auditing: Marketplaces, AI, and Digital Tools
 
 Auditing has always been seen as a traditional profession — stacks of paperwork, manual checks, and long timelines. But times are changing fast.
@@ -8,7 +17,7 @@ In this blog, we’ll explore the future of auditing and how tools like **Sheets
 
 ---
 
-![future-of-auditing-marketplaces-ai.webp](future-of-auditing-marketplaces-ai.webp)
+![future-of-auditing-marketplaces-ai.webp](/images/blog/future-of-auditing-marketplaces-ai.webp)
 
 ## Trend 1: Marketplaces Are Connecting Clients and Auditors
 

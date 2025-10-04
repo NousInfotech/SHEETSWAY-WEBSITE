@@ -1,3 +1,12 @@
+---
+title: "How Much Does an Audit Cost? Global Breakdown for SMEs"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Audit Costs", "Pricing", "SME", "Global", "Budget"]
+featuredImage: "/images/blog/audit-cost-global-breakdown-smes.webp"
+excerpt: "If you're a business owner, one of the first questions you'll ask when planning an audit is: how much will it cost? The answer depends on your company's size, complexity, and location."
+---
+
 # How Much Does an Audit Cost? Global Breakdown for SMEs
 
 If you’re a business owner, one of the first questions you’ll ask when planning an audit is: **how much will it cost?** The answer depends on your company’s size, complexity, and location.
@@ -6,7 +15,7 @@ In this guide, we’ll break down the factors that affect audit pricing, compare
 
 ---
 
-![audit-cost-global-breakdown-smes.webp](audit-cost-global-breakdown-smes.webp)
+![audit-cost-global-breakdown-smes.webp](/images/blog/audit-cost-global-breakdown-smes.webp)
 
 ## Factors That Affect Audit Costs
 

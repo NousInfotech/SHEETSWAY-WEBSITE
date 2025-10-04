@@ -1,4 +1,13 @@
-# The Role of AI in Auditing: Global Trends and Malta’s Adoption
+---
+title: "The Role of AI in Auditing: Global Trends and Malta's Adoption"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["AI", "Auditing", "Global Trends", "Malta", "Technology"]
+featuredImage: "/images/blog/ai-in-auditing-global-malta.webp"
+excerpt: "Artificial Intelligence (AI) is no longer a buzzword — it's reshaping industries everywhere, including auditing. From transaction testing to fraud detection, AI is changing how auditors work."
+---
+
+# The Role of AI in Auditing: Global Trends and Malta's Adoption
 
 Artificial Intelligence (AI) is no longer a buzzword — it’s reshaping industries everywhere, including auditing. From transaction testing to fraud detection, AI is changing how auditors work and how businesses prepare for audits.
 
@@ -8,7 +17,7 @@ Here’s how AI is transforming auditing worldwide — and what it means for Mal
 
 ---
 
-![ai-in-auditing-global-malta.webp](ai-in-auditing-global-malta.webp)
+![ai-in-auditing-global-malta.webp](/images/blog/ai-in-auditing-global-malta.webp)
 
 ## Global Trends: How AI Is Transforming Auditing
 

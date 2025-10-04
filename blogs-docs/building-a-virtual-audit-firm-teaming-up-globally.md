@@ -1,3 +1,12 @@
+---
+title: "Building a Virtual Audit Firm: Teaming Up Globally Through Marketplaces"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Virtual Audit Firm", "Global Collaboration", "Marketplace", "Auditors", "Digital Transformation"]
+featuredImage: "/images/blog/virtual-audit-firm-global-marketplace.webp"
+excerpt: "The days when audit firms were limited by geography are over. In 2025, technology and marketplaces are making it possible for auditors across the world to join forces and build virtual firms."
+---
+
 # Building a Virtual Audit Firm: Teaming Up Globally Through Marketplaces
 
 The days when audit firms were limited by geography are over. In 2025, technology and marketplaces are making it possible for auditors across the world to **join forces and build virtual firms** — without the heavy costs of traditional offices.
@@ -6,7 +15,7 @@ For ambitious auditors, this means new opportunities: more clients, more reach, 
 
 ---
 
-![virtual-audit-firm-global-marketplace.webp](virtual-audit-firm-global-marketplace.webp)
+![virtual-audit-firm-global-marketplace.webp](/images/blog/virtual-audit-firm-global-marketplace.webp)
 
 ## What Is a Virtual Audit Firm?
 

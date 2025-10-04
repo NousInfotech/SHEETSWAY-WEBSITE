@@ -1,3 +1,12 @@
+---
+title: "Audit vs. Review vs. Compilation: Key Differences Explained"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Audit", "Review", "Compilation", "Financial Statements", "Assurance"]
+featuredImage: "/images/blog/audit-vs-review-vs-compilation.webp"
+excerpt: "When business owners prepare financial statements, they often hear three terms: audit, review, and compilation. While they sound similar, each service provides a very different level of assurance."
+---
+
 # Audit vs. Review vs. Compilation: Key Differences Explained
 
 When business owners prepare financial statements, they often hear three terms: **audit, review, and compilation**. While they sound similar, each service provides a very different level of assurance.
@@ -6,7 +15,7 @@ In this guide, we’ll explain the differences, when each is needed, and how to 
 
 ---
 
-![audit-vs-review-vs-compilation.webp](audit-vs-review-vs-compilation.webp)
+![audit-vs-review-vs-compilation.webp](/images/blog/audit-vs-review-vs-compilation.webp)
 
 ## Why the Confusion?
 

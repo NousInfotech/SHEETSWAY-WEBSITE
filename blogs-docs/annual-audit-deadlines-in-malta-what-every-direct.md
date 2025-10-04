@@ -1,3 +1,12 @@
+---
+title: "Annual Audit Deadlines in Malta: What Every Director Should Know"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Audit Deadlines", "Malta", "MBR", "Compliance", "Directors"]
+featuredImage: "/images/blog/malta-audit-deadlines-mbr.webp"
+excerpt: "Running a company in Malta comes with strict deadlines for filing audited financial statements. Missing them can lead to fines, penalties, and problems with the Malta Business Registry (MBR)."
+---
+
 # Annual Audit Deadlines in Malta: What Every Director Should Know
 
 Running a company in Malta comes with strict deadlines for filing audited financial statements. Missing them can lead to fines, penalties, and problems with the Malta Business Registry (MBR).
@@ -6,7 +15,7 @@ In this guide, we’ll explain the **audit filing deadlines in Malta**, what dir
 
 ---
 
-![malta-audit-deadlines-mbr.webp](malta-audit-deadlines-mbr.webp)
+![malta-audit-deadlines-mbr.webp](/images/blog/malta-audit-deadlines-mbr.webp)
 
 ## Why Deadlines Matter
 

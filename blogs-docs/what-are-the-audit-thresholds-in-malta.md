@@ -1,3 +1,12 @@
+---
+title: "What Are the Audit Thresholds in Malta? (Turnover, Assets, Employees Explained)"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Audit Thresholds", "Malta", "GAPSME", "Turnover", "Assets", "Employees"]
+featuredImage: "/images/blog/what-are-the-audit-thresholds-in-malta.webp"
+excerpt: "If you're running a business in Malta, you've probably heard about audit thresholds under GAPSME. But what do these thresholds actually mean, and how do they affect your company?"
+---
+
 # What Are the Audit Thresholds in Malta? (Turnover, Assets, Employees Explained)
 
 If you’re running a business in Malta, you’ve probably heard about *audit thresholds* under GAPSME. But what do these thresholds actually mean, and how do they affect your company?

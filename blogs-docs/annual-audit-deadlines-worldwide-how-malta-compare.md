@@ -1,3 +1,12 @@
+---
+title: "Annual Audit Deadlines Worldwide: How Malta Compares"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Audit Deadlines", "Worldwide", "Malta", "Compliance", "International"]
+featuredImage: "/images/blog/audit-deadlines-worldwide-malta-backlog.webp"
+excerpt: "Audit deadlines vary around the world, and missing them can lead to serious penalties. For directors and business owners, knowing when audited accounts are due is critical."
+---
+
 # Annual Audit Deadlines Worldwide: How Malta Compares
 
 Audit deadlines vary around the world, and missing them can lead to serious penalties. For directors and business owners, knowing when audited accounts are due is critical.
@@ -6,7 +15,7 @@ In Malta, the deadline is **10 months + 42 days** after year-end — but how doe
 
 ---
 
-![audit-deadlines-worldwide-malta-backlog.webp](audit-deadlines-worldwide-malta-backlog.webp)
+![audit-deadlines-worldwide-malta-backlog.webp](/images/blog/audit-deadlines-worldwide-malta-backlog.webp)
 
 ## Why Audit Deadlines Matter
 
