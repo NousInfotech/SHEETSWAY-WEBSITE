@@ -13,7 +13,6 @@ export default function IndustryAwareAI () {
   const [active, setActive] = useState(0)
   const [isMobile] = useMobile(700)
   const [mediaDurations, setMediaDurations] = useState({})
-  const [bgImageError, setBgImageError] = useState(false)
 
   useEffect(() => {
     const primarySrc =
@@ -35,58 +34,62 @@ export default function IndustryAwareAI () {
     return () => clearTimeout(id)
   }, [active, mediaDurations, setActive])
 
-  // 🔹 Enhanced Bottom Divider (full width + more highlight)
-  const BottomDivider = () => (
-    <div className='absolute left-1/2 -translate-x-1/2 bottom-0 w-screen h-16 -mb-12'>
-      <div className='h-full w-full relative'>
-        {/* Shadow effect */}
-        <div className='absolute inset-0 bg-gradient-to-b from-gray-400/40 via-gray-200/20 to-transparent' />
-        {/* Top highlight line */}
-        <div className='absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-500/50 to-transparent' />
-      </div>
+  // 🔹 Enhanced Bottom Divider (contained within parent)
+ const BottomDivider = () => (
+  <div className='absolute left-0 right-0 bottom-0 h-16 -mb-12 bg-gray-200'>
+    <div className='h-full w-full relative'>
+      {/* Shadow effect going upward */}
+      <div className='absolute inset-0 bg-gradient-to-t from-gray-400/30 via-gray-300/15 to-transparent' />
+      
+      {/* Top highlight line */}
+      <div className='absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-400/60 to-transparent' />
+      
+      {/* Optional: Bottom edge for depth */}
+      <div className='absolute bottom-0 left-0 right-0 h-px bg-gray-200' />
     </div>
-  )
+  </div>
+)
 
   if (isMobile) {
     return (
-      <div className='relative overflow-hidden'>
-        <div className='text-gray-900 bg-gradient-to-b from-white via-orange-50 to-white px-6 py-10 relative overflow-hidden pb-20'>
+      <div className='relative overflow-x-hidden overflow-y-visible'>
+        <div className='text-gray-900 bg-gradient-to-b from-white via-orange-50 to-white px-4 py-10 relative pb-20 w-full'>
           {[
             'Automatic FS Mapping',
             'Procedures Generation',
             'AI Driven Answers',
             'AI Chat Bot'
           ].map((el, i) => (
-            <div key={i} className='relative'>
+            <div key={i} className='relative w-full overflow-hidden'>
               <div
                 className={`${
-                  active === i ? 'border-l-4 border-primary -mx-6 px-6' : ''
-                }`}
+                  active === i ? 'border-l-4 border-primary -ml-4 pl-4 pr-0' : ''
+                } w-full`}
               >
                 <h1
                   className={`${
                     active === i ? 'text-primary' : 'text-gray-400 mb-4'
-                  } text-2xl font-extrabold font-montserrat`}
+                  } text-xl font-extrabold font-montserrat break-words pr-2`}
                   onClick={() => setActive(i)}
                 >
                   {el}{' '}
                   {industryAwareData[active].title == el &&
                     industryAwareData[active].tag && (
-                      <span className='text-base font-semibold'>
+                      <span className='text-sm font-semibold'>
                         ({industryAwareData[active].tag})
                       </span>
                     )}
                 </h1>
                 {active === i && (
                   <>
-                    <p className='text-sm font-semibold text-gray-800 mt-1 max-w-xs font-nunito'>
+                    <p className='text-sm font-semibold text-gray-800 mt-1 font-nunito break-words pr-2'>
                       {industryAwareData[active].description.split('.')[0]}.
                     </p>
-                    <div className='flex gap-2 mt-4'>
+                    <div className='flex gap-2 mt-4 flex-wrap pr-2'>
                       {industryAwareData[active].tags.map(tag => (
                         <button
                           key={tag}
-                          className='px-2 py-1 bg-white text-gray-600 rounded-md text-xs sm:text-sm border'
+                          className='px-2 py-1 bg-white text-gray-600 rounded-md text-xs border whitespace-nowrap'
                         >
                           {tag}
                         </button>
@@ -97,13 +100,13 @@ export default function IndustryAwareAI () {
               </div>
 
               {active === i && (
-                <div className='my-4'>
+                <div className='my-4 w-full overflow-hidden px-2'>
                   {industryAwareData[active].images.primarySrc
                     ?.toLowerCase()
                     .endsWith('.webm') ? (
                     <video
                       src={industryAwareData[active].images.primarySrc}
-                      className='rounded-xl shadow-[0px_1px_10px_rgba(0,0,0,0.3)] w-full h-full object-contain mx-auto block'
+                      className='rounded-xl shadow-[0px_1px_10px_rgba(0,0,0,0.3)] w-full max-w-full h-auto object-contain mx-auto block'
                       autoPlay
                       loop
                       muted
@@ -122,7 +125,7 @@ export default function IndustryAwareAI () {
                     <img
                       src={industryAwareData[active].images.primarySrc}
                       alt={industryAwareData[active].title}
-                      className='rounded-xl shadow-[0px_1px_10px_rgba(0,0,0,0.3)] w-full h-full object-cover'
+                      className='rounded-xl shadow-[0px_1px_10px_rgba(0,0,0,0.3)] w-full max-w-full h-auto object-contain mx-auto block'
                     />
                   )}
                 </div>
@@ -138,14 +141,14 @@ export default function IndustryAwareAI () {
 
   return (
     <div className='relative overflow-hidden'>
-      <div className='text-gray-900 bg-gradient-to-b from-white via-orange-50 to-white px-4 sm:px-6 md:px-8 lg:px-12 relative overflow-hidden pb-20'>
+      <div className='text-gray-900 bg-gradient-to-b from-white via-orange-50 to-white px-4 sm:px-6 md:px-8 lg:px-12 relative pb-20'>
         <SectionDivider
           imageSrc={assets.Rectangle2MarketplacePng}
           position='top'
         />
 
-        {/* Background Image with Error Handling */}
-        <div className='absolute inset-0 z-0 mt-16 overflow-hidden'>
+        {/* Background Image - contained within parent */}
+        <div className='absolute inset-0 z-0 mt-16 pointer-events-none'>
           <Image
             src='/images/blog/LineBg.svg'
             alt='Background Pattern'
@@ -161,7 +164,7 @@ export default function IndustryAwareAI () {
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold font-bodoni text-gray-900'>
               Built by Auditors,
             </h1>
-            <div className='mt-3 flex items-center gap-2 text-gray-600 font-montserrat'>
+            <div className='mt-3 flex items-center gap-2 text-gray-600 font-montserrat flex-wrap'>
               <span className='text-sm sm:text-base'>Backed by</span>
               <img src='/SVG/Logo.svg' alt='SheetSway' className='h-5 w-auto' />
               <span className='text-sm sm:text-base'>
@@ -204,7 +207,7 @@ export default function IndustryAwareAI () {
                 )}
                 <div className='pl-3 flex flex-col justify-between'>
                   <h2
-                    className={`text-lg sm:text-xl md:text-2xl font-extrabold cursor-pointer font-montserrat hover:text-primary ${
+                    className={`text-lg sm:text-xl md:text-2xl font-extrabold cursor-pointer font-montserrat hover:text-primary break-words ${
                       active === index ? 'text-primary' : 'text-[#A8A8A8]'
                     }`}
                     onClick={() => setActive(index)}
@@ -218,7 +221,7 @@ export default function IndustryAwareAI () {
                   </h2>
                   {active === index && (
                     <div className='space-y-4'>
-                      <p className='text-gray-700 mt-2 font-nunito text-xs sm:text-sm md:text-base lg:text-lg'>
+                      <p className='text-gray-700 mt-2 font-nunito text-xs sm:text-sm md:text-base lg:text-lg break-words'>
                         <span className='font-bold'>
                           {el.description.split('.')[0]}.
                         </span>
@@ -228,7 +231,7 @@ export default function IndustryAwareAI () {
                         {el.tags.map(tag => (
                           <span
                             key={tag}
-                            className='px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 bg-white text-gray-600 rounded-md text-xs sm:text-sm border'
+                            className='px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 bg-white text-gray-600 rounded-md text-xs sm:text-sm border whitespace-nowrap'
                           >
                             {tag}
                           </span>
@@ -246,7 +249,7 @@ export default function IndustryAwareAI () {
             className='relative w-full lg:w-[570px] min-h-[250px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[450px]'
             amount={0.5}
           >
-            <div className='absolute inset-0 flex items-center justify-center'>
+            <div className='absolute inset-0 flex items-center justify-center overflow-hidden'>
               <div
                 className='relative p-4 sm:p-6 md:p-0'
                 style={{
