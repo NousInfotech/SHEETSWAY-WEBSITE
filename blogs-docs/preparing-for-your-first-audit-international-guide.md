@@ -1,3 +1,12 @@
+---
+title: "Preparing for Your First Audit: International Guide + Malta Rules Explained"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["First Audit", "International", "Malta Rules", "Preparation", "Compliance"]
+featuredImage: "/images/blog/first-audit-guide-malta-international.webp"
+excerpt: "If you've never gone through an audit before, the process can seem overwhelming. What documents do you need? How long will it take? And what rules apply in your country?"
+---
+
 # Preparing for Your First Audit: International Guide + Malta Rules Explained
 
 If you’ve never gone through an audit before, the process can seem overwhelming. What documents do you need? How long will it take? And what rules apply in your country?
@@ -6,7 +15,7 @@ The good news is: with the right preparation, your first audit doesn’t have to
 
 ---
 
-![first-audit-guide-malta-international.webp](first-audit-guide-malta-international.webp)
+![first-audit-guide-malta-international.webp](/images/blog/first-audit-guide-malta-international.webp)
 
 ## Why Audits Matter
 

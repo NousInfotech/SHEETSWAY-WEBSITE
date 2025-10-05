@@ -1,3 +1,12 @@
+---
+title: "Students and Freelancers: How to Make Money Referring Audits Part-Time"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Students", "Freelancers", "Part-Time Income", "Referral Program", "Side Hustle"]
+featuredImage: "/images/blog/students-freelancers-referring-audit.webp"
+excerpt: "Looking for a flexible way to earn extra income while studying or freelancing? Forget delivery gigs or low-paying side jobs — here's a smarter option: referring businesses that need audits."
+---
+
 # Students and Freelancers: How to Make Money Referring Audits Part-Time
 
 Looking for a flexible way to earn extra income while studying or freelancing? Forget delivery gigs or low-paying side jobs — here’s a smarter option: **referring businesses that need audits**.
@@ -6,7 +15,7 @@ Through the **Sheetsway Referral Program**, you can make money just by connectin
 
 ---
 
-![students-freelancers-referring-audit.webp](students-freelancers-referring-audit.webp)
+![students-freelancers-referring-audit.webp](/images/blog/students-freelancers-referring-audit.webp)
 
 ## Why Audit Referrals Are Perfect for Students and Freelancers
 

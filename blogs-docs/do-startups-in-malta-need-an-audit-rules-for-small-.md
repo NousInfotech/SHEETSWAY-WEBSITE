@@ -1,3 +1,12 @@
+---
+title: "Do Startups in Malta Need an Audit? Rules for Small & Medium Businesses"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Startups", "Malta", "Audit Requirements", "GAPSME", "SME"]
+featuredImage: "/images/blog/startup-audit-requirements-malta-gapsme.webp"
+excerpt: "If you're launching a startup or running a small business in Malta, one of the first questions you'll face is: do we need an audit?"
+---
+
 # Do Startups in Malta Need an Audit? Rules for Small & Medium Businesses
 
 If you’re launching a startup or running a small business in Malta, one of the first questions you’ll face is: **do we need an audit?**
@@ -8,7 +17,7 @@ In this blog, we’ll break down what this means for startups and SMEs, how GAPS
 
 ---
 
-![startup-audit-requirements-malta-gapsme.webp](startup-audit-requirements-malta-gapsme.webp)
+![startup-audit-requirements-malta-gapsme.webp](/images/blog/startup-audit-requirements-malta-gapsme.webp)
 
 ## Audit Rules for Startups in Malta
 

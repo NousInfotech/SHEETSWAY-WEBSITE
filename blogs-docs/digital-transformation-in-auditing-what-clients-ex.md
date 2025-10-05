@@ -1,3 +1,12 @@
+---
+title: "Digital Transformation in Auditing: What Clients Expect Today"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Digital Transformation", "Auditing", "Technology", "Client Expectations", "2025"]
+featuredImage: "/images/blog/digital-transformation-auditing-2025.webp"
+excerpt: "The world of auditing is changing fast. Clients no longer want slow, paper-heavy processes. They expect speed, transparency, and digital convenience."
+---
+
 # Digital Transformation in Auditing: What Clients Expect Today
 
 The world of auditing is changing fast. Clients no longer want slow, paper-heavy processes. They expect **speed, transparency, and digital convenience** — just like they get from banking apps, online shopping, and digital signatures.
@@ -8,7 +17,7 @@ This blog will break down what **digital transformation in auditing** really mea
 
 ---
 
-![digital-transformation-auditing-2025.webp](digital-transformation-auditing-2025.webp)
+![digital-transformation-auditing-2025.webp](/images/blog/digital-transformation-auditing-2025.webp)
 
 ## The Shift: From Paper to Digital
 

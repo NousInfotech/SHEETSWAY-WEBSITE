@@ -1,3 +1,12 @@
+---
+title: "Why SMEs in Malta (and Abroad) Are Moving to Audit Marketplaces"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["SMEs", "Malta", "Audit Marketplaces", "Digital Transformation", "Business"]
+featuredImage: "/images/blog/smes-moving-to-audit-marketplaces.webp"
+excerpt: "For years, finding an auditor has been a headache for small and medium-sized enterprises (SMEs). Endless phone calls. Back-and-forth emails. Waiting weeks for a single proposal."
+---
+
 # Why SMEs in Malta (and Abroad) Are Moving to Audit Marketplaces
 
 For years, finding an auditor has been a headache for small and medium-sized enterprises (SMEs). Endless phone calls. Back-and-forth emails. Waiting weeks for a single proposal.
@@ -8,7 +17,7 @@ From **Malta to international hubs**, more businesses are making the switch — 
 
 ---
 
-![smes-moving-to-audit-marketplaces.webp](smes-moving-to-audit-marketplaces.webp)
+![smes-moving-to-audit-marketplaces.webp](/images/blog/smes-moving-to-audit-marketplaces.webp)
 
 ## The Old Way: Slow and Frustrating
 

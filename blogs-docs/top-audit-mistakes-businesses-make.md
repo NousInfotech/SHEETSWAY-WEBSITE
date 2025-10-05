@@ -1,3 +1,12 @@
+---
+title: "Top Audit Mistakes Businesses Make (and How to Avoid Them)"
+date: "2024-01-15"
+author: "Sheetsway Team"
+tags: ["Audit Mistakes", "Business", "Compliance", "Best Practices", "SME"]
+featuredImage: "/images/blog/audit-mistakes-to-avoid.webp"
+excerpt: "Every year, businesses go through audits — and many run into the same problems over and over again. Some mistakes are small, but others can cause serious delays, higher costs, or even penalties."
+---
+
 # Top Audit Mistakes Businesses Make (and How to Avoid Them)
 
 Every year, businesses go through audits — and many run into the same problems over and over again. Some mistakes are small, but others can cause serious delays, higher costs, or even penalties.
@@ -6,7 +15,7 @@ In this guide, we’ll highlight the **most common audit mistakes SMEs make**, e
 
 ---
 
-![audit-mistakes-to-avoid.webp](audit-mistakes-to-avoid.webp)
+![audit-mistakes-to-avoid.webp](/images/blog/audit-mistakes-to-avoid.webp)
 
 ## Mistake 1: Waiting Until the Last Minute
 
