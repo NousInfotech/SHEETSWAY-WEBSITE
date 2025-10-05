@@ -37,17 +37,19 @@ export default function IndustryAwareAI () {
 
   // 🔹 Enhanced Bottom Divider (full width + more highlight)
   const BottomDivider = () => (
-    <div className='absolute left-0 right-0 bottom-0 w-screen h-10 -mb-5'>
-      <div className='h-full w-full bg-gradient-to-b from-transparent via-white-100 to-gray-100/10 shadow-2xl'>
-        <div className='absolute inset-0 bg-gradient-to-r from-primary/10 via-white-800 ' />
-        <div className='absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent' />
+    <div className='absolute left-1/2 -translate-x-1/2 bottom-0 w-screen h-16 -mb-12'>
+      <div className='h-full w-full relative'>
+        {/* Shadow effect */}
+        <div className='absolute inset-0 bg-gradient-to-b from-gray-400/40 via-gray-200/20 to-transparent' />
+        {/* Top highlight line */}
+        <div className='absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-500/50 to-transparent' />
       </div>
     </div>
   )
 
   if (isMobile) {
     return (
-      <div className='relative'>
+      <div className='relative overflow-hidden'>
         <div className='text-gray-900 bg-gradient-to-b from-white via-orange-50 to-white px-6 py-10 relative overflow-hidden pb-20'>
           {[
             'Automatic FS Mapping',
@@ -135,7 +137,7 @@ export default function IndustryAwareAI () {
   }
 
   return (
-    <div className='relative'>
+    <div className='relative overflow-hidden'>
       <div className='text-gray-900 bg-gradient-to-b from-white via-orange-50 to-white px-4 sm:px-6 md:px-8 lg:px-12 relative overflow-hidden pb-20'>
         <SectionDivider
           imageSrc={assets.Rectangle2MarketplacePng}
@@ -143,7 +145,7 @@ export default function IndustryAwareAI () {
         />
 
         {/* Background Image with Error Handling */}
-        <div className='absolute inset-0 z-0 mt-16'>
+        <div className='absolute inset-0 z-0 mt-16 overflow-hidden'>
           <Image
             src='/images/blog/LineBg.svg'
             alt='Background Pattern'
