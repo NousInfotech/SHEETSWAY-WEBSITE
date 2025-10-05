@@ -11,10 +11,9 @@ const AuditProcessSection = () => {
       style={{
         borderBottomLeftRadius: "60px",
         borderBottomRightRadius: "60px",
+        overflow: "hidden",
       }}
     >
-      {/*  */}
-
       <div className="max-w-7xl xl:max-w-8xl 2xl:max-w-9xl mx-auto relative z-10">
         {/* Main Content Area */}
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 xl:gap-20 2xl:gap-24 mb-12 lg:mb-20 xl:mb-24">
@@ -91,19 +90,18 @@ const AuditProcessSection = () => {
           </div>
 
           {/* Right Content - Illustration */}
-          <div className="lg:flex-1 relative w-full">
-            <div className="relative w-full flex justify-end">
+          <div className="lg:flex-1 relative w-full overflow-hidden">
+            <div className="relative w-full max-w-full">
               <Image
                 src={assets.CardsAndBg4Png}
                 alt="Online Audit Process Illustration"
                 width={1500}
                 height={1200}
-                className="object-contain w-full h-auto relative z-0 illustration-image"
+                className="object-contain w-full h-auto"
                 priority
                 style={{
-                  transform: "scale(1.5) translateX(7%)", // move slightly left
-                  transformOrigin: "right center",
-                  zIndex: 0,
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
             </div>
@@ -113,12 +111,12 @@ const AuditProcessSection = () => {
         {/* Statistics Section */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {/* Stat 1 */}
-          <div className="text-center relative">
+          <div className="text-center relative overflow-visible px-4">
             <div className="relative inline-block">
               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 relative z-10 inline-block">
                 100+
               </div>
-              <div className="pointer-events-none absolute -top-5 sm:-top-12 md:-top-2 lg:-top-6 xl:-top-0 2xl:-top-4 -right-2 sm:-right-2 md:-right-4 lg:-right-2 xl:-right-2 2xl:-right-2 w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-14 lg:h-14 xl:w-28 xl:h-18 2xl:w-12 2xl:h-12 z-0">
+              <div className="pointer-events-none absolute -top-2 sm:-top-3 lg:-top-4 -right-2 sm:-right-3 lg:-right-4 w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 z-0">
                 <Image
                   src={assets.AuditOnlineHeartPng}
                   alt="Heart icon"
@@ -135,12 +133,12 @@ const AuditProcessSection = () => {
           </div>
 
           {/* Stat 2 */}
-          <div className="text-center relative">
+          <div className="text-center relative overflow-visible px-4">
             <div className="relative inline-block">
               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 relative z-10 inline-block">
                 4.8
               </div>
-              <div className="pointer-events-none absolute -top-5 sm:-top-10 md:-top-12 lg:-top-16 xl:-top-10 2xl:-top-24 -right-6 sm:-right-8 md:-right-10 lg:-right-12 xl:-right-16 2xl:-right-20 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-20 xl:h-20 2xl:w-12 2xl:h-12 z-0">
+              <div className="pointer-events-none absolute -top-4 sm:-top-6 lg:-top-8 -right-4 sm:-right-6 lg:-right-8 w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 z-0">
                 <Image
                   src={assets.AuditOnlineStarPng}
                   alt="Star icon"
@@ -157,12 +155,12 @@ const AuditProcessSection = () => {
           </div>
 
           {/* Stat 3 */}
-          <div className="text-center relative">
+          <div className="text-center relative overflow-visible px-4">
             <div className="relative inline-block">
               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 relative z-10 inline-block">
                 2000+
               </div>
-              <div className="pointer-events-none absolute -top-5 sm:-top-10 md:-top-12 lg:-top-16 xl:-top-10 2xl:-top-24 -right-4 sm:-right-6 md:-right-8 lg:-right-5 xl:-right-10 2xl:-right-16 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-20 xl:h-20 2xl:w-22 2xl:h-22 z-0">
+              <div className="pointer-events-none absolute -top-4 sm:-top-6 lg:-top-8 -right-3 sm:-right-4 lg:-right-6 w-10 h-10 sm:w-14 sm:h-14 lg:w-16 lg:h-16 z-0">
                 <Image
                   src={assets.AuditOnlineDiamondPng}
                   alt="Diamond icon"
