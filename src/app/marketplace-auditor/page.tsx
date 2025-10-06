@@ -28,7 +28,7 @@ export default function MarketplaceAuditor() {
       <div className="relative">
         <div
           className="absolute inset-0 bg-cover bg-no-repeat bg-center opacity-10 pointer-events-none"
-          style={{ backgroundImage: "url('/Marketplace auditor page/SVG/Background pattern.svg')" }}
+          style={{  backgroundImage: "url('/images/blog/LineBg.svg')", }}
         />
         <div className="relative z-10">
           <IntegrationPage/>
