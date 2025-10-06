@@ -92,7 +92,7 @@ const AuditProcessSection = () => {
 
           {/* Right Content - Illustration */}
           <div className="lg:flex-1 relative w-full overflow-hidden">
-            <div className="relative w-full flex justify-end">
+            <div className="relative w-full">
               <Image
                 src={assets.CardsAndBg4Png}
                 alt="Online Audit Process Illustration"
@@ -101,9 +101,11 @@ const AuditProcessSection = () => {
                 className="object-contain w-full h-auto relative z-0 illustration-image"
                 priority
                 style={{
-                  transform: "scale(1.5) translateX(7%)", // move slightly left
-                  transformOrigin: "right center",
-                  zIndex: 0,
+                  transform: 'scale(1.0)',
+                  transformOrigin: 'left center',
+                  position: 'relative',
+                  right: '0%',
+                  zIndex: 0
                 }}
               />
             </div>
