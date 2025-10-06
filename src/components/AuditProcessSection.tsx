@@ -7,7 +7,7 @@ import assets from "@/data/assets";
 const AuditProcessSection = () => {
   return (
     <section
-      className="pt-8 md:pt-16 lg:pt-20 xl:pt-24 pb-16 md:pb-20 lg:pb-28 xl:pb-12 px-4 lg:px-6 xl:px-8 bg-white relative mb-8 md:mb-16 lg:mb-20 xl:mb-25"
+      className="pt-8 md:pt-16 lg:pt-20 xl:pt-24 pb-16 md:pb-20 lg:pb-28 xl:pb-12 px-4 lg:px-6 xl:px-8 bg-white relative mb-8 md:mb-16 lg:mb-20 xl:mb-25 overflow-hidden"
       style={{
         borderBottomLeftRadius: "60px",
         borderBottomRightRadius: "60px",
@@ -91,7 +91,7 @@ const AuditProcessSection = () => {
           </div>
 
           {/* Right Content - Illustration */}
-          <div className="lg:flex-1 relative w-full">
+          <div className="lg:flex-1 relative w-full overflow-hidden">
             <div className="relative w-full flex justify-end">
               <Image
                 src={assets.CardsAndBg4Png}
