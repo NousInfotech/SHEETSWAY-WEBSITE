@@ -13,7 +13,7 @@ const BuiltByAuditorsCTA = () => {
           src={assets.CtaPng}
           alt="CTA Background"
           fill
-          className="object-contain lg:object-contain object-cover"
+          className="lg:object-contain object-cover"
           priority
         />
       </div>

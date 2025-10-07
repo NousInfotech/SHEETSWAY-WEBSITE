@@ -17,7 +17,7 @@ function Plugin({ heading, p1, p2, p3, link, videoSrc, shadow, linkName }) {
 
       <Video
         src={videoSrc}
-        className={`w-60 sm:w-72 rounded-xl border ${shadow}`}
+        className={`w-60 sm:w-72 rounded-xl relative border z-[15] ${shadow}`}
       />
       <Link href={link} className="mt-6 text-sm cursor-pointer font-medium">
         Explore our <span className="text-primary">{linkName}</span> tool &gt;

@@ -107,7 +107,7 @@ export default function IndustryAwareAI () {
                   .endsWith('.webm') ? (
                   <video
                     src={industryAwareData[active].images.primarySrc}
-                    className='rounded-xl shadow-[0px_1px_10px_rgba(0,0,0,0.3)] w-full h-full object-contain mx-auto block'
+                    className='rounded-xl relative z-[15] shadow-[0px_1px_10px_rgba(0,0,0,0.3)] w-full h-full object-contain mx-auto block'
                     autoPlay
                     loop
                     muted
