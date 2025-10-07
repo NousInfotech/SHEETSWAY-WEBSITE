@@ -35,20 +35,16 @@ export default function IndustryAwareAI () {
   }, [active, mediaDurations, setActive])
 
   // 🔹 Enhanced Bottom Divider (contained within parent)
- const BottomDivider = () => (
-  <div className='absolute left-0 right-0 bottom-0 h-16 -mb-12 bg-gray-200'>
-    <div className='h-full w-full relative'>
-      {/* Shadow effect going upward */}
-      <div className='absolute inset-0 bg-gradient-to-t from-gray-400/30 via-gray-300/15 to-transparent' />
-      
-      {/* Top highlight line */}
-      <div className='absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-400/60 to-transparent' />
-      
-      {/* Optional: Bottom edge for depth */}
-      <div className='absolute bottom-0 left-0 right-0 h-px bg-gray-200' />
+  const BottomDivider = () => (
+    <div className='absolute left-1/2 -translate-x-1/2 bottom-0 w-screen h-16 -mb-12'>
+      <div className='h-full w-full relative'>
+        {/* Shadow effect */}
+        <div className='absolute inset-0 bg-gradient-to-b from-gray-400/40 via-gray-200/20 to-transparent' />
+        {/* Top highlight line */}
+        <div className='absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-500/50 to-transparent' />
+      </div>
     </div>
-  </div>
-)
+  )
 
   if (isMobile) {
     return (

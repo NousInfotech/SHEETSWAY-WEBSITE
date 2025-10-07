@@ -6,7 +6,6 @@ tags: ["Audit Deadlines", "Malta", "MBR", "Compliance", "Directors"]
 featuredImage: "/images/blog/malta-audit-deadlines-mbr.webp"
 excerpt: "Running a company in Malta comes with strict deadlines for filing audited financial statements. Missing them can lead to fines, penalties, and problems with the Malta Business Registry (MBR)."
 ---
-
 # Annual Audit Deadlines in Malta: What Every Director Should Know
 
 Running a company in Malta comes with strict deadlines for filing audited financial statements. Missing them can lead to fines, penalties, and problems with the Malta Business Registry (MBR).
@@ -69,11 +68,11 @@ Besides fines, **persistent late filing** can also lead to:
 ## How This Compares Internationally
 
 | **Country** | **Deadline for Filing Audited Accounts** |
-| --- | --- |
-| **Malta** | 10 months + 42 days after year-end |
-| **UK** | 9 months after year-end (private companies) |
-| **Ireland** | 9 months after year-end |
-| **Cyprus** | 12 months after year-end |
+| ----------------- | ---------------------------------------------- |
+| **Malta**   | 10 months + 42 days after year-end             |
+| **UK**      | 9 months after year-end (private companies)    |
+| **Ireland** | 9 months after year-end                        |
+| **Cyprus**  | 12 months after year-end                       |
 
 👉 Malta gives slightly more time than the UK or Ireland — but not enough to leave everything last-minute.
 
