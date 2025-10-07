@@ -9,10 +9,11 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigationItems = [
-    { name: 'Marketplace', href: '/marketplace-auditor' },
+    { name: 'Marketplace', href: '/' },
     { name: 'Auditor', href: '/marketplace-auditor' },
     { name: 'Reseller', href: '/reseller' },
     { name: 'FAQ', href: '/faq' },
+    { name: 'Blog', href: '/blog' },
     { name: 'About Us', href: '/about-us' },
   ];
 
