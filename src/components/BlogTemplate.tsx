@@ -90,7 +90,7 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ blog, relatedBlogs = [] }) 
       </header>
 
       {/* Featured Image */}
-      {blog.featuredImage && (
+      {/* {blog.featuredImage && (
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
           <div className="max-w-4xl mx-auto">
             <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg">
@@ -105,7 +105,7 @@ const BlogTemplate: React.FC<BlogTemplateProps> = ({ blog, relatedBlogs = [] }) 
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       {/* Content */}
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
