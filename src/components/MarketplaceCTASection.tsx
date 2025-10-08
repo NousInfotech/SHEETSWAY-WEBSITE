@@ -17,8 +17,9 @@ const MarketplaceCTASection = () => {
           ]}
           buttonText="Sign Up"
           buttonColor="orange"
+          redirectLink={config.clientSignup}
           onButtonClick={() => {
-            window.location.href = config.clientSignup;
+            window.open(config.clientSignup, "_blank");
           }}
         />
 

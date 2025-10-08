@@ -124,10 +124,12 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* List Audit Button */}
-            <button className='w-full sm:w-auto bg-[#004666] hover:bg-[#004666] text-white px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 py-3 sm:py-3 md:py-4 lg:py-4 xl:py-4 rounded-lg font-medium text-sm sm:text-base md:text-base lg:text-lg xl:text-lg transition-colors duration-200 whitespace-nowrap'>
-              List your Audit Now
-            </button>
+            <a href={config.clientSignup}>
+              {/* List Audit Button */}
+              <button className='w-full sm:w-auto bg-[#004666] hover:bg-[#004666] text-white px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 py-3 sm:py-3 md:py-4 lg:py-4 xl:py-4 rounded-lg font-medium text-sm sm:text-base md:text-base lg:text-lg xl:text-lg transition-colors duration-200 whitespace-nowrap'>
+                List your Audit Now
+              </button>
+            </a>
           </div>
 
           {/* Journey Text */}

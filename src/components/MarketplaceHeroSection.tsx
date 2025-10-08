@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import assets from "@/data/assets";
+import config from "@/utils/constants";
 
 const MarketplaceHeroSection = () => {
   return (
@@ -26,9 +27,9 @@ const MarketplaceHeroSection = () => {
           alt="Hero Background Mobile"
           fill
           className="object-cover lg:hidden"
-          style={{ 
+          style={{
             objectPosition: "center center",
-            transform: "scale(1.05)"
+            transform: "scale(1.05)",
           }}
           priority
           quality={100}
@@ -82,9 +83,11 @@ const MarketplaceHeroSection = () => {
                     </svg>
                   </div>
                 </button>
-                <button className="bg-white text-orange-600 px-6 sm:px-8 lg:px-10 xl:px-10 py-3 lg:py-4 xl:py-4 rounded-lg font-extrabold hover:bg-gray-50 transition-colors duration-200 shadow-lg text-sm sm:text-base lg:text-base xl:text-lg ">
-                  Log In
-                </button>
+                <a href={config.auditorSignin}>
+                  <button className="bg-white text-orange-600 px-6 sm:px-8 lg:px-10 xl:px-10 py-3 lg:py-4 xl:py-4 rounded-lg font-extrabold hover:bg-gray-50 transition-colors duration-200 shadow-lg text-sm sm:text-base lg:text-base xl:text-lg ">
+                    Log In
+                  </button>
+                </a>
               </div>
             </div>
 

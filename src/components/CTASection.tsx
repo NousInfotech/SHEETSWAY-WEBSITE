@@ -8,7 +8,7 @@ const CTASection = () => {
     <section
       className="relative pb-40 px-4 bg-gradient-to-r from-[#1E84B2] to-[#004666]"
       style={{
-        zIndex: -1,
+        zIndex: 1,
       }}
     >
       <div className="max-w-7xl mx-auto space-y-12 w-full">
@@ -19,10 +19,12 @@ const CTASection = () => {
             "Have your business audited the way you like it,",
             "with many options and from home.",
           ]}
+          redirectLink={config.clientSignup}
           buttonText="Sign Up"
           buttonColor="orange"
           onButtonClick={() => {
-            window.location.href = config.clientSignup;
+            console.log("Opening:", config.clientSignup);
+            window.open(config.clientSignup, "_blank");
           }}
         />
 

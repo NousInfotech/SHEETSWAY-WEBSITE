@@ -1,4 +1,5 @@
 'use client'
+import config from '@/utils/constants'
 import React from 'react'
 
 const HeroSection = () => {
@@ -43,9 +44,11 @@ const HeroSection = () => {
                   </svg>
                 </div>
               </button>
-              <button className='bg-white border border-gray-200 px-6 h-[44px] sm:h-[48px] rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-colors shadow-sm w-full sm:w-auto'>
-                Log In
-              </button>
+              <a href={config.resellerSignin}>
+                <button className="bg-white text-orange-600 px-6 sm:px-8 lg:px-10 xl:px-10 py-3 lg:py-4 xl:py-4 rounded-lg font-extrabold hover:bg-gray-50 transition-colors duration-200 shadow-lg text-sm sm:text-base lg:text-base xl:text-lg ">
+                  Log In
+                </button>
+              </a>
             </div>
           </div>
 

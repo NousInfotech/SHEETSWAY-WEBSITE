@@ -1,16 +1,18 @@
 'use client';
 
 import { CTAItem } from '@/components/common';
+import config from '@/utils/constants';
 
 const CTASection = () => {
   return (
     <section className="relative pt-8 md:pt-10 lg:pt-20 pb-10 px-4 bg-gradient-to-r from-[#1E84B2] to-[#004666]" style={{
-      zIndex: -1
+      zIndex: 2
     }}>
       <div className="max-w-7xl mx-auto space-y-12 w-full flex flex-col justify-center min-h-[200px]">
         {/* First CTA - Sign Up */}
         <CTAItem
           title=" Earn with Every Referral"
+          redirectLink={config.resellerSignup}
           description={[
             "Share your unique link, refer businesses needing audits, ",
             "and earn commission once their first audit is",

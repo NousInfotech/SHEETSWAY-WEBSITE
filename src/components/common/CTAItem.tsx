@@ -1,36 +1,40 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
 interface CTAItemProps {
   title: string;
   description: string[];
   buttonText: string;
-  buttonColor?: 'orange' | 'purple';
+  buttonColor?: "orange" | "purple";
   onButtonClick?: () => void;
   className?: string;
+  redirectLink?: string;
 }
 
 const CTAItem: React.FC<CTAItemProps> = ({
   title,
   description,
   buttonText,
-  buttonColor = 'orange',
+  buttonColor = "orange",
   onButtonClick,
-  className = ""
+  className = "",
+  redirectLink = "#",
 }) => {
   const getButtonColorClasses = () => {
     switch (buttonColor) {
-      case 'purple':
-        return 'text-purple-600';
-      case 'orange':
+      case "purple":
+        return "text-purple-600";
+      case "orange":
       default:
-        return 'text-orange-500';
+        return "text-orange-500";
     }
   };
 
   return (
-    <div className={`flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 ${className}`}>
+    <div
+      className={`flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 ${className}`}
+    >
       <div className="text-white space-y-4 flex-1">
         <h2 className="text-md sm:text-3xl md:text-2xl font-bold leading-tight">
           {title}
@@ -44,12 +48,23 @@ const CTAItem: React.FC<CTAItemProps> = ({
         </div>
       </div>
       <div className="lg:flex-shrink-0">
-        <button 
-          className={`bg-white ${getButtonColorClasses()} font-semibold px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 shadow-lg w-48`}
-          onClick={onButtonClick}
-        >
-          {buttonText}
-        </button>
+        {redirectLink ? (
+          <a
+            href={redirectLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`bg-white ${getButtonColorClasses()} font-semibold px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 shadow-lg w-48 inline-flex items-center justify-center`}
+          >
+            {buttonText}
+          </a>
+        ) : (
+          <button
+            className={`bg-white ${getButtonColorClasses()} font-semibold px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 shadow-lg w-48`}
+            onClick={onButtonClick}
+          >
+            {buttonText}
+          </button>
+        )}
       </div>
     </div>
   );
